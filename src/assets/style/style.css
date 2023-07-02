@@ -3,7 +3,7 @@
     margin: 0;
     box-sizing: border-box;
 }
-
+ 
 :root{
     ---main-color :midnightblue;
     ---second-color : rgba(6, 6, 6, 0.578);
@@ -50,7 +50,7 @@
 .footer h3{
     color: white;
 }
-
+/* placing footer to the bootom of the page */
 #app {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -60,3 +60,6 @@
 #app > *{  
     grid-column: 1/-1;
 }
+
+
+/* CONTACT PAGE */
