@@ -30,7 +30,7 @@ export default {
 <style  scoped>
 
 .testimonial{
-   background-image: url('https://wallpapercave.com/wp/wp6616042.jpg');
+   background-color: midnightblue;
    background-size: cover ;
 }
 .container {
@@ -53,7 +53,7 @@ export default {
     text-align: center;
     backdrop-filter: blur(6px) saturate(165%);
     -webkit-backdrop-filter: blur(6px) saturate(165%);
-    background-color: rgba(10, 18, 33, 0.62);
+    background-color: rgba(10, 18, 33, 0.91);
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.125);
     color: white;
