@@ -8,7 +8,7 @@ export default createStore({
   },
   mutations: {
     setTestimonials(state, testimonials){
-      state.testimonials = testimonials
+      state.testimonials = testimonials;
     },
   },
   actions: {
