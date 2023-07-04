@@ -1,15 +1,110 @@
 <template>
-    <div>
-        <h1>Resume</h1>
-    </div>
-</template>
 
-<script>
-    export default {
-        
+  <!-- educatioin section -->
+    <div class="holder">
+      <center><h1>Education</h1></center>
+      <div class="container">
+        <div class="card" v-for="education in education" :key="education.id">
+          <div class="card-body">
+            <h5 class="card-title">Qualification : {{ education.name }}</h5>
+            <p class="card-text">Course : {{ education.Level }}</p>
+            <p class="card-text">Year : {{ education.year }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- skills section -->
+    <div class="holder">
+      <center><h1>Skills</h1></center>
+      <div class="container">
+        <div class="card" v-for="skill in skill" :key="skill.id">
+          <div class="card-body">
+            <h5 class="card-title">Skill : {{ skill.name }}</h5>
+            <p class="card-text">Level : {{ skill.Level }} </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- work experince section -->
+    <div class="holder">
+      <center><h1>Work</h1></center>
+      <div class="container">
+        <div class="card" v-for="work in work" :key="work.id">
+          <div class="work-image">
+            <img :src="work.image" class="card-img-top" :alt="work.institution">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Company : {{ work.institution }}</h5>
+            <p class="card-subtitle">Role : {{ work.role }}</p>
+            <p class="card-title">Duration : {{ work.duration}}</p>
+            <p class="card-title">Reason for leaving : {{ work.reason }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+  </template>
+  
+  <script>
+  export default {
+    computed: {
+        education() {
+            return this.$store.state.education
+        },
+        skill() {
+            return this.$store.state.skill
+        },
+        work() {
+            return this.$store.state.work
+        }
+    },
+    mounted() {
+        this.$store.dispatch('fetchEducation'),
+        this.$store.dispatch('fetchSkills'),
+        this.$store.dispatch('fetchWork')
     }
-</script>
+  };
+  </script>
 
 <style scoped>
+h1{
+  color:white;
+}
+.holder{
+  background-color: midnightblue;
+ 
+}
+.container {
+   display: grid;
+   grid-template-columns: auto auto auto;
+    
+}
 
+.container img {
+   width: 200px;
+   height: 200px; 
+   object-fit:contain;
+  aspect-ratio: 3/5;
+  margin-top: 5px;
+
+}
+
+.card {
+   margin: 5px;
+   text-align: center;
+   backdrop-filter: blur(6px) saturate(165%);
+   -webkit-backdrop-filter: blur(6px) saturate(165%);
+   background-color: rgba(10, 18, 33, 0.91);
+   border-radius: 12px;
+   border: 1px solid rgba(255, 255, 255, 0.125);
+   color: white;
+ transition: 1s;
+}
+.card:hover{
+   border: 4px solid white;
+}
+.work-image img{
+  width:50px;
+  width:50px;
+}
 </style>

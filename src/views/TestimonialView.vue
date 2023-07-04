@@ -31,7 +31,7 @@ export default {
 
 .testimonial{
    background-color: midnightblue;
-   background-size: cover ;
+  
 }
 .container {
     display: grid;
