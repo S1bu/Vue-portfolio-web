@@ -4,6 +4,9 @@ export default createStore({
   state: {
     testimonials:null,
     projects:null,
+    education:null,
+    skill:null,
+    work:null,
   },
   getters: {
   },
@@ -14,18 +17,29 @@ export default createStore({
     setProjects(state, projects){
       state.projects = projects;
     },
+    setEducation(state, education){
+      state.education = education;
+    },
+    setSkills(state,skill){
+      state.skill = skill;
+    },
+    setWork(state,work){
+      state.work = work;
+    },
   },
   actions: {
+    // TESTIMONIALS
     async fetchTestimonials(context){
       try{
         let res = await fetch(myInfoLink);
-        let { Testimonials } = await res.json()
+        let { Testimonials } = await res.json() //assuming this be targeting the name of the array we want in the server
         context.commit('setTestimonials' ,Testimonials)
       }
       catch(e){
         console.log(e.message);
       }
     },
+    // PROJECTS
     async fetchProjects(context){
       try{
         let res = await fetch(myInfoLink);
@@ -36,6 +50,39 @@ export default createStore({
         console.log(e.message);
       }
     },
+    // EDUCATION
+    async fetchEducation(context){
+      try{
+        let res = await fetch(myInfoLink);
+        let { education } = await res.json()
+        context.commit('setEducation' ,education)
+      }
+      catch(e){
+        console.log(e.message);
+      }
+    },
+    // SKILLS
+    async fetchSkills(context){
+      try{
+        let res = await fetch(myInfoLink);
+        let { Skills } = await res.json()
+        context.commit('setSkills' ,Skills)
+      }
+      catch(e){
+        console.log(e.message);
+      }
+    },
+      // WORK
+      async fetchWork(context){
+        try{
+          let res = await fetch(myInfoLink);
+          let { Work } = await res.json()
+          context.commit('setWork' ,Work)
+        }
+        catch(e){
+          console.log(e.message);
+        }
+      },
   },
   modules: {
   }
