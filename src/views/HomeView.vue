@@ -1,15 +1,15 @@
 <template>
 <div class="holder">
   <div class="container text-center">
-   
+   <div class="row">
+
+   </div>
       <div class="col">
         <h1>
           {{  name }} {{ surname }}
         <br>
-        {{ partOfSentence }} {{ career }}
+        {{ partOfSentence }} <span class="text-primary">{{ career }}</span>
         </h1>
- 
-
       </div>
     </div>
   </div>

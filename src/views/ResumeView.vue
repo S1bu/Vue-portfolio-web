@@ -6,9 +6,9 @@
       <div class="container">
         <div class="card" v-for="education in education" :key="education.id">
           <div class="card-body">
-            <h5 class="card-title">Qualification : {{ education.name }}</h5>
-            <p class="card-text">Course : {{ education.Level }}</p>
-            <p class="card-text">Year : {{ education.year }}</p>
+            <h5 class="card-title"><span class="bold text-primary">Qualification</span> : {{ education.name }}</h5>
+            <p class="card-text"><span class="bold text-primary">Course</span> : {{ education.Level }}</p>
+            <p class="card-text"><span class="bold text-primary">Year</span> : {{ education.year }}</p>
           </div>
         </div>
       </div>
@@ -19,8 +19,8 @@
       <div class="container">
         <div class="card" v-for="skill in skill" :key="skill.id">
           <div class="card-body">
-            <h5 class="card-title">Skill : {{ skill.name }}</h5>
-            <p class="card-text">Level : {{ skill.Level }} </p>
+            <h5 class="card-title"><span class="bold text-primary">Skill</span>  : {{ skill.name }}</h5>
+            <p class="card-text"><span class="bold text-primary">Level </span>: {{ skill.Level }} </p>
           </div>
         </div>
       </div>
@@ -34,10 +34,10 @@
             <img :src="work.image" class="card-img-top" :alt="work.institution">
           </div>
           <div class="card-body">
-            <h5 class="card-title">Company : {{ work.institution }}</h5>
-            <p class="card-subtitle">Role : {{ work.role }}</p>
-            <p class="card-title">Duration : {{ work.duration}}</p>
-            <p class="card-title">Reason for leaving : {{ work.reason }}</p>
+            <h5 class="card-title"> <span class="bold text-primary">Company</span>  : {{ work.institution }}</h5>
+            <p class="card-subtitle"> <span class="bold text-primary">Role </span> : {{ work.role }}</p>
+            <p class="card-title"> <span class="bold text-primary">Duration </span> : {{ work.duration}}</p>
+            <p class="card-title"> <span class="bold text-primary"> Reason for leaving</span> : {{ work.reason }}</p>
           </div>
         </div>
       </div>
@@ -79,7 +79,9 @@ h1{
    grid-template-columns: auto auto auto;
     
 }
-
+.bold{
+  font-weight: 900;
+}
 .container img {
    width: 200px;
    height: 200px; 
@@ -91,7 +93,6 @@ h1{
 
 .card {
    margin: 5px;
-   text-align: center;
    backdrop-filter: blur(6px) saturate(165%);
    -webkit-backdrop-filter: blur(6px) saturate(165%);
    background-color: rgba(10, 18, 33, 0.91);
