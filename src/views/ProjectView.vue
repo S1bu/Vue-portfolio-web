@@ -1,7 +1,7 @@
 <template>
     <div class="project">
         <div class="container">
-            <div class="card" v-for="project in project" style="width: 28rem;" :key="project.id">
+            <div class="card" v-for="project in project"  :key="project.id">
                 <img :src="project.image" class="card-img-top" alt="project.project">
                 <div class="card-body">
                   <h5 class="card-title">{{ project.project }}</h5>

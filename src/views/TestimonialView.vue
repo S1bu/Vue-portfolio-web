@@ -1,7 +1,7 @@
 <template >
     <div class="testimonial">
         <div class="container">
-            <div class="card" v-for="testimonial in testimonials" style="width: 28rem;" :key="testimonial.id">
+            <div class="card" v-for="testimonial in testimonials" :key="testimonial.id">
                 <div class="image">
                     <img :src="testimonial.image" class="card-img-top" alt="">
                 </div>
