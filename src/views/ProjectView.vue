@@ -8,10 +8,18 @@
                   <p class="card-text">{{ project.Description }}</p>
                   <div class="row">
                     <div class="col">
-                        <a :href="project.codeUrl" class="btn btn-primary" target="_blank"><i class="bi bi-code"></i></a>
+                        <a :href="project.codeUrl" class="btn btn-primary" target="_blank">
+                            <i class="bi bi-code"></i> 
+                            <br>
+                            code
+                        </a>
                       </div>
                       <div class="col">
-                        <a :href="project.showUrl" class="btn btn-primary" target="_blank"><i class="bi bi-laptop"></i></a>
+                        <a :href="project.showUrl" class="btn btn-primary" target="_blank">
+                            <i class="bi bi-laptop"></i>
+                            <br>
+                            view
+                        </a>
                       </div>
                   </div>
                 </div>
