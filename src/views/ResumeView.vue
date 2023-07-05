@@ -15,12 +15,22 @@
     </div>
     <!-- skills section -->
     <div class="holder">
-      <center><h1>Skills</h1></center>
+        <center><h1>Skills</h1></center>
       <div class="container">
         <div class="card" v-for="skill in skill" :key="skill.id">
           <div class="card-body">
-            <h5 class="card-title"><span class="bold text-primary">Skill</span>  : {{ skill.name }}</h5>
-            <p class="card-text"><span class="bold text-primary">Level </span>: {{ skill.Level }} </p>
+            <div class="row">
+                <div class="col">
+                    <h5 class="card-title"><span class="bold text-primary">Skill</span>  : {{ skill.name }}</h5>
+                    <p class="card-text"><span class="bold text-primary">Level </span>: {{ skill.Level }} </p>
+                </div>
+                <div class="col">
+                    <div class="logo">
+                        <img :src="skill.logo" :alt="skill.name">
+                    </div>
+                </div>
+            </div>
+      
           </div>
         </div>
       </div>
@@ -86,10 +96,16 @@ h1{
    height: 200px; 
    object-fit:contain;
   aspect-ratio: 3/5;
-  margin-top: 5px;
-
+  margin-top: 10px;
 }
 
+.logo img{
+    width:4rem;
+    height:4rem;
+    object-fit:contain;
+   aspect-ratio: 3/5;
+   margin-top: 5px;
+}
 .card {
    margin: 5px;
    backdrop-filter: blur(6px) saturate(165%);
@@ -105,6 +121,6 @@ h1{
 }
 .work-image img{
   width:4rem;
-  width:4rem;
+  height:4rem;
 }
 </style>

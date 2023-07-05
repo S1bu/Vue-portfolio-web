@@ -80,6 +80,10 @@
   img{
     width: 18rem;
     height: 25rem;
+    rotate: 30deg;
+    background-color: midnightblue;
+    margin-top: 50px;
+    border-radius: 100px;
   }
   .col{
     margin-top: 10px;
