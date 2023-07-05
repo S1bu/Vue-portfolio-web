@@ -25,8 +25,9 @@
               <div class="col">
                   <h5 class="card-title"><span class="bold text-primary">Skill</span>  : {{ skill.name }}</h5>
                   <p class="card-text"><span class="bold text-primary">Level </span>: {{ skill.Level }} </p>
+                  <p class="card-text"><span class="bold text-primary">Comment </span>: {{ skill.Description}} </p>
               </div>
-              <div class="col">
+              <div class="col-3">
                   <div class="logo">
                       <img :src="skill.logo" :alt="skill.name">
                   </div>
