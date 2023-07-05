@@ -22,5 +22,7 @@
 </script>
 
 <style scoped>
-
+.footer{
+    z-index: 900;
+}
 </style>

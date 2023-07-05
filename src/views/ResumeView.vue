@@ -1,61 +1,71 @@
 <template>
-
+<div class="resume">
+    <section id="education"></section>
   <!-- educatioin section -->
-    <div class="holder">
-      <center><h1>Education</h1></center>
-      <div class="container">
-        <div class="card" v-for="education in education" :key="education.id">
-          <div class="card-body">
-            <h5 class="card-title"><span class="bold text-primary">Qualification</span> : {{ education.name }}</h5>
-            <p class="card-text"><span class="bold text-primary">Course</span> : {{ education.Level }}</p>
-            <p class="card-text"><span class="bold text-primary">Year</span> : {{ education.year }}</p>
-          </div>
+  <div class="holder">
+    <center><h1>Education</h1></center>
+    <div class="container">
+      <div class="card" v-for="education in education" :key="education.id">
+        <div class="card-body">
+          <h5 class="card-title"><span class="bold text-primary">Qualification</span> : {{ education.name }}</h5>
+          <p class="card-text"><span class="bold text-primary">Course</span> : {{ education.Level }}</p>
+          <p class="card-text"><span class="bold text-primary">Year</span> : {{ education.year }}</p>
         </div>
       </div>
     </div>
-    <!-- skills section -->
-    <div class="holder">
-        <center><h1>Skills</h1></center>
-      <div class="container">
-        <div class="card" v-for="skill in skill" :key="skill.id">
-          <div class="card-body">
-            <div class="row">
-                <div class="col">
-                    <h5 class="card-title"><span class="bold text-primary">Skill</span>  : {{ skill.name }}</h5>
-                    <p class="card-text"><span class="bold text-primary">Level </span>: {{ skill.Level }} </p>
-                </div>
-                <div class="col">
-                    <div class="logo">
-                        <img :src="skill.logo" :alt="skill.name">
-                    </div>
-                </div>
-            </div>
-      
+  </div>
+  <section id="skills"></section>
+  <!-- skills section -->
+  <div class="holder">
+      <center><h1>Skills</h1></center>
+    <div class="container">
+      <div class="card" v-for="skill in skill" :key="skill.id">
+        <div class="card-body">
+          <div class="row">
+              <div class="col">
+                  <h5 class="card-title"><span class="bold text-primary">Skill</span>  : {{ skill.name }}</h5>
+                  <p class="card-text"><span class="bold text-primary">Level </span>: {{ skill.Level }} </p>
+              </div>
+              <div class="col">
+                  <div class="logo">
+                      <img :src="skill.logo" :alt="skill.name">
+                  </div>
+              </div>
           </div>
+    
         </div>
       </div>
     </div>
-    <!-- work experince section -->
-    <div class="holder">
-      <center><h1>Work</h1></center>
-      <div class="container">
-        <div class="card" v-for="work in work" :key="work.id">
-          <div class="work-image text-center">
-            <img :src="work.image" class="card-img-top" :alt="work.institution">
-          </div>
-          <div class="card-body">
-            <h5 class="card-title"> <span class="bold text-primary">Company</span>  : {{ work.institution }}</h5>
-            <p class="card-subtitle"> <span class="bold text-primary">Role </span> : {{ work.role }}</p>
-            <p class="card-title"> <span class="bold text-primary">Duration </span> : {{ work.duration}}</p>
-            <p class="card-title"> <span class="bold text-primary"> Reason for leaving</span> : {{ work.reason }}</p>
-          </div>
+  </div>
+  <!-- work experince section -->
+  <section id="work"></section>
+  <div class="holder">
+    <center><h1>Work</h1></center>
+    <div class="container">
+      <div class="card" v-for="work in work" :key="work.id">
+        <div class="work-image text-center">
+          <img :src="work.image" class="card-img-top" :alt="work.institution">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title"> <span class="bold text-primary">Company</span>  : {{ work.institution }}</h5>
+          <p class="card-subtitle"> <span class="bold text-primary">Role </span> : {{ work.role }}</p>
+          <p class="card-title"> <span class="bold text-primary">Duration </span> : {{ work.duration}}</p>
+          <p class="card-title"> <span class="bold text-primary"> Reason for leaving</span> : {{ work.reason }}</p>
+          <p class="card-title"> <span class="bold text-primary"> Duties </span> : {{ work.duties }}</p>
         </div>
       </div>
     </div>
+  </div>
+</div>
+
+<sideNav/>
+
    
   </template>
   
   <script>
+  import sideNav from '@/components/sideNav.vue';
+
   export default {
     computed: {
         education() {
@@ -72,7 +82,12 @@
         this.$store.dispatch('fetchEducation'),
         this.$store.dispatch('fetchSkills'),
         this.$store.dispatch('fetchWork')
-    }
+    },
+    name: 'ResumeView',
+  components: {
+//  import registered here
+ sideNav,
+  }
   };
   </script>
 
@@ -80,8 +95,11 @@
 h1{
   color:white;
 }
+.resume{
+    background-color: midnightblue;
+}
 .holder{
-  background-color: midnightblue;
+    margin: 4rem 0;
 }
 .container {
    display: grid;
@@ -122,6 +140,9 @@ h1{
   width:4rem;
   height:4rem;
 }
+
+ 
+/********** RESPONSIVENESS *********/
 @media(width < 600px){
     .container {
         display: grid;

@@ -41,5 +41,3 @@
 </script>
 
 <style scoped>
-
-</style>
