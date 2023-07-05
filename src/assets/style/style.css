@@ -24,6 +24,9 @@
     height: 50px;
 }
 
+nav a.router-link-exact-active {
+font-weight: 900;
+}
 /* ------Footer -------*/
 .footer{
     background-color: var(---main-color);

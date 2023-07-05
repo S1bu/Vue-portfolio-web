@@ -63,5 +63,10 @@ i{
     padding: 10px;
 }
 
+@media(width < 600px){
+    .container {
+        grid-template-columns: auto; 
+     }
+}
 
 </style>

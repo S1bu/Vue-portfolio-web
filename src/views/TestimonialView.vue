@@ -66,4 +66,9 @@ export default {
    /* animation: tada; /* referring directly to the animation's @keyframe declaration */
     /*animation-duration: 5s; /* don't forget to set a duration! */
  }
+ @media(width < 600px){
+    .container {
+        grid-template-columns: auto; 
+     }
+}
 </style>

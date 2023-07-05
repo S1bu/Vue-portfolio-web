@@ -1,7 +1,7 @@
 <template>
     <div class="holder">
         <div class="container">
-            <div class="row">
+          
                 <div class="col">
                     <p>
                         <span class="bold text-primary">Name </span>: <br> {{ name }}
@@ -34,8 +34,6 @@
                 <div class="col text-center">
                     <img :src="image1" :alt="name">
                 </div>
-            </div>
-            
         </div>
     </div>
 </template>
@@ -71,6 +69,11 @@
 .holder{
     background-color: midnightblue;
   }
+
+  .container{
+    display: grid;
+    grid-template-columns: auto auto;
+  }
 .bold{
     font-weight: 900;
 }
@@ -82,18 +85,36 @@
     height: 25rem;
     rotate: 30deg;
     background-color: midnightblue;
-    margin-top: 50px;
     border-radius: 100px;
+    margin-top: 40px;
   }
   .col{
     margin-top: 10px;
-    margin: 5px;
     backdrop-filter: blur(6px) saturate(165%);
     -webkit-backdrop-filter: blur(6px) saturate(165%);
     background-color: rgba(10, 18, 33, 0.91);
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.125);
     color: white;
-  transition: 1s;
+    transition: 1s;
+    padding-left: 10px;
+    margin: 2px;
   }
+  @media(width < 600px){
+    .holder{
+        margin-right: 3px;
+    }
+    .row {
+        display: flex;
+        flex-direction: column;
+     }
+  .col img{
+    width: 10rem;
+    height: 15rem;
+  }
+  .container{
+    display: grid;
+    grid-template-columns: auto;
+  }
+}
 </style>
