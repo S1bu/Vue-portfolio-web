@@ -1,6 +1,6 @@
 <template>
     <nav class="navbar navbar-expand-lg ">
-        <div class="container-fluid">
+        <div class="container-fluid link">
           <div class="navbar-brand"><img src="https://i.postimg.cc/q7sz3thW/logo-sibusiso-Dyan.png" alt=""></div></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>

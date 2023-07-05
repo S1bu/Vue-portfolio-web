@@ -4,10 +4,10 @@
             <div class="row">
                 <div class="col">
                     <p>
-                        <span class="bold text-primary">Name </span>: {{ name }}
+                        <span class="bold text-primary">Name </span>: <br> {{ name }}
                     </p>
                     <p>
-                        <span class="bold text-primary">Surname </span> :{{ surname }}
+                        <span class="bold text-primary">Surname </span> : <br>{{ surname }}
                     </p>
                     <p>
                         <span class="bold text-primary">Languages </span>
@@ -28,7 +28,7 @@
                         </ul>
                     </p>
                     <p>
-                        <span class="bold text-primary">Address </span>: {{ Town }}
+                        <span class="bold text-primary">Address </span>: <br>{{ Town }} <br>{{ city }} <br> {{ Province }} <br> {{ country }} <br> {{ postalCode }}
                     </p>
                 </div>
                 <div class="col text-center">
@@ -50,8 +50,9 @@
                 language1 :'Isixhosa',
                 language2:'English',
                 language3:'Isizulu',
+                country : 'South Africa',
                 Province:'Western Cape',
-                Town:'Goodwood',
+                Town:'Gugulethu',
                 city:'Cape Town',
                 postalCode:'7460',
                 hobbie1:'Coding',
@@ -77,7 +78,18 @@
     color:white
   }
   img{
-    width: 300px;
-    height: 400px;
+    width: 18rem;
+    height: 25rem;
+  }
+  .col{
+    margin-top: 10px;
+    margin: 5px;
+    backdrop-filter: blur(6px) saturate(165%);
+    -webkit-backdrop-filter: blur(6px) saturate(165%);
+    background-color: rgba(10, 18, 33, 0.91);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    color: white;
+  transition: 1s;
   }
 </style>

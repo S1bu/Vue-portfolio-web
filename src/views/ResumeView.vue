@@ -30,7 +30,7 @@
       <center><h1>Work</h1></center>
       <div class="container">
         <div class="card" v-for="work in work" :key="work.id">
-          <div class="work-image">
+          <div class="work-image text-center">
             <img :src="work.image" class="card-img-top" :alt="work.institution">
           </div>
           <div class="card-body">
@@ -72,7 +72,6 @@ h1{
 }
 .holder{
   background-color: midnightblue;
- 
 }
 .container {
    display: grid;
@@ -105,7 +104,7 @@ h1{
    border: 4px solid white;
 }
 .work-image img{
-  width:50px;
-  width:50px;
+  width:4rem;
+  width:4rem;
 }
 </style>

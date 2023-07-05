@@ -8,13 +8,14 @@
 //  import comes here
  import NavBar from './components/NavBar.vue';
  import FooterNav from './components/FooterNav.vue';
-
+ 
 export default {
   name: 'App',
   components: {
 //  import registered here
 NavBar,
 FooterNav,
+ 
   }
 }
 </script>
