@@ -1,4 +1,9 @@
 <template>
+ 
+ 
+<div class="page">
+
+
 <div class="resume">
     <section id="education"></section>
   <!-- educatioin section -->
@@ -58,6 +63,7 @@
     </div>
   </div>
 </div>
+</div>
 
 <sideNav/>
 
@@ -93,11 +99,19 @@
   </script>
 
 <style scoped>
+.page{
+  background-color: midnightblue;
+}
 h1{
   color:white;
 }
+.col-2{
+  background-color: midnightblue;
+}
+ 
 .resume{
     background-color: midnightblue;
+    margin-left: 20%;
 }
 .holder{
     margin: 4rem 0;
@@ -133,10 +147,7 @@ h1{
    border: 1px solid rgba(255, 255, 255, 0.125);
    color: white;
  transition: 1s;
-}
-.card:hover{
-   border: 4px solid white;
-}
+} 
 .work-image img{
   width:4rem;
   height:4rem;

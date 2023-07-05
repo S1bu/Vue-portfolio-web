@@ -17,6 +17,7 @@
 /* navbar*/
 .navbar{
     background-color: var(---main-color);
+    z-index: 900;
 }
 /* my logo*/
 .navbar img{
