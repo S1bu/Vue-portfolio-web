@@ -85,8 +85,7 @@ h1{
 }
 .container {
    display: grid;
-   grid-template-columns: auto auto auto;
-    
+   grid-template-columns: auto auto auto; 
 }
 .bold{
   font-weight: 900;
@@ -122,5 +121,11 @@ h1{
 .work-image img{
   width:4rem;
   height:4rem;
+}
+@media(width < 600px){
+    .container {
+        display: grid;
+        grid-template-columns: auto; 
+     }
 }
 </style>

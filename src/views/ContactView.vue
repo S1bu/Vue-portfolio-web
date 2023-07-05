@@ -60,4 +60,9 @@
     width: 70%;
     padding: 30px;
 }
+@media(width < 600px){
+  .container {
+     width: 100%;
+   }
+}
 </style>
