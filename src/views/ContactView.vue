@@ -19,7 +19,7 @@
               <textarea type="message" class="form-control" id="message" placeholder="Write message"></textarea>
             </div>
          
-          <button type="submit" class="btn btn-primary" v-on:click="validation">Submit</button>
+          <button type="submit" class="btn" v-on:click="validation"><i class="bi bi-send-fill"></i></button>
         </form>
   </div>
 
@@ -49,16 +49,27 @@
 </script>
 
 <style scoped>
+:root{
+  --background-color:linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    ---main-color :midnightblue;
+    ---second-color : rgba(10, 18, 33, 0.59);
+}
  .contact{
-  background-color:midnightblue;
+background-image: var(--background-color);
  }
 .container{
   margin-top: 10px;
   color: white;
-  background-color: rgba(10, 18, 33, 0.91);
+  background-color: var(---second-color);
     border-radius: 10px;
     width: 70%;
     padding: 30px;
+    margin-top: 10%;
+}
+.btn{
+  background-color: var(---second-color);
+  padding: 10px;
+  color: white;
 }
 @media(width < 600px){
   .container {
