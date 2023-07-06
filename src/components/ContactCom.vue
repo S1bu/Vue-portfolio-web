@@ -71,9 +71,18 @@
     padding: 10px;
     color: white;
   }
-  @media(width < 600px){
+  @media(width < 700px){
     .container {
        width: 100%;
      }
+  }
+
+  @media(width < 400px){
+  label{
+    font-size: 10px;
+  }
+  ::placeholder{
+    font-size: 10px;
+  }
   }
   </style>

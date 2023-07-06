@@ -81,10 +81,23 @@ i{
     color: white;
 }
 
-@media(width < 600px){
+@media(width < 700px){
     .container {
         grid-template-columns: auto; 
      }
+}
+
+@media(width < 400px){
+    .card-title{
+        font-size: 15px;
+    }
+
+    .card-text{
+        font-size: 10px;
+    }
+    a{
+        font-size: 10px;
+    }
 }
 
 </style>

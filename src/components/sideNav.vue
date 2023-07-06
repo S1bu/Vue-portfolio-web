@@ -41,4 +41,13 @@ hr {
     border-bottom: 4px solid white;
     rotate: 90deg;
 }
+  
+@media(width < 400px) {
+    .sideNav{
+        top: 20%;
+        font-size: 10px;
+    } 
+
+ 
+  }
 </style>

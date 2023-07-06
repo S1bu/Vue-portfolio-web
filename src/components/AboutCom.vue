@@ -107,7 +107,7 @@
     padding-left: 10px;
     margin: 2px;
   }
-  @media(width < 600px){
+  @media(width < 700px){
     .holder{
         margin-right: 3px;
     }
@@ -123,5 +123,14 @@
     display: grid;
     grid-template-columns: auto;
   }
+}
+
+@media(width < 400px){
+.bold{
+    font-size: 15px;
+}
+p{
+    font-size: 10px;
+}
 }
 </style>

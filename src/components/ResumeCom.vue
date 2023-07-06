@@ -9,7 +9,7 @@
       <div class="container">
         <div class="card" v-for="education in education" :key="education.id">
           <div class="card-body">
-            <h5 class="card-title"><span class="bold">Qualification</span> : {{ education.name }}</h5>
+            <p class="card-text"><span class="bold">Qualification</span> : {{ education.name }}</p>
             <p class="card-text"><span class="bold">Course</span> : {{ education.Level }}</p>
             <p class="card-text"><span class="bold">Year</span> : {{ education.year }}</p>
           </div>
@@ -25,11 +25,11 @@
           <div class="card-body">
             <div class="row">
                 <div class="col">
-                    <h5 class="card-title"><span class="bold">Skill</span>  : {{ skill.name }}</h5>
+                    <p class="card-text"><span class="bold">Skill</span>  : {{ skill.name }}</p>
                     <p class="card-text"><span class="bold">Level </span>: {{ skill.Level }} </p>
                     <p class="card-text"><span class="bold">Comment </span>: {{ skill.Description}} </p>
                 </div>
-                <div class="col-3">
+                <div class=" col col-3">
                     <div class="logo">
                         <img :src="skill.logo" :alt="skill.name">
                     </div>
@@ -164,10 +164,31 @@
     margin: 10%;
   }
   /********** RESPONSIVENESS *********/
-  @media(width < 600px){
+  @media(width < 700px){
       .container {
-          display: grid;
           grid-template-columns: auto; 
        }
   }
+
+   /********** RESPONSIVENESS *********/
+   @media(width < 400px){
+    .container {
+        grid-template-columns: auto; 
+     }
+     p{
+        font-size: 10px;
+     }
+     .logo img{
+       width: 35px;
+        object-fit:contain;
+       aspect-ratio: 3/5;
+    
+    }
+    .bold{
+        font-size: 10px;
+      }
+    
+  
+}
+
   </style>
