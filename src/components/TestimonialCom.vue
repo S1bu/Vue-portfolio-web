@@ -72,9 +72,27 @@ export default {
 }
 
  
- @media(width < 600px){
+ @media(width < 700px){
     .container {
         grid-template-columns: auto; 
      }
+}
+
+@media(width < 400px){
+    .container {
+        grid-template-columns: auto; 
+     }
+
+     .card-title{
+        font-size: 15px;
+     }
+
+     .card-text{
+        font-size: 13px;
+     }
+     .card {
+        width: 18rem;
+  
+    }
 }
 </style>
