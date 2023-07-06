@@ -50,8 +50,8 @@
           <img :src="work.image" class="card-img-top" :alt="work.institution">
         </div>
         <div class="card-body">
-          <h5 class="card-title"> <span class="bold">Company</span>  : {{ work.institution }}</h5>
-          <p class="card-subtitle"> <span class="bold">Role </span> : {{ work.role }}</p>
+          <p class="card-title"> <span class="bold">Company</span>  : {{ work.institution }}</p>
+          <p class="card-title"> <span class="bold">Role </span> : {{ work.role }}</p>
           <p class="card-title"> <span class="bold">Duration </span> : {{ work.duration}}</p>
           <p class="card-title"> <span class="bold"> Reason for leaving</span> : {{ work.reason }}</p>
           <p class="card-title"> <span class="bold"> Duties </span> : {{ work.duties }}</p>
@@ -151,6 +151,17 @@ h1{
 .work-image img{
   width:4rem;
   height:4rem;
+}
+
+#skills{
+  margin: 10%;
+}
+#education{
+  margin: 10%;
+}
+
+#work{
+  margin: 10%;
 }
 /********** RESPONSIVENESS *********/
 @media(width < 600px){
