@@ -22,7 +22,7 @@
 .sideNav{
     position: fixed;
     left: 0;
-    top: 10%;
+    top: 8%;
 }
 .sideNav a {
     text-decoration: none;
@@ -31,16 +31,9 @@
  
 .sideNav li{
     list-style-type: none;
-    margin: 70% 0;
+    margin: 50% 0;
 }
-.sideNav li:hover{
-    animation: tada; 
-    animation-duration: 2s;
-}
-hr {
-    border-bottom: 4px solid white;
-    rotate: 90deg;
-}
+
   
 @media(width < 400px) {
     .sideNav{
