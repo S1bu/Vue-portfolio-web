@@ -173,3 +173,8 @@ font-weight: 900;
   @media (width < 600px){
 
   }
+
+  /* remove scroll bar  */
+  ::-webkit-scrollbar {
+    width: 0;
+  }

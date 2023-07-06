@@ -38,11 +38,6 @@ export default {
   background-image: var(--background-color);
   
 }
-.container {
-    display: grid;
-    grid-template-columns: auto auto auto;
-     
-}
 
 .container img {
     width: 200px;
@@ -50,11 +45,20 @@ export default {
     object-fit:contain;
    aspect-ratio: 3/5;
    margin-top: 5px;
-
 }
-
+.container { /*row*/
+     display: flex;
+     flex-direction: row;
+     flex-wrap: nowrap;
+     overflow-x: auto;
+     overflow-y: hidden;
+     margin-top: 5%;
+}
+/*card*/
 .card {
-    margin: 5px;
+    box-shadow: 2px 2px 20px black;
+    width: 30rem;
+    margin: 20px;
     text-align: center;
     backdrop-filter: blur(6px) saturate(165%);
     -webkit-backdrop-filter: blur(6px) saturate(165%);
@@ -63,6 +67,8 @@ export default {
     border: 1px solid rgba(255, 255, 255, 0.125);
     color: white;
   transition: 1s;
+  flex-grow: 0;
+  flex-shrink: 0;
 }
 
  
