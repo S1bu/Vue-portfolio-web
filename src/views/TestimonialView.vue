@@ -28,9 +28,14 @@ export default {
 </script>
 
 <style  scoped>
-
+:root{
+    --background-color:linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+      ---main-color :midnightblue;
+      ---second-color : rgba(10, 18, 33, 0.59);
+  }
 .testimonial{
-   background-color: midnightblue;
+  /* background-color: midnightblue; */
+  background-image: var(--background-color);
   
 }
 .container {
@@ -53,19 +58,14 @@ export default {
     text-align: center;
     backdrop-filter: blur(6px) saturate(165%);
     -webkit-backdrop-filter: blur(6px) saturate(165%);
-    background-color: rgba(10, 18, 33, 0.91);
+    background-color: var(---second-color);
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.125);
     color: white;
   transition: 1s;
 }
 
-
- .card:hover{
-    border: 4px solid white;
-   /* animation: tada; /* referring directly to the animation's @keyframe declaration */
-    /*animation-duration: 5s; /* don't forget to set a duration! */
- }
+ 
  @media(width < 600px){
     .container {
         grid-template-columns: auto; 

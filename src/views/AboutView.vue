@@ -4,13 +4,13 @@
           
                 <div class="col">
                     <p>
-                        <span class="bold text-primary">Name </span>: <br> {{ name }}
+                        <span class="bold">Name :</span> <br> {{ name }}
                     </p>
                     <p>
-                        <span class="bold text-primary">Surname </span> : <br>{{ surname }}
+                        <span class="bold">Surname :</span> <br>{{ surname }}
                     </p>
                     <p>
-                        <span class="bold text-primary">Languages </span>
+                        <span class="bold">Languages :</span>
                         <ul>
                             <li>{{ language1 }}</li>
                             <li>{{ language2 }}</li>
@@ -18,7 +18,7 @@
                         </ul>
                     </p>
                     <p>
-                        <span class="bold text-primary">Hobbies </span>
+                        <span class="bold">Hobbies :</span>
                         <ul>
                             <li>{{ hobbie1 }}</li>
                             <li>{{ hobbie2 }}</li>
@@ -28,7 +28,7 @@
                         </ul>
                     </p>
                     <p>
-                        <span class="bold text-primary">Address </span>: <br>{{ Town }} <br>{{ city }} <br> {{ Province }} <br> {{ country }} <br> {{ postalCode }}
+                        <span class="bold">Address :</span> <br>{{ Town }} <br>{{ city }} <br> {{ Province }} <br> {{ country }} <br> {{ postalCode }}
                     </p>
                 </div>
                 <div class="col text-center">
@@ -66,8 +66,13 @@
 </script>
 
 <style scoped>
+:root{
+    --background-color:linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+      ---main-color :midnightblue;
+      ---second-color : rgba(10, 18, 33, 0.59);
+  }
 .holder{
-    background-color: midnightblue;
+   background-image: var(--background-color);
   }
 
   .container{
@@ -75,7 +80,9 @@
     grid-template-columns: auto auto;
   }
 .bold{
+    font-size: 1.5rem;
     font-weight: 900;
+    color: var(---second-color);
 }
   p{
     color:white
@@ -84,7 +91,7 @@
     width: 18rem;
     height: 25rem;
     rotate: 30deg;
-    background-color: midnightblue;
+    background-image: none;
     border-radius: 100px;
     margin-top: 40px;
   }
@@ -92,7 +99,7 @@
     margin-top: 10px;
     backdrop-filter: blur(6px) saturate(165%);
     -webkit-backdrop-filter: blur(6px) saturate(165%);
-    background-color: rgba(10, 18, 33, 0.91);
+    background-color: var(---second-color);
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.125);
     color: white;

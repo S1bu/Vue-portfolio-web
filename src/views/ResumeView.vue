@@ -1,5 +1,7 @@
 <template>
-<div class="resume">
+  <div class="page">
+ 
+<div class="resume ">
     <section id="education"></section>
   <!-- educatioin section -->
   <div class="holder">
@@ -7,9 +9,9 @@
     <div class="container">
       <div class="card" v-for="education in education" :key="education.id">
         <div class="card-body">
-          <h5 class="card-title"><span class="bold text-primary">Qualification</span> : {{ education.name }}</h5>
-          <p class="card-text"><span class="bold text-primary">Course</span> : {{ education.Level }}</p>
-          <p class="card-text"><span class="bold text-primary">Year</span> : {{ education.year }}</p>
+          <h5 class="card-title"><span class="bold">Qualification</span> : {{ education.name }}</h5>
+          <p class="card-text"><span class="bold">Course</span> : {{ education.Level }}</p>
+          <p class="card-text"><span class="bold">Year</span> : {{ education.year }}</p>
         </div>
       </div>
     </div>
@@ -23,9 +25,9 @@
         <div class="card-body">
           <div class="row">
               <div class="col">
-                  <h5 class="card-title"><span class="bold text-primary">Skill</span>  : {{ skill.name }}</h5>
-                  <p class="card-text"><span class="bold text-primary">Level </span>: {{ skill.Level }} </p>
-                  <p class="card-text"><span class="bold text-primary">Comment </span>: {{ skill.Description}} </p>
+                  <h5 class="card-title"><span class="bold">Skill</span>  : {{ skill.name }}</h5>
+                  <p class="card-text"><span class="bold">Level </span>: {{ skill.Level }} </p>
+                  <p class="card-text"><span class="bold">Comment </span>: {{ skill.Description}} </p>
               </div>
               <div class="col-3">
                   <div class="logo">
@@ -48,17 +50,18 @@
           <img :src="work.image" class="card-img-top" :alt="work.institution">
         </div>
         <div class="card-body">
-          <h5 class="card-title"> <span class="bold text-primary">Company</span>  : {{ work.institution }}</h5>
-          <p class="card-subtitle"> <span class="bold text-primary">Role </span> : {{ work.role }}</p>
-          <p class="card-title"> <span class="bold text-primary">Duration </span> : {{ work.duration}}</p>
-          <p class="card-title"> <span class="bold text-primary"> Reason for leaving</span> : {{ work.reason }}</p>
-          <p class="card-title"> <span class="bold text-primary"> Duties </span> : {{ work.duties }}</p>
+          <h5 class="card-title"> <span class="bold">Company</span>  : {{ work.institution }}</h5>
+          <p class="card-subtitle"> <span class="bold">Role </span> : {{ work.role }}</p>
+          <p class="card-title"> <span class="bold">Duration </span> : {{ work.duration}}</p>
+          <p class="card-title"> <span class="bold"> Reason for leaving</span> : {{ work.reason }}</p>
+          <p class="card-title"> <span class="bold"> Duties </span> : {{ work.duties }}</p>
         </div>
       </div>
     </div>
   </div>
 </div>
-
+    
+</div>
 <sideNav/>
 
    
@@ -93,11 +96,20 @@
   </script>
 
 <style scoped>
+:root{
+  --background-color:linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    ---second-color : rgba(10, 18, 33, 0.59);
+}
+.page{
+ /* background-color: midnightblue; */
+ background-image: var(--background-color);
+}
 h1{
-  color:white;
+  font-weight: 900;
+  color:var(---second-color);
 }
 .resume{
-    background-color: midnightblue;
+ margin-left: 20%;
 }
 .holder{
     margin: 4rem 0;
@@ -108,6 +120,8 @@ h1{
 }
 .bold{
   font-weight: 900;
+  font-size: 1.3rem;
+  color: var(---second-color);
 }
 .container img {
    width: 200px;
@@ -128,21 +142,16 @@ h1{
    margin: 5px;
    backdrop-filter: blur(6px) saturate(165%);
    -webkit-backdrop-filter: blur(6px) saturate(165%);
-   background-color: rgba(10, 18, 33, 0.91);
+   background-color: var(---second-color);
    border-radius: 12px;
    border: 1px solid rgba(255, 255, 255, 0.125);
    color: white;
  transition: 1s;
 }
-.card:hover{
-   border: 4px solid white;
-}
 .work-image img{
   width:4rem;
   height:4rem;
 }
-
- 
 /********** RESPONSIVENESS *********/
 @media(width < 600px){
     .container {

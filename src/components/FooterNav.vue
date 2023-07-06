@@ -1,4 +1,5 @@
 <template>
+    <div class="containerFooter">
     <div class="footer">
         <div class="link">
         <h3>Follow me</h3>
@@ -8,6 +9,7 @@
        <p>Sibusiso Dyan  Copyright &copy; {{ Year }} <!--current year with using javascript--></p>
     </div>
     </div>
+</div>
 </template>
 
 <script>

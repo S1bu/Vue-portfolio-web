@@ -37,16 +37,24 @@
         <h1>
           {{  name }} {{ surname }}
         <br>
-        {{ partOfSentence }} <span class="text-primary">{{ career }}</span>
+        {{ partOfSentence }} <span class="career">{{ career }}</span>
         </h1>
       </div>
     </div>
   </div>
  
 </template>
-<style scoped>
+<style scoped>:root{
+  --background-color:linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    ---main-color :midnightblue;
+    ---second-color : rgba(10, 18, 33, 0.59);
+}
+.career{
+  color: var(---second-color);
+  font-weight: 900;
+}
 .holder{
-  background-color: midnightblue;
+ background-image: var(--background-color);
   background-size: cover;
   background-attachment: fixed;
   
@@ -56,7 +64,11 @@
   margin-top:20%;
  }
 
-
+@media (width < 600px){
+  h1{
+    margin-top:60%;
+   }  
+}
 </style>
 <script>
 export default {
