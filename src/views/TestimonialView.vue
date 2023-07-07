@@ -45,6 +45,7 @@ export default {
     object-fit:contain;
    aspect-ratio: 3/5;
    margin-top: 5px;
+   
 }
 .container { /*row*/
      display: flex;
@@ -53,6 +54,8 @@ export default {
      overflow-x: auto;
      overflow-y: hidden;
      margin-top: 5%;
+     border: 5px solid rgba(10, 18, 33, 0.59);
+     border-radius: 10px;
 }
 /*card*/
 .card {
@@ -94,5 +97,6 @@ export default {
         width: 18rem;
   
     }
+  
 }
 </style>

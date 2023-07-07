@@ -24,6 +24,9 @@
 </script>
 
 <style scoped>
+.bi-github{
+    color: black;
+}
 .footer{
     z-index: 900;
 }
