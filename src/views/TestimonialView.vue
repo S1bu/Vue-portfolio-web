@@ -3,7 +3,7 @@
         <div class="container">
             <div class="card" v-for="testimonial in testimonials" :key="testimonial.id">
                 <div class="image">
-                    <img :src="testimonial.image" class="card-img-top" alt="">
+                    <img :src="testimonial.image" class="card-img-top" :alt="testimonial.fullname" loading="lazy">
                 </div>
                 <div class="card-body">
                     <h5 class="card-title">{{ testimonial.fullname }} ({{ testimonial.Relation }})</h5>

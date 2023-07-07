@@ -31,7 +31,7 @@
        
           <div class="col-sm-4 text-center">
             <div class="details">
-              <img src="https://i.postimg.cc/tR632Q4p/logo-img.png" alt="">
+              <img src="https://i.postimg.cc/tR632Q4p/logo-img.png" loading="lazy" alt="logo">
               <div class="info">
                 <p><i class="bi bi-whatsapp"></i> 0609479185</p>
                 <p><i class="bi bi-telephone"></i> 0609479185</p>

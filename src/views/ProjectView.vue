@@ -3,7 +3,7 @@
       <div class="container">
           <div class="card" v-for="project in project"  :key="project.id">
             <div class="projectImg">
-              <img :src="project.image" class="card-img-top" alt="project.project">
+              <img :src="project.image" class="card-img-top" alt="project.project" loading="lazy">
             </div>
               <div class="card-body">
                 <h5 class="card-title">{{ project.project }}</h5>
