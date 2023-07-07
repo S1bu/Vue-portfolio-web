@@ -3,13 +3,21 @@
       <div class="container">
         
               <div class="col">
-                  <p>
+                <div class="row">
+                  <div class="col-5">
+                    <p>
                       <span class="bold">Name :</span> <br> {{ name }}
                   </p>
-                  <p>
+                  </div>
+                  <div class="col-5">
+                    <p>
                       <span class="bold">Surname :</span> <br>{{ surname }}
                   </p>
-                  <p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-5">
+                    <p>
                       <span class="bold">Languages :</span>
                       <ul>
                           <li>{{ language1 }}</li>
@@ -17,6 +25,16 @@
                           <li>{{ language3 }}</li>
                       </ul>
                   </p>
+
+                  </div>
+                  <div class="col-5">
+
+                    <p>
+                      <span class="bold">Address :</span> <br>{{ Town }} <br>{{ city }} <br> {{ Province }} <br> {{ country }} <br> {{ postalCode }}
+                  </p>
+                  </div>
+                </div>
+                 
                   <p>
                       <span class="bold">Hobbies :</span>
                       <ul>
@@ -27,9 +45,7 @@
                           <li>{{ hobbie5 }}</li>
                       </ul>
                   </p>
-                  <p>
-                      <span class="bold">Address :</span> <br>{{ Town }} <br>{{ city }} <br> {{ Province }} <br> {{ country }} <br> {{ postalCode }}
-                  </p>
+                 
               </div>
               <div class="col text-center">
                   <img :src="image1" :alt="name">
@@ -78,6 +94,7 @@
 .container{
   display: grid;
   grid-template-columns: auto auto;
+  margin-top: 10%;
 }
 .bold{
   font-size: 1.5rem;
@@ -85,12 +102,14 @@
   color: var(---second-color);
 }
 p{
-  color:white
+  color:white;
+  animation: backInLeft;
+  animation-duration: 2s;
+  margin-left: 10%;
 }
-img{
-  width: 100%;
-  max-width: 18rem;
-  height: auto;
+.col img{
+  width: 250px;
+  height: 350px;
   rotate: 30deg;
   background-image: none;
   border-radius: 100px;

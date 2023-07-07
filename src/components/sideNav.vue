@@ -33,7 +33,15 @@
     list-style-type: none;
     margin: 50% 0;
 }
+  
+@media(width < 700px) {
+    .sideNav{
+        top: 20%;
+        font-size: 10px;
+    } 
 
+ 
+  }
   
 @media(width < 400px) {
     .sideNav{
