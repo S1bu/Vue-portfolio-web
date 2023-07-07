@@ -67,6 +67,12 @@ h1 {
   margin-top: 20%;
 }
 
+@media (width < 900px) {
+  h1 {
+    margin-top: 20%;
+  }
+}
+
 @media (width < 600px) {
   h1 {
     margin-top: 60%;
