@@ -88,8 +88,9 @@ p{
   color:white
 }
 img{
-  width: 18rem;
-  height: 25rem;
+  width: 100%;
+  max-width: 18rem;
+  height: auto;
   rotate: 30deg;
   background-image: none;
   border-radius: 100px;
@@ -135,6 +136,8 @@ p{
 
 img{
   margin-top: 20px;
+  width: 5rem;
+  height: 9rem;
 }
 }
 </style>
