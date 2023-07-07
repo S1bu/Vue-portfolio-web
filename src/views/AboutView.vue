@@ -1,113 +1,121 @@
 <template>
   <div class="holder">
-      <div class="container">
-        
-              <div class="col">
-                <div class="row">
-                  <div class="col-5">
-                    <p>
-                      <span class="bold">Name :</span> <br> {{ name }}
-                  </p>
-                  </div>
-                  <div class="col-5">
-                    <p>
-                      <span class="bold">Surname :</span> <br>{{ surname }}
-                  </p>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-5">
-                    <p>
-                      <span class="bold">Languages :</span>
-                      <ul>
-                          <li>{{ language1 }}</li>
-                          <li>{{ language2 }}</li>
-                          <li>{{ language3 }}</li>
-                      </ul>
-                  </p>
+    <div class="container">
 
-                  </div>
-                  <div class="col-5">
+      <div class="col text-center">
 
-                    <p>
-                      <span class="bold">Address :</span> <br>{{ Town }} <br>{{ city }} <br> {{ Province }} <br> {{ country }} <br> {{ postalCode }}
-                  </p>
-                  </div>
-                </div>
-                 
-                  <p>
-                      <span class="bold">Hobbies :</span>
-                      <ul>
-                          <li>{{ hobbie1 }}</li>
-                          <li>{{ hobbie2 }}</li>
-                          <li>{{ hobbie3 }}</li>
-                          <li>{{ hobbie4 }}</li>
-                          <li>{{ hobbie5 }}</li>
-                      </ul>
-                  </p>
-                 
-              </div>
-              <div class="col text-center">
-                  <img :src="image1" :alt="name" loading="lazy">
-              </div>
+
+        <p>
+          <span class="bold">Name :</span> <br> {{ name }}
+        </p>
+
+
+        <p>
+          <span class="bold">Surname :</span> <br>{{ surname }}
+        </p>
+
+
+
+
+        <p>
+          <span class="bold">Languages :</span>
+        <ul>
+          <li>{{ language1 }}</li>
+          <li>{{ language2 }}</li>
+          <li>{{ language3 }}</li>
+        </ul>
+        </p>
+
+
+
+
+        <p>
+          <span class="bold">Address :</span> <br>{{ Town }} <br>{{ city }} <br> {{ Province }} <br> {{ country }} <br> {{
+            postalCode }}
+        </p>
+
+
+
+        <p>
+          <span class="bold">Hobbies :</span>
+        <ul>
+          <li>{{ hobbie1 }}</li>
+          <li>{{ hobbie2 }}</li>
+          <li>{{ hobbie3 }}</li>
+          <li>{{ hobbie4 }}</li>
+          <li>{{ hobbie5 }}</li>
+        </ul>
+        </p>
+
       </div>
+      <div class="col text-center">
+        <img :src="image1" :alt="name" loading="lazy">
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
-  export default {
-      data(){
-          return{
-              image1 : 'https://i.postimg.cc/T1ktSVTS/sibusisopic.png',
-              name : 'Sibusiso',
-              surname : 'Dyan',
-              language1 :'Isixhosa',
-              language2:'English',
-              language3:'Isizulu',
-              country : 'South Africa',
-              Province:'Western Cape',
-              Town:'Gugulethu',
-              city:'Cape Town',
-              postalCode:'7460',
-              hobbie1:'Coding',
-              hobbie2:'Googling new technology',
-              hobbie3:'Reading personal development e-books',
-              hobbie4:'Watching sci-fi movies ',
-              hobbie5:'Hiking'
-          };
-      }
+export default {
+  data() {
+    return {
+      image1: 'https://i.postimg.cc/T1ktSVTS/sibusisopic.png',
+      name: 'Sibusiso',
+      surname: 'Dyan',
+      language1: 'Isixhosa',
+      language2: 'English',
+      language3: 'Isizulu',
+      country: 'South Africa',
+      Province: 'Western Cape',
+      Town: 'Gugulethu',
+      city: 'Cape Town',
+      postalCode: '7460',
+      hobbie1: 'Coding',
+      hobbie2: 'Googling new technology',
+      hobbie3: 'Reading personal development e-books',
+      hobbie4: 'Watching sci-fi movies ',
+      hobbie5: 'Hiking'
+    };
   }
+}
 
- 
+
 </script>
 
 <style scoped>
-:root{
-  --background-color:linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
-    ---main-color :midnightblue;
-    ---second-color : rgba(10, 18, 33, 0.59);
-}
-.holder{
- background-image: var(--background-color);
+:root {
+  --background-color: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+  ---main-color: midnightblue;
+  ---second-color: rgba(10, 18, 33, 0.59);
 }
 
-.container{
+.holder {
+  background-image: var(--background-color);
+}
+
+.container {
   display: grid;
   grid-template-columns: auto auto;
   margin-top: 10%;
 }
-.bold{
+
+.bold {
   font-size: 1.5rem;
   font-weight: 900;
   color: var(---second-color);
 }
-p{
-  color:white;
+
+ul {
+  list-style-type: none;
+}
+
+p {
+  color: white;
   animation: backInLeft;
   animation-duration: 2s;
-  margin-left: 10%;
 }
-.col img{
+
+.col img {
   width: 250px;
   height: 350px;
   rotate: 30deg;
@@ -115,7 +123,8 @@ p{
   border-radius: 100px;
   margin-top: 40px;
 }
-.col{
+
+.col {
   margin-top: 10px;
   backdrop-filter: blur(6px) saturate(165%);
   -webkit-backdrop-filter: blur(6px) saturate(165%);
@@ -124,39 +133,63 @@ p{
   border: 1px solid rgba(255, 255, 255, 0.125);
   color: white;
   transition: 1s;
-  padding-left: 10px;
   margin: 2px;
 }
-@media(width < 700px){
-  .holder{
-      margin-right: 3px;
+
+@media(width < 900px) {
+  .holder {
+    margin-right: 3px;
   }
+
   .row {
-      display: flex;
-      flex-direction: column;
-   }
-.col img{
-  width: 10rem;
-  height: 15rem;
-}
-.container{
-  display: grid;
-  grid-template-columns: auto;
-}
+    display: flex;
+    flex-direction: column;
+  }
+
+  .col img {
+    width: 10rem;
+    height: 15rem;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: auto;
+  }
 }
 
-@media(width < 400px){
-.bold{
-  font-size: 15px;
-}
-p{
-  font-size: 10px;
+@media(width < 700px) {
+  .holder {
+    margin-right: 3px;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .col img {
+    width: 10rem;
+    height: 15rem;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: auto;
+  }
 }
 
-img{
-  margin-top: 20px;
-  width: 5rem;
-  height: 9rem;
-}
-}
-</style>
+@media(width < 400px) {
+  .bold {
+    font-size: 15px;
+  }
+
+  p {
+    font-size: 10px;
+  }
+
+  img {
+    margin-top: 20px;
+    width: 5rem;
+    height: 9rem;
+  }
+}</style>

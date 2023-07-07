@@ -183,6 +183,13 @@ p {
 }
 
 /********** RESPONSIVENESS *********/
+@media(width < 900px) {
+  .container {
+    grid-template-columns: auto;
+  }
+}
+
+/********** RESPONSIVENESS *********/
 @media(width < 700px) {
   .container {
     grid-template-columns: auto;
@@ -211,4 +218,5 @@ p {
   }
 
 
-}</style>
+}
+</style>

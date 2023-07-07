@@ -13,42 +13,43 @@
 </template>
 
 <script>
-    export default {
-        
-    }
+export default {
+
+}
 </script>
 
 <style scoped>
-.sideNav{
+.sideNav {
     position: fixed;
     left: 0;
     top: 8%;
 }
+
 .sideNav a {
     text-decoration: none;
-    color:  white;
+    color: white;
 }
- 
-.sideNav li{
+
+.sideNav li {
     list-style-type: none;
     margin: 50% 0;
 }
-  
+
 @media(width < 700px) {
-    .sideNav{
+    .sideNav {
         top: 20%;
         font-size: 10px;
-    } 
+    }
 
- 
-  }
-  
+
+}
+
 @media(width < 400px) {
-    .sideNav{
+    .sideNav {
         top: 20%;
         font-size: 10px;
-    } 
+    }
 
- 
-  }
+
+}
 </style>
