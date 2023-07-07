@@ -3,24 +3,29 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-sm-8">
-            <form  >
+            <form   action="https://formspree.io/f/mpzebbdr"
+            method="POST" >
               <label for="Fname">First name</label><br>
-              <input type="text" class="name" placeholder="Name">
+              <input type="text" class="name" name="name" placeholder="Name" required oninvalid="this.setCustomValidity('Please enter your name')"
+              oninput="this.setCustomValidity('')">
               <p class="nameVlid"></p>
               <br>
               <label for="Lname">Last name</label><br>
-              <input type="text" class="surname" placeholder="surname">
+              <input type="text" class="surname" name="last name" placeholder="surname" required oninvalid="this.setCustomValidity('Please enter last name')"
+              oninput="this.setCustomValidity('')">
               <p class="surnameVlid"></p>
               <br>
               <label for="e-mail">e-mail</label><br>
-              <input type="e-mail" class="e-mail" placeholder="@">
+              <input type="e-mail" class="e-mail" name="e-mail" placeholder="@" required oninvalid="this.setCustomValidity('Please enter e-mail')"
+              oninput="this.setCustomValidity('')">
               <p class="emailVlid"></p>
               <br>
               <label for="message">Message</label><br>
-              <textarea type="text" class="message" placeholder="Dear Sibusiso..."></textarea>
+              <textarea type="text" class="message" name="message" placeholder="Dear Sibusiso..." required oninvalid="this.setCustomValidity('Please enter message')"
+              oninput="this.setCustomValidity('')"></textarea>
               <p class="messageVlid"></p>
               <!-- button -->
-              <button type="button" class="submit btn" v-on:click="validation"><i class="bi bi-send"></i></button>
+              <button type="submit" class="submit btn"><i class="bi bi-send"></i></button>
               </form>
           </div>
        
@@ -39,30 +44,30 @@
 <script>
     export default {
       methods:{
-        validation(){
-          let inputName = document.querySelector('.name')  //targets the whole input
-          let inputSurname =  document.querySelector('.surname') //target the whole input
-          let inputMail = document.querySelector('.e-mail')
-          let inputMessage = document.querySelector('.message')
+//         validation(){
+//           let inputName = document.querySelector('.name')  //targets the whole input
+//           let inputSurname =  document.querySelector('.surname') //target the whole input
+//           let inputMail = document.querySelector('.e-mail')
+//           let inputMessage = document.querySelector('.message')
  
- if(inputName.value == ''){
-    document.querySelector('.nameVlid').innerHTML=`Error - insert your first Name`
-    }
+//  if(inputName.value == ''){
+//     document.querySelector('.nameVlid').innerHTML=`Error - insert your first Name`
+//     }
  
     
- if(inputSurname.value == ''){
-    document.querySelector('.surnameVlid').innerHTML=`Error - insert your last name`
- }
+//  if(inputSurname.value == ''){
+//     document.querySelector('.surnameVlid').innerHTML=`Error - insert your last name`
+//  }
 
- if(inputMail.value == ''){
-    document.querySelector('.emailVlid').innerHTML=`Error - insert your e-mail`
- }
+//  if(inputMail.value == ''){
+//     document.querySelector('.emailVlid').innerHTML=`Error - insert your e-mail`
+//  }
 
  
- if(inputMessage.value == ''){
-    document.querySelector('.messageVlid').innerHTML=`Error - insert your message`
- }
-      }
+//  if(inputMessage.value == ''){
+//     document.querySelector('.messageVlid').innerHTML=`Error - insert your message`
+//  }
+//       }
     
     }
   }
