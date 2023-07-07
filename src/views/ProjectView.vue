@@ -2,7 +2,9 @@
   <div class="project">
       <div class="container">
           <div class="card" v-for="project in project"  :key="project.id">
-              <img :src="project.image" class="card-img-top" alt="project.project">
+            <div class="projectImg">
+              <img :src="project.image" class="card-img-top" alt="project.project" loading="lazy">
+            </div>
               <div class="card-body">
                 <h5 class="card-title">{{ project.project }}</h5>
                 <p class="card-text">{{ project.Description }}</p>
@@ -57,6 +59,7 @@
   object-fit:contain;
   aspect-ratio: 3/2;
 }
+ 
 .project{
 background-image: var(--background-color);
   background-size: cover ;

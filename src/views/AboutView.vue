@@ -48,7 +48,7 @@
                  
               </div>
               <div class="col text-center">
-                  <img :src="image1" :alt="name">
+                  <img :src="image1" :alt="name" loading="lazy">
               </div>
       </div>
   </div>

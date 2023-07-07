@@ -31,8 +31,12 @@
        
           <div class="col-sm-4 text-center">
             <div class="details">
-              <p><i class="bi bi-whatsapp"></i> 0609479185</p>
-              <p><i class="bi bi-telephone"></i> 0609479185</p>
+              <img src="https://i.postimg.cc/tR632Q4p/logo-img.png" loading="lazy" alt="logo">
+              <div class="info">
+                <p><i class="bi bi-whatsapp"></i> 0609479185</p>
+                <p><i class="bi bi-telephone"></i> 0609479185</p>
+              </div>
+          
             </div>
           </div>
         </div>
@@ -44,31 +48,6 @@
 <script>
     export default {
       methods:{
-//         validation(){
-//           let inputName = document.querySelector('.name')  //targets the whole input
-//           let inputSurname =  document.querySelector('.surname') //target the whole input
-//           let inputMail = document.querySelector('.e-mail')
-//           let inputMessage = document.querySelector('.message')
- 
-//  if(inputName.value == ''){
-//     document.querySelector('.nameVlid').innerHTML=`Error - insert your first Name`
-//     }
- 
-    
-//  if(inputSurname.value == ''){
-//     document.querySelector('.surnameVlid').innerHTML=`Error - insert your last name`
-//  }
-
-//  if(inputMail.value == ''){
-//     document.querySelector('.emailVlid').innerHTML=`Error - insert your e-mail`
-//  }
-
- 
-//  if(inputMessage.value == ''){
-//     document.querySelector('.messageVlid').innerHTML=`Error - insert your message`
-//  }
-//       }
-    
     }
   }
 </script>
@@ -103,6 +82,14 @@ background-image: var(--background-color);
 }
 .details{
   margin-top: 10%;
+}
+
+.details img{
+  border-radius: 10px;
+}
+
+.info{
+margin-top: 10%;
 }
 .btn{
   background-color: var(---second-color);

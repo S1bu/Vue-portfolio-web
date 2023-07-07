@@ -35,7 +35,7 @@
                 </div>
                 <div class=" col col-3">
                   <div class="logo">
-                    <img :src="skill.logo" :alt="skill.name">
+                    <img :src="skill.logo" :alt="skill.name" loading="lazy">
                   </div>
                 </div>
               </div>
@@ -53,7 +53,7 @@
         <div class="container">
           <div class="card" v-for="work in work" :key="work.id">
             <div class="work-image text-center">
-              <img :src="work.image" class="card-img-top" :alt="work.institution">
+              <img :src="work.image" class="card-img-top" :alt="work.institution" loading="lazy">
             </div>
             <div class="card-body">
               <p class="card-title"> <span class="bold">Company</span> : {{ work.institution }}</p>
