@@ -30,21 +30,31 @@
       <!-- 14 -->
       <div><i class="bi bi-bar-chart"></i></div>
     </div>
-    <div class="container text-center">
+    <div class="container">
       <div class="row">
-      </div>
+     
       <div class="col">
         <h1>
-          {{ name }} {{ surname }}
-          <br>
-          {{ partOfSentence }} <span class="career">{{ career }}</span>
+          <span class="career">  {{ name }} {{ surname }}</span>
         </h1>
+          <br>
+          <h5>
+            {{ partOfSentence }} {{ career }}
+          </h5>
+          <p>
+            <a href="#">CV</a>
+          </p>
       </div>
+      <div class="col text-center">
+        <img :src="image1" :alt="name" loading="lazy">
+      </div>
+    </div>
     </div>
   </div>
 </template>
 <style scoped>
 :root {
+  ---background-color2 :#004d7a;
   --background-color: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
   ---main-color: midnightblue;
   ---second-color: rgba(10, 18, 33, 0.59);
@@ -56,17 +66,47 @@
 }
 
 .holder {
-  background-image: var(--background-color);
+  background-color: #004d7a;
+/*  background-image: var(--background-color); */
   background-size: cover;
   background-attachment: fixed;
-
 }
+.col p{
+  padding-top: 30px;
+}
+.col a{
+  text-decoration:none;
+  background-color:black;
+  color: white;
+  padding: 10px 80px;
 
+  border-radius: 100px 0px 100px 0px;
+-webkit-border-radius: 100px 0px 100px 0px;
+-moz-border-radius: 100px 0px 100px 0px;
+  
+}
+.col a:hover{
+  background-color:#004d7a;
+}
+.col img{
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+  aspect-ratio: 3/10;
+  border-radius:50%;
+  border:2px solid white;
+  rotate: 30deg;
+  margin-top: 60px;
+  background-color: white;
+}
 h1 {
   color: white;
   margin-top: 20%;
 }
 
+h5{
+  color: white;
+}
 @media (width < 900px) {
   h1 {
     margin-top: 20%;

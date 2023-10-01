@@ -45,6 +45,11 @@ export default {
 
 <style scoped>
 :root {
+  ---background-color2 :#004d7a;
+  ---alternative-color: gray;
+  ---text-color:white;
+
+
   --background-color: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
   ---main-color: midnightblue;
   ---second-color: rgba(10, 18, 33, 0.59);
@@ -62,7 +67,7 @@ export default {
 }
 
 .project {
-  background-image: var(--background-color);
+  background-color:var(---background-color2);
   background-size: cover;
 }
 

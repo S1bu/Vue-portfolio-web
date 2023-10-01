@@ -2,22 +2,31 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
 }
  
 :root{
-  --background-color:linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
-    ---main-color :midnightblue;
-    ---second-color : rgba(10, 18, 33, 0.59);
+  ---background-color2 :#004d7a;
+  ---alternative-color: black;
+  ---text-color:white;
+/*  --background-color:linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12); */
+  /*  ---main-color :midnightblue; */
+   /* ---second-color : rgba(10, 18, 33, 0.59);*/
 }
 .navbar a{
   text-decoration: none;
   margin-inline: 10px;
-  color: white;
+  color: var(---text-color);
 
+}
+.navbar a:hover{
+  border-bottom: 2px solid white;
+  color: var(---text-color);
 }
 /* navbar*/
 .navbar{
-   background-color: var(---second-color);
+  background-color: var(---background-color2);
+   /*background-color: var(---second-color);*/
     z-index: 1;
 }
  .navbar li{
@@ -34,6 +43,7 @@ background-image: var(--background-color);
 
 nav a.router-link-exact-active {
 font-weight: 900;
+border-bottom: 2px solid white;
 }
  
 /* ------Footer -------*/
@@ -41,7 +51,8 @@ font-weight: 900;
   background-image: var(--background-color);
 }
 .footer{
-    background-color:var(---second-color);
+  background-color: var(---alternative-color);
+   /* background-color:var(---second-color);*/
     padding: 10px;
     text-align: center;
     padding: 0;

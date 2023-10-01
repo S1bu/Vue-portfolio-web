@@ -1,58 +1,69 @@
 <template>
   <div class="holder">
-    <div class="container">
-
-      <div class="col text-center">
-
-
-        <p>
-          <span class="bold">Name :</span> <br> {{ name }}
-        </p>
-
-
-        <p>
-          <span class="bold">Surname :</span> <br>{{ surname }}
-        </p>
-
-
-
-
-        <p>
-          <span class="bold">Languages :</span>
-        <ul>
-          <li>{{ language1 }}</li>
-          <li>{{ language2 }}</li>
-          <li>{{ language3 }}</li>
-        </ul>
-        </p>
-
-
-
-
-        <p>
-          <span class="bold">Address :</span> <br>{{ Town }} <br>{{ city }} <br> {{ Province }} <br> {{ country }} <br> {{
-            postalCode }}
-        </p>
-
-
-
-        <p>
-          <span class="bold">Hobbies :</span>
-        <ul>
-          <li>{{ hobbie1 }}</li>
-          <li>{{ hobbie2 }}</li>
-          <li>{{ hobbie3 }}</li>
-          <li>{{ hobbie4 }}</li>
-          <li>{{ hobbie5 }}</li>
-        </ul>
-        </p>
-
-      </div>
-      <div class="col text-center">
-        <img :src="image1" :alt="name" loading="lazy">
+    <div class="bg">
+      <div class="image-holder text-center">
+        <h1> {{ name }} {{ surname }}</h1>
+        <img src="https://i.postimg.cc/R0Y36NgM/C12-Sibelsiso-Dyan-sp-2.png" loading="lazy">
       </div>
     </div>
-  </div>
+     
+    <div class="container-fluid">
+        <div class="row align-items-start">
+          <div class="col">
+            <p>{{ language1 }}</p>
+            <p>{{ language2 }}</p>
+            <p>{{ language3 }}</p>
+          </div>
+          <div class="col">
+            <p>{{ hobbie1 }}</p>
+            <p>{{ hobbie2 }}</p>
+            <p>{{ hobbie3 }}</p>
+            <p>{{ hobbie4 }}</p>
+            <p>{{ hobbie5 }}</p>
+          </div>
+        </div>
+      </div>
+
+
+ 
+    <!-- <div class="container-fluid">
+       
+      <br>
+    
+      <div class="row">
+      <div class="col-5">
+        <p>
+          <span class="bold">Name </span> 
+          <br> 
+           {{ name }}
+        </p>
+        <p>
+          <span class="bold">Surname</span> <br>{{ surname }}
+        </p>
+        <p>
+          <span class="bold">Languages</span>
+        </p>
+          <p>{{ language1 }}</p>
+          <p>{{ language2 }}</p>
+          <p>{{ language3 }}</p>
+      </div>
+      <div class="col-5">
+        <p>
+          <span class="bold">Address</span> <br>{{ Town }} <br>{{ city }} <br> {{ Province }} <br> {{ country }} <br> {{
+            postalCode }}
+        </p>
+        <p>
+          <span class="bold">Hobbies</span>
+        </p>    
+          <p>{{ hobbie1 }}</p>
+          <p>{{ hobbie2 }}</p>
+          <p>{{ hobbie3 }}</p>
+          <p>{{ hobbie4 }}</p>
+          <p>{{ hobbie5 }}</p>
+      </div>
+    </div>
+  </div> -->
+</div>
 </template>
 
 <script>
@@ -84,112 +95,60 @@ export default {
 
 <style scoped>
 :root {
-  --background-color: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
-  ---main-color: midnightblue;
-  ---second-color: rgba(10, 18, 33, 0.59);
+  ---background-color2 :#004d7a;
+  ---alternative-color: gray;
+  ---text-color:white;
 }
-
+/* ------ MODAL  ------  */
+/* --------------------- */
 .holder {
-  background-image: var(--background-color);
+  background-color: var(---background-color2);
+  width:100%;
 }
 
-.container {
-  display: grid;
-  grid-template-columns: auto auto;
-  margin-top: 10%;
+p{
+  color:white;
+  margin-left: 10%;
 }
-
-.bold {
-  font-size: 1.5rem;
-  font-weight: 900;
-  color: var(---second-color);
-}
-
-ul {
-  list-style-type: none;
-}
-
-p {
+h1{
   color: white;
-  animation: backInLeft;
-  animation-duration: 2s;
+  font-weight:900;
 }
-
-.col img {
-  width: 250px;
-  height: 350px;
-  rotate: 30deg;
+ 
+ 
+ .bg{
+  background-image: url('https://wallpaperaccess.com/full/418162.png');
+  background-attachment: fixed;
+  background-size: cover;
+  border: 2px solid #004d7a;
+  border-radius: 10px;
+  margin: 5px;
+ }
+ img {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  aspect-ratio: 3/5;
   background-image: none;
-  border-radius: 100px;
-  margin-top: 40px;
+  border-radius:50%;
+  border: 2px solid white; /* Add this line to create a border */
+  background-color:white;
 }
 
-.col {
-  margin-top: 10px;
-  backdrop-filter: blur(6px) saturate(165%);
-  -webkit-backdrop-filter: blur(6px) saturate(165%);
-  background-color: var(---second-color);
-  border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.125);
-  color: white;
-  transition: 1s;
-  margin: 2px;
-}
 
 @media(width < 900px) {
   .holder {
     margin-right: 3px;
   }
 
-  .row {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .col img {
-    width: 10rem;
-    height: 15rem;
-  }
-
-  .container {
-    display: grid;
-    grid-template-columns: auto;
-  }
+  
+ 
 }
 
 @media(width < 700px) {
-  .holder {
-    margin-right: 3px;
+  
   }
 
-  .row {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .col img {
-    width: 10rem;
-    height: 15rem;
-  }
-
-  .container {
-    display: grid;
-    grid-template-columns: auto;
-  }
-}
 
 @media(width < 400px) {
-  .bold {
-    font-size: 15px;
-  }
-
-  p {
-    font-size: 10px;
-  }
-
-  img {
-    margin-top: 20px;
-    width: 5rem;
-    height: 9rem;
-  }
 }</style>

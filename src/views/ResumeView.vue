@@ -101,18 +101,22 @@ export default {
 
 <style scoped>
 :root {
+  ---background-color2 :#004d7a;
+  ---alternative-color: gray;
+  ---text-color:white;
+
   --background-color: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
   ---second-color: rgba(10, 18, 33, 0.59);
 }
 
 .page {
-  /* background-color: midnightblue; */
-  background-image: var(--background-color);
+   background-color: var(---background-color2);
+
 }
 
 h1 {
   font-weight: 900;
-  color: var(---second-color);
+color:white;
 }
 
 .resume {
@@ -156,9 +160,9 @@ p {
 
 .card {
   margin: 5px;
-  backdrop-filter: blur(6px) saturate(165%);
-  -webkit-backdrop-filter: blur(6px) saturate(165%);
-  background-color: var(---second-color);
+  backdrop-filter: blur(0px) saturate(180%);
+  -webkit-backdrop-filter: blur(0px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.75);
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.125);
   color: white;
