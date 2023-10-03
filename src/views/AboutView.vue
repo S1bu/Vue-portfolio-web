@@ -3,7 +3,8 @@
     <div class="bg">
       <div class="image-holder text-center">
         <h1> {{ name }} {{ surname }}</h1>
-        <img src="https://i.postimg.cc/R0Y36NgM/C12-Sibelsiso-Dyan-sp-2.png" loading="lazy">
+        <!-- <img src="https://i.postimg.cc/R0Y36NgM/C12-Sibelsiso-Dyan-sp-2.png" loading="lazy"> -->
+        <img src="https://i.postimg.cc/KcJRrL6s/pic-of-me.png" atl="me" loading="lazy">
       </div>
     </div>
      

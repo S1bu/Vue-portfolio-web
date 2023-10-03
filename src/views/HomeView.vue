@@ -46,7 +46,8 @@
           </p>
       </div>
       <div class="col text-center">
-        <img :src="image1" :alt="name" loading="lazy">
+        <!-- <img src="https://i.postimg.cc/KcJRrL6s/pic-of-me.png" atl="me" loading="lazy"> -->
+        <img src="https://i.postimg.cc/R0Y36NgM/C12-Sibelsiso-Dyan-sp-2.png" atl="me" loading="lazy">
       </div>
     </div>
     </div>
@@ -79,7 +80,6 @@
   background-color:black;
   color: white;
   padding: 10px 80px;
-
   border-radius: 100px 0px 100px 0px;
 -webkit-border-radius: 100px 0px 100px 0px;
 -moz-border-radius: 100px 0px 100px 0px;
@@ -95,9 +95,8 @@
   aspect-ratio: 3/10;
   border-radius:50%;
   border:2px solid white;
-  rotate: 30deg;
   margin-top: 60px;
-  background-color: white;
+  background-color:white;
 }
 h1 {
   color: white;
