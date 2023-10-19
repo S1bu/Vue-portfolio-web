@@ -1,6 +1,28 @@
 <template >
     <div class="testimonial">
-        <div class="container">
+        <center>
+            <div class="card" v-for="testimonial in testimonials" :key="testimonial.id">
+                <div class="row">
+                    <center>
+                        <br>
+                        <h5>{{ testimonial.fullname }} ({{ testimonial.Relation }})</h5>
+                        <img :src="testimonial.image" alt="">
+                    </center>
+                </div>
+            <div class="row">
+        
+            <div class="col-12">
+                <center>
+                </center>
+                <p>{{ testimonial.Description }}</p>     
+            </div>
+            </div>
+          
+        
+        </div>
+        </center>
+       
+        <!-- <div class="container">
             <div class="card" v-for="testimonial in testimonials" :key="testimonial.id">
                 <div class="image">
                     <img :src="testimonial.image" class="card-img-top" :alt="testimonial.fullname" loading="lazy">
@@ -10,7 +32,7 @@
                     <p class="card-text">{{ testimonial.Description }}</p>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
 </template>
 
@@ -35,79 +57,69 @@ export default {
 
     --background-color: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
     ---main-color: midnightblue;
-    ---second-color: rgba(10, 18, 33, 0.59);
+    ---second-color:  rgba(0, 0, 0, 0.736);
 }
-
 .testimonial {
     background-color: var(---background-color2); 
 }
 
-.container img {
+.card:nth-child(1){
+    animation:backInRight; 
+  animation-duration: 2s;
+}
+.card:nth-child(2){
+    animation:backInLeft; 
+  animation-duration: 2s;
+}
+.card:nth-child(3){
+    animation:backInRight; 
+  animation-duration: 2s;
+}
+.card:nth-child(4){
+    animation:backInLeft; 
+  animation-duration: 2s;
+}
+.card:nth-child(5){
+    animation:backInRight; 
+  animation-duration: 2s;
+}
+.card{
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.736);
+    color: white;
+    margin: 5px;
+}
+
+.card img{
     width: 200px;
     height: 200px;
-    object-fit: contain;
-    aspect-ratio: 3/5;
-    margin-top: 5px;
-
+    object-fit: cover;
+    /* aspect-ratio: 3/5; */
+    /*  */
+    border: 2px solid white;
+    border-radius: 100%;
 }
-
-.container {
-    /*row*/
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    overflow-y: hidden;
-    margin-top: 5%;
-    border: 5px solid rgba(10, 18, 33, 0.59);
-    border-radius: 10px;
-}
-
-/*card*/
-.card {
-    box-shadow: 2px 2px 20px black;
-    width: 30rem;
+.card p{
+    margin-top:3%;
     margin: 20px;
-    text-align: center;
-    backdrop-filter: blur(6px) saturate(165%);
-    -webkit-backdrop-filter: blur(6px) saturate(165%);
-    background-color: var(---second-color);
-    border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.125);
-    color: white;
-    transition: 1s;
-    flex-grow: 0;
-    flex-shrink: 0;
 }
-
+.col-9 h5{
+    font-weight: 900;
+}
+hr{
+    width: 70%;
+    /* text-align: center; */
+}
 @media(width < 900px) {
-    .container {
-        grid-template-columns: auto;
-    }
+ 
 }
 
 @media(width < 700px) {
-    .container {
-        grid-template-columns: auto;
-    }
+ 
 }
 
-@media(width < 400px) {
-    .container {
-        grid-template-columns: auto;
-    }
+@media(width < 400px) { 
 
-    .card-title {
-        font-size: 15px;
-    }
-
-    .card-text {
-        font-size: 13px;
-    }
-
-    .card {
-        width: 18rem;
-
-    }
+    
 
 }</style>
