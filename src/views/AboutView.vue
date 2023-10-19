@@ -4,18 +4,24 @@
       <div class="image-holder text-center">
         <h1> {{ name }} {{ surname }}</h1>
         <!-- <img src="https://i.postimg.cc/R0Y36NgM/C12-Sibelsiso-Dyan-sp-2.png" loading="lazy"> -->
-        <img src="https://i.postimg.cc/KcJRrL6s/pic-of-me.png" atl="me" loading="lazy">
-      </div>
-    </div>
-     
-    <div class="container-fluid">
+        <img src="https://i.postimg.cc/R0Y36NgM/C12-Sibelsiso-Dyan-sp-2.png" atl="me" loading="lazy">
         <div class="row align-items-start">
+          <center>
+            <div class="row" style="width: 70%;">
+            <p style="margin: 0;padding: 0;">I am a full-stack web development student 💻 at Life Choices Academy, with 6 months 
+              of experience working on real-world projects. I am currently seeking an internship related to software development.
+               My passion lies within technology 🤖, more specifically web development, where I can use code to impact people's lives. 
+               👨🏾‍💻.</p>
+          </div>
+          </center>
           <div class="col">
+            <p>Languages:</p>
             <p>{{ language1 }}</p>
             <p>{{ language2 }}</p>
             <p>{{ language3 }}</p>
           </div>
           <div class="col">
+            <p>Hobbies:</p>
             <p>{{ hobbie1 }}</p>
             <p>{{ hobbie2 }}</p>
             <p>{{ hobbie3 }}</p>
@@ -24,46 +30,7 @@
           </div>
         </div>
       </div>
-
-
- 
-    <!-- <div class="container-fluid">
-       
-      <br>
-    
-      <div class="row">
-      <div class="col-5">
-        <p>
-          <span class="bold">Name </span> 
-          <br> 
-           {{ name }}
-        </p>
-        <p>
-          <span class="bold">Surname</span> <br>{{ surname }}
-        </p>
-        <p>
-          <span class="bold">Languages</span>
-        </p>
-          <p>{{ language1 }}</p>
-          <p>{{ language2 }}</p>
-          <p>{{ language3 }}</p>
-      </div>
-      <div class="col-5">
-        <p>
-          <span class="bold">Address</span> <br>{{ Town }} <br>{{ city }} <br> {{ Province }} <br> {{ country }} <br> {{
-            postalCode }}
-        </p>
-        <p>
-          <span class="bold">Hobbies</span>
-        </p>    
-          <p>{{ hobbie1 }}</p>
-          <p>{{ hobbie2 }}</p>
-          <p>{{ hobbie3 }}</p>
-          <p>{{ hobbie4 }}</p>
-          <p>{{ hobbie5 }}</p>
-      </div>
     </div>
-  </div> -->
 </div>
 </template>
 
@@ -82,11 +49,11 @@ export default {
       Town: 'Gugulethu',
       city: 'Cape Town',
       postalCode: '7460',
-      hobbie1: 'Coding',
-      hobbie2: 'Googling new technology',
-      hobbie3: 'Reading personal development e-books',
-      hobbie4: 'Watching sci-fi movies ',
-      hobbie5: 'Hiking'
+      hobbie1: 'Coding👨🏾‍💻',
+      hobbie2: 'Googling new technology🤖',
+      hobbie3: 'Reading personal development e-books📚',
+      hobbie4: 'Watching sci-fi movies 🍿🎬 ',
+      hobbie5: 'Hiking⛰️🥾'
     };
   }
 }
@@ -102,6 +69,14 @@ export default {
 }
 /* ------ MODAL  ------  */
 /* --------------------- */
+
+.row{
+  background-color: rgba(0, 0, 0, 0.84) ;
+  border: 2px solid white;
+  margin: 5px;
+  border-radius:10px ;
+  /* width: 90%; */
+}
 .holder {
   background-color: var(---background-color2);
   width:100%;
@@ -133,7 +108,7 @@ h1{
   background-image: none;
   border-radius:50%;
   border: 2px solid white; /* Add this line to create a border */
-  background-color:white;
+  background-color:rgba(0, 0, 0, 0.84) ;
 }
 
 
