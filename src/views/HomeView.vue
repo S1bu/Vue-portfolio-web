@@ -42,7 +42,7 @@
             {{ partOfSentence }} {{ career }}
           </h5>
           <p>
-            <a href="#">CV</a>
+            <a href="https://docs.google.com/document/d/1JjMBUvuxd-KF1SndmMJ8Iy3-VMUZNK2_MTNq18YFjpo/edit?usp=sharing">CV</a>
           </p>
       </div>
       <div class="col text-center">
@@ -60,13 +60,16 @@
   ---main-color: midnightblue;
   ---second-color: rgba(10, 18, 33, 0.59);
 }
-
+.container{
+  margin-top: 6%;
+}
 .career {
   color: var(---second-color);
   font-weight: 900;
 }
 
 .holder {
+  
   background-color: #004d7a;
 /*  background-image: var(--background-color); */
   background-size: cover;
@@ -86,7 +89,8 @@
   
 }
 .col a:hover{
-  background-color:#004d7a;
+  background-color:black;
+  color: white;
 }
 .col img{
   width: 300px;
