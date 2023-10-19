@@ -2,6 +2,7 @@
   <div class="page">
 
     <div class="resume ">
+      <center>hover over card to see more info</center>
       <section id="education"></section>
       <!-- educatioin section -->
       <div class="holder">
@@ -13,9 +14,9 @@
                   <div class="logo text-center">
                     <img :src="education.logo" :alt="education.name" loading="lazy">
                   </div>
-                  <center>{{ education.name }}</center>
+                  <center>{{ education.name }} <i class="bi bi-hand-index"></i></center>
                   <br>
-                  <center> <a href="#">More...</a></center>
+                  <!-- <center> <a href="#">More...</a></center> -->
                   <div class="card-body">
                     <div class="logo text-center">
                       <img :src="education.logo" :alt="education.name" loading="lazy">
@@ -41,9 +42,9 @@
                   <div class="logo text-center">
                     <img :src="skill.logo" :alt="skill.name" loading="lazy">
                   </div>
-                  <center>{{ skill.name }}</center>
+                  <center>{{ skill.name }} <i class="bi bi-hand-index"></i></center>
                   <br>
-                  <center> <a href="#">More...</a></center>
+                  <!-- <center> <a href="#">More...</a></center> -->
                   <div class="card-body">
                     <div class="logo text-center">
                       <img :src="skill.logo" :alt="skill.name" loading="lazy">
@@ -70,9 +71,9 @@
                   <div class="logo text-center">
                     <img :src="work.image" class="card-img-top" :alt="work.institution" loading="lazy">
                   </div>
-                  <center>{{ work.institution }}</center>
+                  <center>{{ work.institution }} <i class="bi bi-hand-index"></i></center>
                   <br>
-                  <center><a href="#">More...</a></center>
+                  <!-- <center><a href="#">More...</a></center> -->
                   <div class="card-body">
                     <div class="logo text-center">
                       <img :src="work.image" class="card-img-top" :alt="work.institution" loading="lazy">
@@ -127,10 +128,7 @@ export default {
 }
 
 /*the info that must disapear*/
-.card {
-  position: relative;
-  margin-top: 40px ;
-}
+
 
 a{
   color: white;
@@ -159,10 +157,11 @@ padding: 10px 20px;
   display: none;
   z-index: 1; /* Set a higher z-index value */
 }
-
+ 
 
 .card:hover .card-body {
   display: block;
+  transition: .3s;
 }
 
 .page {
@@ -180,6 +179,7 @@ color:white;
 .container-fluid {
   display: grid;
   grid-template-columns: auto auto auto;
+  justify-content: center;
 }
 
 .bold {
@@ -225,12 +225,39 @@ p {
 
 .card {
   margin: 5px;
-  background:transparent;
+  background:rgba(0, 0, 0, 0.736);
   border-radius: 12px;
-  border: none;
+ width: 400px;
   color: white;
   transition: 1s;
-  
+  position: relative;
+  margin-top: 40px;
+}
+
+.card:nth-child(1){
+  animation:backInLeft; 
+  animation-duration: 2s;
+}
+
+.card:nth-child(2){
+  animation:backInDown; 
+  animation-duration: 2s;
+}
+.card:nth-child(3){
+  animation:backInRight; 
+  animation-duration: 2s;
+}
+.card:nth-child(4){
+  animation:backInLeft; 
+  animation-duration: 2s;
+}
+.card:nth-child(5){
+  animation:backInUp; 
+  animation-duration: 2s;
+}
+.card:nth-child(6){
+  animation:backInRight; 
+  animation-duration: 2s;
 }
 
  
