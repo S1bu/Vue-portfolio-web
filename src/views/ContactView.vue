@@ -29,13 +29,15 @@
         </div>
 
         <div class="col-sm-4 text-center">
+          
           <div class="details">
+         
             <img src="https://i.postimg.cc/tR632Q4p/logo-img.png" loading="lazy" alt="logo">
             <div class="info">
               <p><i class="bi bi-whatsapp"></i> 0609479185</p>
-              <p><i class="bi bi-telephone"></i> 0609479185</p>
+              <p><i class="bi bi-linkedin"></i> www.linkedin.com/in<br>/sibusiso-dyan-0004</p>
+              <P><i class="bi bi-geo-alt"></i> South Africa,Cape town</P>
             </div>
-
           </div>
         </div>
       </div>
@@ -88,11 +90,15 @@ export default {
 }
 
 .details {
-  margin-top: 10%;
+  padding: 10px 0;
+  margin: 10px;
+  /* margin-top: 10%; */
+  background-color: rgba(0, 0, 0, 0.736);
 }
 
 .details img {
   border-radius: 10px;
+  padding-top: 40px;
 }
 
 .info {
@@ -100,9 +106,13 @@ export default {
 }
 
 .btn {
-  background-color: var(---second-color);
+  width: 50%;
+  background-color: black;
   padding: 10px;
   color: white;
+  border-radius: 100px 0px 100px 0px;
+-webkit-border-radius: 100px 0px 100px 0px;
+-moz-border-radius: 100px 0px 100px 0px;
 }
 
 textarea {
