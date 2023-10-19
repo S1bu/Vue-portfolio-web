@@ -61,9 +61,12 @@ export default {
 
 }
 
-.container img {
-  object-fit: contain;
-  aspect-ratio: 3/2;
+.container img{
+width: 200px;
+height: 200px;
+object-fit: contain;
+aspect-ratio: 3/5;
+border-radius:10px;
 }
 
 .project {
@@ -76,7 +79,7 @@ export default {
   text-align: center;
   backdrop-filter: blur(6px) saturate(165%);
   -webkit-backdrop-filter: blur(6px) saturate(165%);
-  background-color: var(---second-color);
+  background:rgba(0, 0, 0, 0.736);
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.125);
   color: white;
@@ -88,7 +91,7 @@ i {
 }
 
 .btn {
-  background-color: var(---second-color);
+  background-color: var(---background-color2);
   color: white;
 }
 
