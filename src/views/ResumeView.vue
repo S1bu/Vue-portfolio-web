@@ -259,7 +259,28 @@ p {
   animation:backInRight; 
   animation-duration: 2s;
 }
+/*  */
+.card:nth-child(7){
+  animation:backInLeft; 
+  animation-duration: 2s;
+}
 
+.card:nth-child(8){
+  animation:backInDown; 
+  animation-duration: 2s;
+}
+.card:nth-child(9){
+  animation:backInRight; 
+  animation-duration: 2s;
+}
+.card:nth-child(10){
+  animation:backInLeft; 
+  animation-duration: 2s;
+}
+.card:nth-child(11){
+  animation:backInUp; 
+  animation-duration: 2s;
+}
  
 
 #skills {
