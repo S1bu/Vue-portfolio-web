@@ -8,7 +8,7 @@
         <div class="card-body">
           <h5 class="card-title">{{ project.project }}</h5>
           <p class="card-text">{{ project.Description }}</p>
-          <div class="row">
+          <div class="row center">
             <div class="col">
               <a :href="project.codeUrl" class="btn" target="_blank">
                 <i class="bi bi-code"></i>
@@ -59,6 +59,11 @@ export default {
   display: grid;
   grid-template-columns: auto auto auto;
 
+}
+.center{
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
 }
 
 .container img{
