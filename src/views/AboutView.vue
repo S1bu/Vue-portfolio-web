@@ -7,20 +7,15 @@
         <img src="https://i.postimg.cc/R0Y36NgM/C12-Sibelsiso-Dyan-sp-2.png" atl="me" loading="lazy">
         <div class="row align-items-start">
           <center>
-            <div class="row" style="width: 70%;">
-            <p style="margin: 0;padding: 0;">I am a full-stack web development student 💻 at Life Choices Academy, with 6 months 
-              of experience working on real-world projects. I am currently seeking an internship related to software development.
-               My passion lies within technology 🤖, more specifically web development, where I can use code to impact people's lives. 
-               👨🏾‍💻.</p>
-          </div>
+         
           </center>
-          <div class="col">
+          <div class="col col_1">
             <p>Languages:</p>
             <p>{{ language1 }}</p>
             <p>{{ language2 }}</p>
             <p>{{ language3 }}</p>
           </div>
-          <div class="col">
+          <div class="col col_2">
             <p>Hobbies:</p>
             <p>{{ hobbie1 }}</p>
             <p>{{ hobbie2 }}</p>
@@ -69,7 +64,26 @@ export default {
 }
 /* ------ MODAL  ------  */
 /* --------------------- */
-
+.going-up{
+  animation:backInUp; 
+  animation-duration: 2s;
+}
+.col_1{
+  animation:backInRight; 
+  animation-duration: 2s;
+  border: 2px solid white;
+  border-radius: 10px;
+  margin: 5px; 
+}
+.col_2{
+  animation:backInLeft; 
+  animation-duration: 2s;
+  border: 2px solid white; 
+  width: 90%;
+  border-radius: 10px;
+  margin: 5px;
+  
+}
 .row{
   background-color: rgba(0, 0, 0, 0.84) ;
   border: 2px solid white;
