@@ -85,6 +85,32 @@ border-radius:10px;
   color: white;
   transition: 1s;
 }
+/* Animation */
+.card:nth-child(1){
+    animation:backInRight; 
+  animation-duration: 2s;
+}
+.card:nth-child(2){
+  animation:backInRight; 
+  animation-duration: 2s;
+}
+.card:nth-child(3){
+  animation:backInRight; 
+  animation-duration: 2s;
+}
+.card:nth-child(4){
+    animation:backInLeft; 
+  animation-duration: 2s;
+}
+.card:nth-child(5){
+    animation:backInLeft; 
+  animation-duration: 2s;
+}
+.card:nth-child(6){
+    animation:backInLeft; 
+  animation-duration: 2s;
+}
+ 
 
 i {
   padding: 10px;
