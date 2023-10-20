@@ -37,15 +37,24 @@
         <h1>
           <span class="career">  {{ name }} {{ surname }}</span>
         </h1>
-          <br>
-          <h5>
+        <h5>
             {{ partOfSentence }} {{ career }}
           </h5>
+          <br>
+          <div class="row">
+            <p style="margin: 0;padding: 0;">I am a full-stack web development student 💻 at Life Choices Academy, with 6 months 
+              of experience working on real-world projects. I am currently seeking an internship related to software development.
+               My passion lies within technology 🤖, more specifically web development, where I can use code to impact people's lives. 
+               👨🏾‍💻.</p>
+          </div>
+         
           <p>
             <a href="https://docs.google.com/document/d/1JjMBUvuxd-KF1SndmMJ8Iy3-VMUZNK2_MTNq18YFjpo/edit?usp=sharing">CV</a>
           </p>
       </div>
       <div class="col text-center">
+        <br>
+        <br>
         <!-- <img src="https://i.postimg.cc/KcJRrL6s/pic-of-me.png" atl="me" loading="lazy"> -->
         <img src="https://i.postimg.cc/R0Y36NgM/C12-Sibelsiso-Dyan-sp-2.png" atl="me" loading="lazy">
       </div>
@@ -77,6 +86,9 @@
 }
 .col p{
   padding-top: 30px;
+}
+.row p {
+color: white;
 }
 .col a{
   text-decoration:none;
