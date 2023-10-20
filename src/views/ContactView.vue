@@ -117,14 +117,14 @@ export default {
 
 textarea {
   padding: 10px;
-  width: 100%;
+  width: 70%;
   border-radius: 10px;
   border: none;
 }
 
 input {
   padding: 10px;
-  width: 100%;
+  width: 70%;
   border-radius: 10px;
   border: none;
 }
