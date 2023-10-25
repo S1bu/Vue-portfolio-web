@@ -37,16 +37,24 @@
         <h1>
           <span class="career">  {{ name }} {{ surname }}</span>
         </h1>
-          <br>
-          <h5>
+        <h5>
             {{ partOfSentence }} {{ career }}
           </h5>
-          <p>
-            <a href="https://docs.google.com/document/d/1JjMBUvuxd-KF1SndmMJ8Iy3-VMUZNK2_MTNq18YFjpo/edit?usp=sharing">CV</a>
+          <br>
+          <div class="row">
+            <p style="margin: 0;padding: 0;">I am a full-stack web development student 💻 at Life Choices Academy, with 6 months 
+              of experience working on real-world projects. I am currently seeking an internship related to software development.
+               My passion lies within technology 🤖, more specifically web development, where I can use code to impact people's lives. 
+               👨🏾‍💻.</p>
+          </div>
+         
+          <p class="btn-holder">
+            <a href="https://docs.google.com/document/d/1JjMBUvuxd-KF1SndmMJ8Iy3-VMUZNK2_MTNq18YFjpo/edit?usp=sharing">CV <i class="bi bi-file-text"></i></a>
           </p>
       </div>
       <div class="col text-center">
-        <!-- <img src="https://i.postimg.cc/KcJRrL6s/pic-of-me.png" atl="me" loading="lazy"> -->
+        <br>
+        <br>
         <img src="https://i.postimg.cc/R0Y36NgM/C12-Sibelsiso-Dyan-sp-2.png" atl="me" loading="lazy">
       </div>
     </div>
@@ -60,6 +68,7 @@
   ---main-color: midnightblue;
   ---second-color: rgba(10, 18, 33, 0.59);
 }
+ 
 .container{
   margin-top: 6%;
 }
@@ -69,28 +78,36 @@
 }
 
 .holder {
-  
   background-color: #004d7a;
-/*  background-image: var(--background-color); */
   background-size: cover;
   background-attachment: fixed;
 }
 .col p{
   padding-top: 30px;
 }
+.row p {
+color: white;
+}
+ 
 .col a{
   text-decoration:none;
-  background-color:black;
-  color: white;
+  background-color:white;
+  font-weight: bold;
+  color: black;
   padding: 10px 80px;
-  border-radius: 100px 0px 100px 0px;
--webkit-border-radius: 100px 0px 100px 0px;
--moz-border-radius: 100px 0px 100px 0px;
-  
+  box-shadow: 5px 10px rgba(0, 0, 0, 0.432);
+  transition: 1s;
+  border-radius: 10px;  
 }
 .col a:hover{
   background-color:black;
   color: white;
+  box-shadow: none;
+  transition: 1s;
+}
+.btn-holder{
+  animation:backInLeft; 
+  animation-duration: 2s;
 }
 .col img{
   width: 300px;

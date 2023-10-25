@@ -24,7 +24,7 @@
               oninvalid="this.setCustomValidity('Please enter message')" oninput="this.setCustomValidity('')"></textarea>
             <p class="messageVlid"></p>
             <!-- button -->
-            <button type="submit" class="submit btn"><i class="bi bi-send"></i></button>
+            <button type="submit" class="submit btn">Send <i class="bi bi-chat-quote"></i></button>
           </form>
         </div>
 
@@ -85,7 +85,6 @@ export default {
 .text-center {
   background-color: var(---second-color);
   animation: bounce;
-  /* referring directly to the animation's @keyframe declaration */
   animation-duration: 2s;
 }
 
@@ -106,25 +105,35 @@ export default {
 }
 
 .btn {
-  width: 50%;
-  background-color: black;
-  padding: 10px;
+  text-decoration:none;
+  background-color:white;
+  font-weight: bold;
+  color: black;
+  padding: 10px 80px;
+  box-shadow: 5px 10px rgba(0, 0, 0, 0.432);
+  transition: 1s;
+  border-radius: 10px; 
+  /* animation */
+  animation:backInLeft; 
+  animation-duration: 2s;
+}
+.btn:hover{
+  background-color:black;
   color: white;
-  border-radius: 100px 0px 100px 0px;
--webkit-border-radius: 100px 0px 100px 0px;
--moz-border-radius: 100px 0px 100px 0px;
+  box-shadow: none;
+  transition: 1s;
 }
 
 textarea {
   padding: 10px;
-  width: 100%;
+  width: 70%;
   border-radius: 10px;
   border: none;
 }
 
 input {
   padding: 10px;
-  width: 100%;
+  width: 70%;
   border-radius: 10px;
   border: none;
 }
