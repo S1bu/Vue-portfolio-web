@@ -16,7 +16,7 @@
                   </div>
                   <center>{{ education.name }} <i class="bi bi-hand-index"></i></center>
                   <br>
-                  <!-- <center> <a href="#">More...</a></center> -->
+            
                   <div class="card-body">
                     <div class="logo text-center">
                       <img :src="education.logo" :alt="education.name" loading="lazy">
@@ -73,7 +73,7 @@
                   </div>
                   <center>{{ work.institution }} <i class="bi bi-hand-index"></i></center>
                   <br>
-                  <!-- <center><a href="#">More...</a></center> -->
+
                   <div class="card-body">
                     <div class="logo text-center">
                       <img :src="work.image" class="card-img-top" :alt="work.institution" loading="lazy">
@@ -149,20 +149,23 @@ padding: 10px 20px;
   width: 600px;
   height: auto;
   background-color: var(---background-color2);
+  /* background-image: url("https://cdn.pixabay.com/photo/2023/07/14/08/45/futuristic-city-8126526_1280.jpg");
+  background-size: cover; */
   color: white;
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   display: none;
-  z-index: 1; /* Set a higher z-index value */
+  z-index: 1;
 }
  
 
 .card:hover .card-body {
   display: block;
-  transition: .3s;
+  transition: ease-in;
 }
+
 
 .page {
    background-color: var(---background-color2);
