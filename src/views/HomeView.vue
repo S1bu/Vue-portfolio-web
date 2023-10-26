@@ -48,14 +48,13 @@
                👨🏾‍💻.</p>
           </div>
          
-          <p>
-            <a href="https://docs.google.com/document/d/1JjMBUvuxd-KF1SndmMJ8Iy3-VMUZNK2_MTNq18YFjpo/edit?usp=sharing">CV</a>
+          <p class="btn-holder">
+            <a href="https://docs.google.com/document/d/1JjMBUvuxd-KF1SndmMJ8Iy3-VMUZNK2_MTNq18YFjpo/edit?usp=sharing">CV <i class="bi bi-file-text"></i></a>
           </p>
       </div>
       <div class="col text-center">
         <br>
         <br>
-        <!-- <img src="https://i.postimg.cc/KcJRrL6s/pic-of-me.png" atl="me" loading="lazy"> -->
         <img src="https://i.postimg.cc/R0Y36NgM/C12-Sibelsiso-Dyan-sp-2.png" atl="me" loading="lazy">
       </div>
     </div>
@@ -69,40 +68,55 @@
   ---main-color: midnightblue;
   ---second-color: rgba(10, 18, 33, 0.59);
 }
+ 
 .container{
   margin-top: 6%;
 }
 .career {
   color: var(---second-color);
   font-weight: 900;
+
+
 }
 
 .holder {
-  
   background-color: #004d7a;
-/*  background-image: var(--background-color); */
   background-size: cover;
   background-attachment: fixed;
 }
+.col  h1 {
+  text-shadow: 2px 5px rgba(0, 0, 0, 0.432);
+  animation: shakeY; 
+  animation-duration: 5s;
+  animation-iteration-count: infinite; /* This is correct */
+}
+
 .col p{
   padding-top: 30px;
 }
 .row p {
 color: white;
 }
+ 
 .col a{
   text-decoration:none;
-  background-color:black;
-  color: white;
+  background-color:white;
+  font-weight: bold;
+  color: black;
   padding: 10px 80px;
-  border-radius: 100px 0px 100px 0px;
--webkit-border-radius: 100px 0px 100px 0px;
--moz-border-radius: 100px 0px 100px 0px;
-  
+  box-shadow: 5px 10px rgba(0, 0, 0, 0.432);
+  transition: 1s;
+  border-radius: 10px;  
 }
 .col a:hover{
   background-color:black;
   color: white;
+  box-shadow: none;
+  transition: 1s;
+}
+.btn-holder{
+  animation:backInLeft; 
+  animation-duration: 2s;
 }
 .col img{
   width: 300px;
