@@ -4,7 +4,9 @@
     box-sizing: border-box;
     font-family: 'Courier New', Courier, monospace;
 }
- 
+ body{
+  cursor: none;
+ }
 :root{
   ---background-color2 :#004d7a;
   ---alternative-color: black;
@@ -203,3 +205,47 @@ font-size: 12px;
   }
 
 
+  .custom-shape-divider-top-1698223862 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1698223862 svg {
+    position: relative;
+    display: block;
+    width: calc(280% + 1.3px);
+    height: 223px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1698223862 .shape-fill {
+    fill: #004D7A;
+}
+/* cursor code */
+.cursor-dot{
+  width: 5px;
+  height: 5px;
+  background-color: white;
+}
+
+.cursor-outline{
+  width: 30px;
+  height: 30px;
+  border: 2px solid hsla(0,0%,100%,0.5);
+}
+
+.cursor-dot,
+.cursor-outline{
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate(-50%,-50%);
+  border-radius: 50%;
+  z-index: 1;
+  pointer-events:none;
+}

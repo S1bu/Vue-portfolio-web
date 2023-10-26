@@ -75,6 +75,8 @@
 .career {
   color: var(---second-color);
   font-weight: 900;
+
+
 }
 
 .holder {
@@ -82,6 +84,13 @@
   background-size: cover;
   background-attachment: fixed;
 }
+.col  h1 {
+  text-shadow: 2px 5px rgba(0, 0, 0, 0.432);
+  animation: shakeY; 
+  animation-duration: 5s;
+  animation-iteration-count: infinite; /* This is correct */
+}
+
 .col p{
   padding-top: 30px;
 }

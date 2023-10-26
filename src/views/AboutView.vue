@@ -3,9 +3,10 @@
     <div class="bg">
       <div class="image-holder text-center">
         <h1> {{ name }} {{ surname }}</h1>
-        <!-- <img src="https://i.postimg.cc/R0Y36NgM/C12-Sibelsiso-Dyan-sp-2.png" loading="lazy"> -->
         <img src="https://i.postimg.cc/R0Y36NgM/C12-Sibelsiso-Dyan-sp-2.png" atl="me" loading="lazy">
-        <div class="row align-items-start">
+      </div>
+    </div>
+    <div class="row align-items-start">
           <center>
          
           </center>
@@ -24,8 +25,6 @@
             <p>{{ hobbie5 }}</p>
           </div>
         </div>
-      </div>
-    </div>
 </div>
 </template>
 
