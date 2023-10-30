@@ -38,14 +38,8 @@ export default {
 <style  scoped>
 .testimonial{
     background-color: #004d7a;
-    width: 100%;
-  
+    width: 100%; 
 }
-/* .row{ */
-    /* width: 100%; */
-    /* border: 2px solid red; */
-    /* margin: 10px 10px; */
-/* } */
 img{
     width: 150px;
     height: 150px;
@@ -54,17 +48,13 @@ img{
     object-fit: contain;
     aspect-ratio: 2/5;
 }
- 
- 
-/* ---------------- */ 
 .rowz{
     margin:100px;
-   transition: 1s;
+    transition: 1s;
 }
 .rowz:hover{
     margin:150px;
     transition: 1s;
- 
 }
 .rowz:nth-child(odd) > 
 .detail{
@@ -74,29 +64,25 @@ img{
     float: left;
     width: 35%;
     height: 35vh;
-     margin-top: 5%;
-     animation:backInLeft; 
+    margin-top: 5%;
+    animation:backInLeft; 
     animation-duration: 2s;
-           box-shadow: 8px 12px rgba(0, 0, 0, 0.432);
+    box-shadow: 8px 12px rgba(0, 0, 0, 0.432);
 }
-
 .rowz:nth-child(odd)>
 .description{
     color: white;
     background-color: rgba(0, 0, 0, 0.69);
-    /* background-color: rgba(255, 255, 255, 0.697); */
     border-radius: 10px;
     float: right;
     width: 60%;
     height: 35vh;
-     margin-top: 5%;
-     padding: 10px;
-     animation:backInRight; 
+    margin-top: 5%;
+    padding: 10px;
+    animation:backInRight; 
     animation-duration: 2s;
-           box-shadow: 8px 12px rgba(0, 0, 0, 0.432);
+    box-shadow: 8px 12px rgba(0, 0, 0, 0.432);
 }
-/* --------------------- */ 
- 
 .rowz:nth-child(even) > 
 .detail{
     background-color: rgba(0, 0, 0, 0.69);
@@ -116,7 +102,6 @@ img{
  .description{
     color: white;
     background-color: rgba(0, 0, 0, 0.69);
-    /* background-color: rgba(255, 255, 255, 0.697); */
     border-radius: 10px;
     float: left;
     width: 60%;
@@ -125,7 +110,7 @@ img{
     padding: 10px;
     animation:backInLeft; 
     animation-duration: 2s;
-       box-shadow: 8px 12px rgba(0, 0, 0, 0.432);
+    box-shadow: 8px 12px rgba(0, 0, 0, 0.432);
 }
 
 .rowz:last-child{
