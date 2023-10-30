@@ -1,32 +1,28 @@
 <template>
   <div class="project">
-    <div class="container">
-      <div class="card" v-for="project in project" :key="project.id">
-        <div class="projectImg">
-          <img :src="project.image" class="card-img-top" alt="project.project" loading="lazy">
-        </div>
-        <div class="card-body">
+    <div class="card" v-for="project in project" :key="project.id">
+      <div class="info">
+        <div class="row">
           <h5 class="card-title">{{ project.project }}</h5>
           <p class="card-text">{{ project.Description }}</p>
-          <div class="row center">
-            <div class="col">
-              <a :href="project.codeUrl" class="btn" target="_blank">
-                <i class="bi bi-code"></i>
-                <br>
-                code
-              </a>
-            </div>
-            <div class="col">
-              <a :href="project.showUrl" class="btn" target="_blank">
-                <i class="bi bi-laptop"></i>
-                <br>
-                view
-              </a>
-            </div>
+        </div>
+        <div class="row">
+          <div class="col text-center">
+            <a :href="project.codeUrl" target="_blank">
+              <i class="bi bi-code"></i>
+              code
+            </a>
+          </div>
+          <div class="col text-center">
+            <a :href="project.showUrl" target="_blank">
+              <i class="bi bi-laptop"></i>
+              view
+            </a>
           </div>
         </div>
       </div>
     </div>
+
   </div>
 </template>
 
@@ -55,31 +51,75 @@ export default {
   ---second-color: rgba(10, 18, 33, 0.59);
 }
 
-.container {
+.card{
+  background-image: url('https://i.postimg.cc/VkySz1Fg/spaceman3.jpg');
+  background-size: cover;
+  width: 400px;
+  height: 40vh;
+  border: 1px solid #004d7a;
+  margin: 10px;
+}
+
+.info{
+  background-color:rgba(0, 0, 0, 0.432);
+  width: 95%;
+  height: 95%;
+  margin: 10px;
+}
+
+.row:first-child{
+  position: absolute;
+  top: 15px;
+  padding: 60px;
+  color: white;
+}
+.row{
+  position: absolute;
+  bottom: 10px;
+  padding: 15px;
+  width: 100%;
+}
+
+.row .col{
+width: 90%;
+}
+a{
+  background-color: white;
+  padding: 10px 30px;
+  width: 100%;
+  text-decoration: none;
+  color: black;
+  font-weight: 900;
+  border-radius: 10px;
+}
+/* .container {
   display: grid;
   grid-template-columns: auto auto auto;
 
-}
-.center{
+} */
+/* .center{
   display: grid;
   grid-template-columns: auto auto;
   justify-content: center;
-}
-
+} */
+/* 
 .container img{
 width: 200px;
 height: 200px;
 object-fit: contain;
 aspect-ratio: 3/5;
 border-radius:10px;
-}
+} */
 
 .project {
   background-color:var(---background-color2);
   background-size: cover;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
 }
 
-.card {
+/* .card {
   margin: 5px;
   text-align: center;
   backdrop-filter: blur(6px) saturate(165%);
@@ -89,9 +129,9 @@ border-radius:10px;
   border: 1px solid rgba(255, 255, 255, 0.125);
   color: white;
   transition: 1s;
-}
+} */
 /* Animation */
-.card:nth-child(1){
+/* .card:nth-child(1){
     animation:backInRight; 
   animation-duration: 2s;
 }
@@ -114,17 +154,18 @@ border-radius:10px;
 .card:nth-child(6){
     animation:backInLeft; 
   animation-duration: 2s;
-}
+} */
  
 
-i {
+/* i {
   padding: 10px;
 }
 
 .btn {
   background-color: var(---background-color2);
   color: white;
-}
+  /* box-shadow: 2px 2px rgba(0, 0, 0, 0.796); */
+
 
 @media(width < 900px) {
   .container {
