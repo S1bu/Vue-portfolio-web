@@ -1,27 +1,25 @@
 <template >
     <div class="testimonial">
-        <center>
-            <div class="card" v-for="testimonial in testimonials" :key="testimonial.id">
-                <div class="row">
-                    <center>
-                        <br>
-                        <h5>{{ testimonial.fullname }} ({{ testimonial.Relation }})</h5>
-                        <img :src="testimonial.image" alt="">
-                    </center>
-                </div>
-            <div class="row">
-        
-            <div class="col-12">
-                <center>
-                </center>
-                <p>{{ testimonial.Description }}</p>     
+ 
+            <div class="rowz" v-for="testimonial in testimonials" :key="testimonial.id">
+                <!-- <center> -->
+                    <div class=" description text-center">
+                <br>
+                <br>
+               <p>"{{ testimonial.Description }}"</p> 
             </div>
+            <div class="detail text-center">
+                <br>
+                <h5 class="card-title">{{ testimonial.fullname }} </h5>
+                <img :src="testimonial.image" class="card-img-top" :alt="testimonial.fullname" loading="lazy">
+                <h6>({{ testimonial.Relation }})</h6>
+                
             </div>
-          
-        
+           
         </div>
-        </center>
-       
+      
+    </div>
+   
         <!-- <div class="container">
             <div class="card" v-for="testimonial in testimonials" :key="testimonial.id">
                 <div class="image">
@@ -33,7 +31,7 @@
                 </div>
             </div>
         </div> -->
-    </div>
+  
 </template>
 
 <script>
@@ -50,66 +48,107 @@ export default {
 </script>
 
 <style  scoped>
-:root {
-    ---background-color2 :#004d7a;
-    ---alternative-color: gray;
-    ---text-color:white;
-
-    --background-color: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
-    ---main-color: midnightblue;
-    ---second-color:  rgba(0, 0, 0, 0.736);
+.testimonial{
+    background-color: #004d7a;
+    width: 100%;
+  
 }
-.testimonial {
-    background-color: var(---background-color2); 
-}
-
-.card:nth-child(1){
-    animation:backInRight; 
-  animation-duration: 2s;
-}
-.card:nth-child(2){
-    animation:backInLeft; 
-  animation-duration: 2s;
-}
-.card:nth-child(3){
-    animation:backInRight; 
-  animation-duration: 2s;
-}
-.card:nth-child(4){
-    animation:backInLeft; 
-  animation-duration: 2s;
-}
-.card:nth-child(5){
-    animation:backInRight; 
-  animation-duration: 2s;
-}
-.card{
-    width: 80%;
-    background-color: rgba(0, 0, 0, 0.736);
-    color: white;
-    margin: 5px;
-}
-
-.card img{
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    /* aspect-ratio: 3/5; */
-    /*  */
+/* .row{ */
+    /* width: 100%; */
+    /* border: 2px solid red; */
+    /* margin: 10px 10px; */
+/* } */
+img{
+    width: 150px;
+    height: 150px;
     border: 2px solid white;
-    border-radius: 100%;
+    border-radius: 50%;
+    object-fit: contain;
+    aspect-ratio: 2/5;
 }
-.card p{
-    margin-top:3%;
-    margin: 20px;
+ 
+ 
+/* ---------------- */ 
+.rowz{
+    margin:100px;
+   transition: 1s;
 }
-.col-9 h5{
-    font-weight: 900;
+.rowz:hover{
+    margin:150px;
+    transition: 1s;
+ 
 }
-hr{
-    width: 70%;
-    /* text-align: center; */
+.rowz:nth-child(odd) > 
+.detail{
+    background-color: rgba(0, 0, 0, 0.69);
+    color: white;
+    border-radius: 10px;
+    float: left;
+    width: 35%;
+    height: 35vh;
+     margin-top: 5%;
+     animation:backInLeft; 
+    animation-duration: 2s;
+           box-shadow: 8px 12px rgba(0, 0, 0, 0.432);
 }
+
+.rowz:nth-child(odd)>
+.description{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.69);
+    /* background-color: rgba(255, 255, 255, 0.697); */
+    border-radius: 10px;
+    float: right;
+    width: 60%;
+    height: 35vh;
+     margin-top: 5%;
+     padding: 10px;
+     animation:backInRight; 
+    animation-duration: 2s;
+           box-shadow: 8px 12px rgba(0, 0, 0, 0.432);
+}
+/* --------------------- */ 
+ 
+.rowz:nth-child(even) > 
+.detail{
+    background-color: rgba(0, 0, 0, 0.69);
+    color: white;
+    border-radius: 10px;
+    float: right;
+    width: 35%;
+    height: 35vh;
+    margin-top: 5%;
+    animation:backInRight; 
+    animation-duration: 2s;
+    box-shadow: 8px 12px rgba(0, 0, 0, 0.432);
+}
+
+
+.rowz:nth-child(even)>
+ .description{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.69);
+    /* background-color: rgba(255, 255, 255, 0.697); */
+    border-radius: 10px;
+    float: left;
+    width: 60%;
+    height: 35vh;
+    margin-top: 5%;
+    padding: 10px;
+    animation:backInLeft; 
+    animation-duration: 2s;
+       box-shadow: 8px 12px rgba(0, 0, 0, 0.432);
+}
+
+.rowz:last-child{
+.detail{
+    margin-bottom: 20px;
+}
+.description{
+    margin-bottom: 20px;
+}
+}
+
 @media(width < 900px) {
  
 }
