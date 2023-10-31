@@ -92,24 +92,7 @@ a{
   font-weight: 900;
   border-radius: 10px;
 }
-/* .container {
-  display: grid;
-  grid-template-columns: auto auto auto;
 
-} */
-/* .center{
-  display: grid;
-  grid-template-columns: auto auto;
-  justify-content: center;
-} */
-/* 
-.container img{
-width: 200px;
-height: 200px;
-object-fit: contain;
-aspect-ratio: 3/5;
-border-radius:10px;
-} */
 
 .project {
   background-color:var(---background-color2);
@@ -119,62 +102,14 @@ border-radius:10px;
   justify-content: center;
 }
 
-/* .card {
-  margin: 5px;
-  text-align: center;
-  backdrop-filter: blur(6px) saturate(165%);
-  -webkit-backdrop-filter: blur(6px) saturate(165%);
-  background:rgba(0, 0, 0, 0.736);
-  border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.125);
-  color: white;
-  transition: 1s;
-} */
-/* Animation */
-/* .card:nth-child(1){
-    animation:backInRight; 
-  animation-duration: 2s;
-}
-.card:nth-child(2){
-  animation:backInRight; 
-  animation-duration: 2s;
-}
-.card:nth-child(3){
-  animation:backInRight; 
-  animation-duration: 2s;
-}
-.card:nth-child(4){
-    animation:backInLeft; 
-  animation-duration: 2s;
-}
-.card:nth-child(5){
-    animation:backInLeft; 
-  animation-duration: 2s;
-}
-.card:nth-child(6){
-    animation:backInLeft; 
-  animation-duration: 2s;
-} */
- 
-
-/* i {
-  padding: 10px;
-}
-
-.btn {
-  background-color: var(---background-color2);
-  color: white;
-  /* box-shadow: 2px 2px rgba(0, 0, 0, 0.796); */
-
-
 @media(width < 900px) {
-  .container {
+  .project {
     grid-template-columns: auto;
   }
 }
 
 @media(width < 700px) {
-  .container {
+  .project {
     grid-template-columns: auto;
   }
 }
