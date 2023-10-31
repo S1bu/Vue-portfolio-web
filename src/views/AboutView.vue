@@ -6,18 +6,23 @@
         <img src="https://i.postimg.cc/R0Y36NgM/C12-Sibelsiso-Dyan-sp-2.png" atl="me" loading="lazy">
       </div>
     </div>
+    <div class="row">
+      <div class="col">
+        <h4>Who am I:</h4>
+        <p style="margin: 40px;padding: 0;">I am a full-stack web development student 💻 at Life Choices Academy, with 6 months 
+              of experience working on real-world projects. I am currently seeking an internship related to software development.
+               My passion lies within technology 🤖, more specifically web development, where I can use code to impact people's lives. 
+               👨🏾‍💻.</p>
+      </div>
+            
+          </div>
     <div class="row align-items-start">
           <center>
          
           </center>
-          <div class="col col_1">
-            <p>Languages:</p>
-            <p>{{ language1 }}</p>
-            <p>{{ language2 }}</p>
-            <p>{{ language3 }}</p>
-          </div>
-          <div class="col col_2">
-            <p>Hobbies:</p>
+       
+          <div class="col">
+            <h4>Hobbies:</h4>
             <p>{{ hobbie1 }}</p>
             <p>{{ hobbie2 }}</p>
             <p>{{ hobbie3 }}</p>
@@ -38,8 +43,8 @@ export default {
       language1: 'Isixhosa',
       language2: 'English',
       language3: 'Isizulu',
-      country: 'South Africa',
-      Province: 'Western Cape',
+      country: 'South Africa🌍',
+      Province: 'Western Cape 📍',
       Town: 'Gugulethu',
       city: 'Cape Town',
       postalCode: '7460',
@@ -63,6 +68,11 @@ export default {
 }
 /* ------ MODAL  ------  */
 /* --------------------- */
+h4{
+  text-shadow: 2px 5px rgba(0, 0, 0, 0.432);
+  color: white;
+  font-weight: 900;
+}
 .going-up{
   animation:backInUp; 
   animation-duration: 2s;
@@ -70,25 +80,23 @@ export default {
 .col_1{
   animation:backInRight; 
   animation-duration: 2s;
-  border: 2px solid white;
+  /* border: 2px solid white; */
   border-radius: 10px;
   margin: 5px; 
 }
 .col_2{
   animation:backInLeft; 
   animation-duration: 2s;
-  border: 2px solid white; 
+  /* border: 2px solid white;  */
   width: 90%;
   border-radius: 10px;
   margin: 5px;
   
 }
 .row{
-  background-color: rgba(0, 0, 0, 0.84) ;
-  border: 2px solid white;
+  /* border: 2px solid white; */
   margin: 5px;
   border-radius:10px ;
-  /* width: 90%; */
 }
 .holder {
   background-color: var(---background-color2);
