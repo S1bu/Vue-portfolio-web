@@ -49,9 +49,9 @@ export default {
       city: 'Cape Town',
       postalCode: '7460',
       hobbie1: 'Coding👨🏾‍💻',
-      hobbie2: 'Googling new technology🤖',
-      hobbie3: 'Reading personal development e-books📚',
-      hobbie4: 'Watching sci-fi movies 🍿🎬 ',
+      hobbie2: 'Exploring new technology🤖',
+      hobbie3: 'learning new skills📚',
+      hobbie4: 'Watching sci-fi movies 🍿🎬',
       hobbie5: 'Hiking⛰️🥾'
     };
   }
