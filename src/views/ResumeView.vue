@@ -2,7 +2,6 @@
   <div class="page">
 
     <div class="resume ">
-      <center>hover over card to see more info</center>
       <section id="education"></section>
       <!-- educatioin section -->
       <div class="holder">
