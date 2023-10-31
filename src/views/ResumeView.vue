@@ -161,8 +161,9 @@ padding: 10px 20px;
  
 
 .card:hover .card-body {
-  display: block;
-  transition: ease-in;
+   display: block;
+  animation:fadeIn; 
+  animation-duration: 2s;
 }
 
 
