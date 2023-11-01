@@ -14,8 +14,7 @@
                     <img :src="education.logo" :alt="education.name" loading="lazy">
                   </div>
                   <center>{{ education.name }} <i class="bi bi-hand-index"></i></center>
-                  <br>
-            
+                  <br>          
                   <div class="card-body">
                     <div class="logo text-center">
                       <img :src="education.logo" :alt="education.name" loading="lazy">
@@ -43,7 +42,7 @@
                   </div>
                   <center>{{ skill.name }} <i class="bi bi-hand-index"></i></center>
                   <br>
-                  <!-- <center> <a href="#">More...</a></center> -->
+                
                   <div class="card-body">
                     <div class="logo text-center">
                       <img :src="skill.logo" :alt="skill.name" loading="lazy">
@@ -59,7 +58,6 @@
           </div>
         </div>
       </div>
-      <!-- work experince section -->
       <section id="work"></section>
       <div class="holder">
         <center>
@@ -72,7 +70,6 @@
                   </div>
                   <center>{{ work.institution }} <i class="bi bi-hand-index"></i></center>
                   <br>
-
                   <div class="card-body">
                     <div class="logo text-center">
                       <img :src="work.image" class="card-img-top" :alt="work.institution" loading="lazy">
@@ -111,7 +108,6 @@ export default {
   },
   name: 'ResumeView',
   components: {
-    //  import registered here
   
   }
 };
@@ -126,9 +122,6 @@ export default {
   ---second-color: rgba(10, 18, 33, 0.59);
 }
 
-/*the info that must disapear*/
-
-
 a{
   color: white;
   margin-top: 10px ;
@@ -141,15 +134,13 @@ padding: 10px 20px;
   height:5rem;
 }
 .card-body {
-  position: fixed; /* Change position to fixed */
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 600px;
   height: auto;
   background-color: var(---background-color2);
-  /* background-image: url("https://cdn.pixabay.com/photo/2023/07/14/08/45/futuristic-city-8126526_1280.jpg");
-  background-size: cover; */
   color: white;
   padding: 20px;
   border: 1px solid #ccc;
@@ -161,7 +152,7 @@ padding: 10px 20px;
  
 
 .card:hover .card-body {
-   display: block;
+  display: block;
   animation:fadeIn; 
   animation-duration: 2s;
 }
@@ -172,7 +163,9 @@ padding: 10px 20px;
 }
 
 h1 {
-color:white;
+  color:white;
+  text-shadow: 2px 5px rgba(0, 0, 0, 0.432);
+  font-weight: 900;
 }
  
 .holder {
