@@ -9,7 +9,32 @@
           <h1>Education</h1>
         </center>
         <div class="container-fluid">
-          <div class="card"  v-for="education in education" :key="education.id">  
+          <div class="edu-holder">
+            <div class="edu-card"  v-for="education in education" :key="education.id">
+              <div class="edu-title">
+            <center>
+              <h4>{{ education.name }}</h4>
+            </center>
+           </div>
+              <div class="edu-content">
+              <!-- the logo -->
+           <div class="edu-img text-center">
+            <img :src="education.logo" :alt="education.name" loading="lazy">
+           </div>
+              
+
+              
+              <!-- info -->
+              <div class="info">
+                <p class="card-text"> Qualification: {{ education.Qualification }}</p>
+                <p class="card-text"> Course: {{ education.Level }}</p>
+                <p class="card-text"> Year: {{ education.year }}</p>    
+              </div>
+              </div>
+        </div>
+          </div>
+          
+          <!-- <div class="card"  v-for="education in education" :key="education.id">  
                   <div class="logo text-center">
                     <img :src="education.logo" :alt="education.name" loading="lazy">
                   </div>
@@ -23,7 +48,7 @@
               <p class="card-text"><span class="bold">Course</span> : {{ education.Level }}</p>
               <p class="card-text"><span class="bold">Year</span> : {{ education.year }}</p>          
                 </div>
-                </div>
+                </div> -->
           </div>
 
       </div>
@@ -121,6 +146,103 @@ export default {
   --background-color: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
   ---second-color: rgba(10, 18, 33, 0.59);
 }
+/* ------------------------------------------- */
+/* education section */
+/* ------------------------------------------- */
+h4{
+  font-weight: 900;
+  color: white;
+  background-color: black;
+  padding: 10px;
+  -webkit-border-top-left-radius: 10px;
+-webkit-border-top-right-radius: 10px;
+-moz-border-radius-topleft: 10px;
+-moz-border-radius-topright: 10px;
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+}
+.edu-holder{
+  display: grid;
+  grid-template-columns: auto auto;
+  /* border: 1px solid red; */
+}
+
+.info p{
+color: white;
+}
+
+.edu-card{
+  width: 500px;
+  margin: 10px;
+ border-radius: 20px;
+}
+.edu-card:nth-child(odd){
+  animation:backInLeft; 
+  animation-duration: 2s;
+}
+.edu-card:nth-child(even){
+  animation:backInRight; 
+  animation-duration: 2s;
+}
+.edu-card:hover .edu-content{
+  opacity: 1;
+  transition: 1s;
+}
+/* edu stuff */
+.edu-card:nth-child(1){
+  background-image: url('https://i.postimg.cc/zXTBtjfC/Screenshot-2023-11-02-093721.png');
+  background-size: cover;
+}
+.edu-card:nth-child(2){
+  background-image: url('https://i.postimg.cc/SjFrfrxT/Screenshot-2023-11-02-093329.png');
+  background-size: cover;
+}
+
+.edu-card:nth-child(3){
+  background-image: url('https://i.postimg.cc/FHxZ005p/Screenshot-2023-11-02-093034.png');
+  background-size: cover;
+}
+.edu-card:nth-child(4){
+  background-image: url('https://i.postimg.cc/DfHtHPXz/Screenshot-2023-11-02-091053.png');
+  background-size: cover;
+}
+.edu-card:nth-child(5){
+  background-image: url('https://i.postimg.cc/GmgLBsfT/Screenshot-2023-11-02-091425.png');
+  background-size: cover;
+}
+.edu-card:nth-child(6){
+  background-image: url('https://i.postimg.cc/DfHtHPXz/Screenshot-2023-11-02-091053.png');
+  background-size: cover;
+}
+.edu-card:nth-child(7){
+  background-image: url(' https://i.postimg.cc/3JM3mT99/Screenshot-2023-11-02-091259.png');
+  background-size: cover;
+}
+/* --------- */
+
+.edu-content{
+  background-color: rgba(0, 0, 0, 0.736);
+  width:480px;
+  margin: 10px;
+  text-align: center;
+  opacity: 0;
+  transition: 1s;
+  border-radius: 10px;
+}
+
+.edu-content img{
+  object-fit: contain;
+  aspect-ratio: 3/5;
+  width: 70px;
+  height: 70px;
+  /* border: 1px solid red; */
+  
+}
+/* ------------------------------------------- */
+/* ------------------------------------------- */
+/* ------------------------------------------- */
+
+
 
 a{
   color: white;
