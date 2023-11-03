@@ -1,5 +1,52 @@
 <template>
   <div class="contact">
+    <div class="box">
+      <!-- 1st -->
+      <div><i class="bi bi-laptop"></i></div>
+      <!-- 2 -->
+      <div><i class="bi bi-github"></i></div>
+      <!-- 3 -->
+      <div><i class="bi bi-code-slash"></i></div>
+      <!-- 4 -->
+      <div><i class="bi bi-briefcase-fill"></i></div>
+      <!-- 5 -->
+      <div><i class="bi bi-android2"></i></div>
+      <!-- 6 -->
+      <div><i class="bi bi-whatsapp"></i></div>
+      <!-- 7 -->
+      <div><i class="bi bi-facebook"></i></div>
+      <!-- 8 -->
+      <div><i class="bi bi-android"></i></div>
+      <!-- 9 -->
+      <div><i class="bi bi-qr-code"></i></div>
+      <!-- 10 -->
+      <div><i class="bi bi-code"></i></div>
+      <!-- 11 -->
+      <div><i class="bi bi-android2"></i></div>
+      <!-- 12 -->
+      <div><i class="bi bi-facebook"></i></div>
+      <!-- 13 -->
+      <div><i class="bi bi-box"></i></div>
+      <!-- 14 -->
+      <div><i class="bi bi-bar-chart"></i></div>
+      <!-- --- -->
+      <!-- --- -->
+      <!-- --- -->
+      <!-- 15 -->
+      <div><i class="bi bi-airplane"></i></div>
+
+      <!-- 16 -->
+      <div><i class="bi bi-backpack2"></i></div>
+
+      <!-- 17 -->
+      <div><i class="bi bi-balloon"></i></div>
+
+      <!-- 18 -->
+      <div><i class="bi bi-bicycle"></i></div>
+
+      <!-- 19 -->
+      <div><i class="bi bi-brilliance"></i></div>
+    </div>
     <div class="container-fluid">
       <div class="row">
         <div class="col-sm-8">
@@ -153,6 +200,11 @@ form p {
   .container {
     width: 100%;
   }
+
+  img{
+    width: 80px;
+  }
+
 }
 
 @media(width < 400px) {
@@ -164,7 +216,7 @@ form p {
     font-size: 10px;
   }
 
-  .ol-sm-8 {
+  .col-sm-8 {
     margin-bottom: 10%;
   }
 
