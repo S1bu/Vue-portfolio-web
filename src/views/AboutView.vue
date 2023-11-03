@@ -7,7 +7,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="col">
+      <div class="col text-center">
         <h4>Who am I:</h4>
         <p style="margin: 40px;padding: 0;">I am a full-stack web development student 💻 at Life Choices Academy, with 6 months 
               of experience working on real-world projects. I am currently seeking an internship related to software development.
@@ -16,12 +16,12 @@
       </div>
             
           </div>
-    <div class="row align-items-start">
+    <div class="row">
           <center>
          
           </center>
        
-          <div class="col">
+          <div class="col text-center">
             <h4>Hobbies:</h4>
             <p>{{ hobbie1 }}</p>
             <p>{{ hobbie2 }}</p>
@@ -29,6 +29,21 @@
             <p>{{ hobbie4 }}</p>
             <p>{{ hobbie5 }}</p>
           </div>
+        </div>
+        <div class="row text-center">
+          <h4>Inspiration(s):</h4>
+
+          <div class="insp-card text-center">
+            <p>{{ inspiration1 }}</p>
+            <img :src="inspiration_pic1" alt="">
+          </div>
+          <!--  -->
+          
+          <div class="insp-card text-center">
+            <p>{{ inspiration2 }}</p>
+            <img :src="inspiration_pic2" alt="">
+          </div>
+          
         </div>
 </div>
 </template>
@@ -52,7 +67,11 @@ export default {
       hobbie2: 'Exploring new technology🤖',
       hobbie3: 'learning new skills📚',
       hobbie4: 'Watching sci-fi movies 🍿🎬',
-      hobbie5: 'Hiking⛰️🥾'
+      hobbie5: 'Hiking⛰️🥾',
+      inspiration1 :'Dan pena',
+      inspiration_pic1: 'https://i.postimg.cc/dVjy5kR0/3c0ad48cb3992ee6456583bad2a69aa6.jpg',
+      inspiration2:'Elon Musk',
+      inspiration_pic2: 'https://i.postimg.cc/xTv4q1Q2/ac7e03044fb7469b99a3190165ffb1c2.jpg',
     };
   }
 }
@@ -65,6 +84,22 @@ export default {
   ---background-color2 :#004d7a;
   ---alternative-color: gray;
   ---text-color:white;
+}
+.insp-card{
+  text-align: center;
+  width: 300px;
+  margin: 10px;
+}
+
+.insp-card img{
+  width: 400px;
+  height: 400px;
+object-fit:contain
+}
+.card{
+  background-color: rgba(0, 0, 0, 0.432);
+  width: auto;
+  text-align: center;
 }
 /* ------ MODAL  ------  */
 /* --------------------- */
@@ -105,7 +140,7 @@ h4{
 
 p{
   color:white;
-  margin-left: 10%;
+  /* margin-left: 10%; */
 }
 h1{
   color: white;
@@ -121,7 +156,7 @@ h1{
   border-radius: 10px;
   margin: 5px;
  }
- img {
+.image-holder img {
   width: 200px;
   height: 200px;
   object-fit: contain;
