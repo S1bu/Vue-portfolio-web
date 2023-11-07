@@ -30,21 +30,21 @@
             <p>{{ hobbie5 }}</p>
           </div>
         </div>
-        <div class="row text-center">
+        <!-- <div class="row text-center">
           <h4>Inspiration(s):</h4>
 
           <div class="insp-card text-center">
             <p>{{ inspiration1 }}</p>
             <img :src="inspiration_pic1" alt="">
           </div>
-          <!--  -->
+       
           
           <div class="insp-card text-center">
             <p>{{ inspiration2 }}</p>
             <img :src="inspiration_pic2" alt="">
           </div>
           
-        </div>
+        </div> -->
 </div>
 </template>
 
