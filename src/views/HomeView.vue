@@ -1,5 +1,5 @@
 <template>
-  <div class="contact">
+  <div class="holder">
     <div class="box">
       <!-- 1st -->
       <div><i class="bi bi-laptop"></i></div>
@@ -29,129 +29,88 @@
       <div><i class="bi bi-box"></i></div>
       <!-- 14 -->
       <div><i class="bi bi-bar-chart"></i></div>
-      <!-- --- -->
-      <!-- --- -->
-      <!-- --- -->
       <!-- 15 -->
-      <div><i class="bi bi-airplane"></i></div>
-
-      <!-- 16 -->
+      <div><i class="bi bi-airplane"></i></div> 
+      <!-- 16 -->     
       <div><i class="bi bi-backpack2"></i></div>
-
       <!-- 17 -->
       <div><i class="bi bi-balloon"></i></div>
-
       <!-- 18 -->
       <div><i class="bi bi-bicycle"></i></div>
-
       <!-- 19 -->
       <div><i class="bi bi-brilliance"></i></div>
-    </div>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-sm-8">
-          <form action="https://formspree.io/f/mpzebbdr" method="POST">
-            <label for="Fname">First name</label><br>
-            <input type="text" class="name" name="name" placeholder="Name" required
-              oninvalid="this.setCustomValidity('Please enter your name')" oninput="this.setCustomValidity('')">
-            <p class="nameVlid"></p>
-            <br>
-            <label for="Lname">Last name</label><br>
-            <input type="text" class="surname" name="last name" placeholder="surname" required
-              oninvalid="this.setCustomValidity('Please enter last name')" oninput="this.setCustomValidity('')">
-            <p class="surnameVlid"></p>
-            <br>
-            <label for="e-mail">e-mail</label><br>
-            <input type="e-mail" class="e-mail" name="e-mail" placeholder="@" required
-              oninvalid="this.setCustomValidity('Please enter e-mail')" oninput="this.setCustomValidity('')">
-            <p class="emailVlid"></p>
-            <br>
-            <label for="message">Message</label><br>
-            <textarea type="text" class="message" name="message" placeholder="Dear Sibusiso..." required
-              oninvalid="this.setCustomValidity('Please enter message')" oninput="this.setCustomValidity('')"></textarea>
-            <p class="messageVlid"></p>
-            <!-- button -->
-            <button type="submit" class="submit btn">Send <i class="bi bi-chat-quote"></i></button>
-          </form>
-        </div>
-
-        <div class="col-sm-4 text-center">
-          
-          <div class="details">
-         
-            <img src="https://i.postimg.cc/tR632Q4p/logo-img.png" loading="lazy" alt="logo">
-            <div class="info">
-              <p><i class="bi bi-whatsapp"></i> 0609479185</p>
-              <p><i class="bi bi-linkedin"></i> www.linkedin.com/in<br>/sibusiso-dyan-0004</p>
-              <P><i class="bi bi-geo-alt"></i> South Africa,Cape town</P>
-            </div>
-          </div>
-        </div>
       </div>
+      
+    <div class="container">
+      <div class="row">
+     
+      <div class="col">
+
+        <h1>
+          <span class="career">  {{ name }} {{ surname }}</span>
+        </h1>
+        <h5>
+            {{ partOfSentence }} {{ career }}
+          </h5>
+          <br>
+          <div class="row">
+            <p style="margin: 0;padding: 0;">I am a full-stack web development student 💻 at Life Choices Academy, with 6 months 
+              of experience working on real-world projects. I am currently seeking an internship related to software development.
+               My passion lies within technology 🤖, more specifically web development, where I can use code to impact people's lives. 
+               👨🏾‍💻.</p>
+          </div>
+         
+          <p class="btn-holder">
+            <a href="https://docs.google.com/document/d/1JjMBUvuxd-KF1SndmMJ8Iy3-VMUZNK2_MTNq18YFjpo/edit?usp=sharing">CV <i class="bi bi-file-text"></i></a>
+          </p>
+      </div>
+      <div class="col text-center">
+        <br>
+        <br>
+        <img src="https://i.postimg.cc/R0Y36NgM/C12-Sibelsiso-Dyan-sp-2.png" atl="me" loading="lazy">
+      </div>
+    </div>
     </div>
   </div>
 </template>
-
-<script>
-export default {
-  methods: {
-  }
-}
-</script>
-
 <style scoped>
 :root {
   ---background-color2 :#004d7a;
-  ---alternative-color: gray;
-  ---text-color:white;
-
   --background-color: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
   ---main-color: midnightblue;
   ---second-color: rgba(10, 18, 33, 0.59);
 }
+ 
+.container{
+  margin-top: 6%;
+}
+.career {
+  color: var(---second-color);
+  font-weight: 900;
 
-.col-4 {
-  background-color: var(---second-color);
+
 }
 
-.contact {
-  background-color: var(---background-color2);
+.holder {
+  background-color: #004d7a;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.col  h1 {
+  text-shadow: 2px 5px rgba(0, 0, 0, 0.432);
+  animation: shakeY; 
+  animation-duration: 5s;
+  animation-iteration-count: infinite; /* This is correct */
 }
 
-.container-fluid {
-  margin-top: 10px;
-  color: white;
-  background-color: var(---second-color);
-  border-radius: 10px;
-  width: 90%;
-  padding: 30px;
-  margin-top: 10%;
-  margin-bottom: 10%;
+.col p{
+  padding-top: 30px;
 }
-
-.text-center {
-  background-color: var(---second-color);
-  animation: bounce;
-  animation-duration: 2s;
+.row p {
+color: white;
 }
-
-.details {
-  padding: 10px 0;
-  margin: 10px;
-  /* margin-top: 10%; */
-  background-color: rgba(0, 0, 0, 0.736);
-}
-
-.details img {
-  border-radius: 10px;
-  padding-top: 40px;
-}
-
-.info {
-  margin-top: 10%;
-}
-
-.btn {
+ 
+.col a{
   text-decoration:none;
   background-color:white;
   font-weight: bold;
@@ -159,74 +118,63 @@ export default {
   padding: 10px 80px;
   box-shadow: 5px 10px rgba(0, 0, 0, 0.432);
   transition: 1s;
-  border-radius: 10px; 
-  /* animation */
-  animation:backInLeft; 
-  animation-duration: 2s;
+  border-radius: 10px;  
 }
-.btn:hover{
+.col a:hover{
   background-color:black;
   color: white;
   box-shadow: none;
   transition: 1s;
 }
-
-textarea {
-  padding: 10px;
-  width: 70%;
-  border-radius: 10px;
-  border: none;
+.btn-holder{
+  animation:backInLeft; 
+  animation-duration: 2s;
+}
+.col img{
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+  aspect-ratio: 3/10;
+  border-radius:50%;
+  border:2px solid white;
+  margin-top: 60px;
+  background-color:white;
+  z-index: 1;
+}
+h1 {
+  color: white;
+  margin-top: 20%;
 }
 
-input {
-  padding: 10px;
-  width: 70%;
-  border-radius: 10px;
-  border: none;
+h5{
+  color: white;
 }
-
-form p {
-  color: red;
-  font-weight: 800;
-}
-
-@media(width < 900px) {
-  .container {
-    width: 100%;
+@media (width < 900px) {
+  h1 {
+    margin-top: 20%;
   }
 }
 
-@media(width < 700px) {
-  .container {
-    width: 100%;
+@media (width < 600px) {
+  h1 {
+    margin-top: 60%;
   }
-
-  img{
-    width: 80px;
+}
+</style>
+<script>
+export default {
+  data() {
+    return {
+      name: 'Sibusiso',
+      surname: 'Dyan',
+      partOfSentence: 'an aspiring',
+      career: 'Software developer',
+      image1: 'https://i.postimg.cc/T1ktSVTS/sibusisopic.png',
+      backgroundImage: 'https://i.postimg.cc/pTwJhPP0/image-cool-bg.jpg'
+    }
   }
-
 }
 
-@media(width < 400px) {
-  label {
-    font-size: 10px;
-  }
 
-  ::placeholder {
-    font-size: 10px;
-  }
-
-  .col-sm-8 {
-    margin-bottom: 10%;
-  }
-
-  .col-sm-4 {
-    margin-top: 10%;
-  }
-
-  form p {
-    color: red;
-    font-weight: 800;
-    font-size: 10px;
-  }
-}</style>
+</script>
+  
