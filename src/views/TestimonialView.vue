@@ -1,8 +1,9 @@
 <template >
     <div class="testimonial">
- 
+        <br>
+ <h1>What poeple have to say about me</h1>
             <div class="rowz" v-for="testimonial in testimonials" :key="testimonial.id">
-                <!-- <center> -->
+              
                     <div class=" description text-center">
                 <br>
                 <br>
@@ -21,7 +22,7 @@
         </div>
       
     </div>
-   
+  
 </template>
 
 <script>
@@ -43,7 +44,7 @@ export default {
     width: 100%;
   
 }
-
+ 
 img{
     width: 150px;
     height: 150px;
@@ -51,7 +52,12 @@ img{
     aspect-ratio: 3/5;
 }
  
- 
+ h1{
+    text-align: center;
+    text-shadow: 2px 5px rgba(0, 0, 0, 0.432);
+  color: white;
+  font-weight: 900;
+ }
 /* ---------------- */ 
 .rowz{
     margin:100px;
@@ -70,25 +76,26 @@ img{
     float: left;
     width: 35%;
     height: 35vh;
-    margin-top: 5%;
-    animation:backInLeft; 
+     margin-top: 5%;
+     animation:backInLeft; 
     animation-duration: 2s;
-    box-shadow: 8px 12px rgba(0, 0, 0, 0.432);
+           box-shadow: 8px 12px rgba(0, 0, 0, 0.432);
 }
 
 .rowz:nth-child(odd)>
 .description{
     color: white;
     background-color: rgba(0, 0, 0, 0.69);
+    /* background-color: rgba(255, 255, 255, 0.697); */
     border-radius: 10px;
     float: right;
     width: 60%;
     height: 35vh;
-    margin-top: 5%;
-    padding: 10px;
-    animation:backInRight; 
+     margin-top: 5%;
+     padding: 10px;
+     animation:backInRight; 
     animation-duration: 2s;
-    box-shadow: 8px 12px rgba(0, 0, 0, 0.432);
+           box-shadow: 8px 12px rgba(0, 0, 0, 0.432);
 }
 /* --------------------- */ 
  
@@ -111,6 +118,7 @@ img{
  .description{
     color: white;
     background-color: rgba(0, 0, 0, 0.69);
+    /* background-color: rgba(255, 255, 255, 0.697); */
     border-radius: 10px;
     float: left;
     width: 60%;
@@ -119,7 +127,7 @@ img{
     padding: 10px;
     animation:backInLeft; 
     animation-duration: 2s;
-    box-shadow: 8px 12px rgba(0, 0, 0, 0.432);
+       box-shadow: 8px 12px rgba(0, 0, 0, 0.432);
 }
 
 .rowz:last-child{
