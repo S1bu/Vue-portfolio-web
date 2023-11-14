@@ -54,17 +54,86 @@ export default {
 .card{
   background-image: url('https://i.postimg.cc/VkySz1Fg/spaceman3.jpg');
   background-size: cover;
+  background-position: center;
   width: 400px;
   height: 40vh;
   border: 1px solid #004d7a;
   margin: 10px;
+  transition: 1s;
+}
+
+.card:nth-child(1):hover{
+  background-image: url('https://i.postimg.cc/8cYkY7yq/Screenshot-2023-11-13-133258.png');
+  background-position: center;
+   background-size: cover;
+}
+.card:nth-child(2):hover{
+  background-image: url('https://i.postimg.cc/NfFZW4LZ/Screenshot-2023-11-13-130830.png');
+  background-position: center;
+   background-size: cover;
+}
+.card:nth-child(3):hover{
+  background-image: url('https://i.postimg.cc/W10WCCpX/Screenshot-2023-11-13-130613.png');
+  background-position: center;
+   background-size: cover;
+}
+
+.card:nth-child(4):hover{
+  background-image: url('https://i.postimg.cc/15xD44RW/Screenshot-2023-11-13-133351.png');
+  background-position: center;
+   background-size: cover;
+}
+.card:nth-child(5):hover{
+  background-image: url('https://i.postimg.cc/pTypcJ0W/Screenshot-2023-11-13-133155.png');
+  background-position: center;
+   background-size: cover;
+}
+.card:nth-child(6):hover{
+  background-image: url('https://i.postimg.cc/5NbC5Lwr/Screenshot-2023-11-13-133010.png');
+  background-position: center;
+   background-size: cover;
+}
+
+.card:nth-child(7):hover{
+  background-image: url('https://i.postimg.cc/GpCZZB76/Screenshot-2023-11-13-123042.png');
+  background-position: center;
+   background-size: cover;
+}
+.card:nth-child(8):hover{
+  background-image:url('https://i.postimg.cc/6p6Jyx0P/Screenshot-2023-11-13-122407.png') ;
+  background-position: center;
+   background-size: cover;
+}
+.card:nth-child(9):hover{
+  background-image: url('https://i.postimg.cc/QMd2qF6D/Screenshot-2023-11-13-124113.png');
+  background-position: center;
+   background-size: cover;
+}
+
+.card:nth-child(10):hover{
+  background-image: url('https://i.postimg.cc/TGbwhJ7C/Screenshot-2023-11-13-131100.png');
+  background-position: center;
+   background-size: cover;
+}
+
+.card:nth-child(12):hover{
+  background-image: url('https://i.postimg.cc/fy134SVG/Screenshot-2023-11-13-132751.png');
+  background-position: center;
+   background-size: cover;
+}
+.card:nth-child(11):hover{
+  background-image: url('https://i.postimg.cc/Nf1P6CFw/Screenshot-2023-11-13-121835.png~');
+  background-position: center;
+   background-size: cover;
+  transition: 1s;
 }
 
 .info{
-  background-color:rgba(0, 0, 0, 0.432);
+  background-color:rgba(0, 0, 0, 0.763);
   width: 95%;
   height: 95%;
   margin: 10px;
+    /* border: 1px solid red; */
 }
 
 .row:first-child{
