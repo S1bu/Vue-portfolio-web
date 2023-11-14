@@ -61,7 +61,7 @@
           </div>
          
           <p class="btn-holder">
-            <a href="https://docs.google.com/document/d/1JjMBUvuxd-KF1SndmMJ8Iy3-VMUZNK2_MTNq18YFjpo/edit?usp=sharing">CV <i class="bi bi-file-text"></i></a>
+            <a href="https://docs.google.com/document/d/1JjMBUvuxd-KF1SndmMJ8Iy3-VMUZNK2_MTNq18YFjpo/edit?usp=sharing" target="_blank">CV <i class="bi bi-file-text"></i></a>
           </p>
       </div>
       <div class="col text-center">
