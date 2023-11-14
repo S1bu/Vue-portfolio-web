@@ -33,22 +33,6 @@
               </div>
         </div>
           </div>
-          
-          <!-- <div class="card"  v-for="education in education" :key="education.id">  
-                  <div class="logo text-center">
-                    <img :src="education.logo" :alt="education.name" loading="lazy">
-                  </div>
-                  <center>{{ education.name }} <i class="bi bi-hand-index"></i></center>
-                  <br>          
-                  <div class="card-body">
-                    <div class="logo text-center">
-                      <img :src="education.logo" :alt="education.name" loading="lazy">
-                    </div>
-                <p class="card-text"><span class="bold">Qualification</span> : {{ education.name }}</p>
-              <p class="card-text"><span class="bold">Course</span> : {{ education.Level }}</p>
-              <p class="card-text"><span class="bold">Year</span> : {{ education.year }}</p>          
-                </div>
-                </div> -->
           </div>
 
       </div>
@@ -163,8 +147,7 @@ border-top-right-radius: 10px;
 }
 .edu-holder{
   display: grid;
-  grid-template-columns: auto auto;
-  /* border: 1px solid red; */
+  grid-template-columns: auto auto ;
 }
 
 .info p{
@@ -188,19 +171,20 @@ color: white;
   opacity: 1;
   transition: 1s;
 }
-/* edu stuff */
-/* Garlandale */
-.edu-card:nth-child(1){
+/* ---------------------------------------------- */
+/* edu stuff - mainly background images */
+ 
+.edu-card:nth-child(7){
   background-image: url('https://i.postimg.cc/zXTBtjfC/Screenshot-2023-11-02-093721.png');
   background-size: cover;
 }
 /* Jg meiring */
-.edu-card:nth-child(2){
+.edu-card:nth-child(6){
   background-image: url('https://i.postimg.cc/SjFrfrxT/Screenshot-2023-11-02-093329.png');
   background-size: cover;
 }
 /* silulo */
-.edu-card:nth-child(3){
+.edu-card:nth-child(5){
   background-image: url('https://i.postimg.cc/FHxZ005p/Screenshot-2023-11-02-093034.png');
   background-size: cover;
 }
@@ -210,22 +194,31 @@ color: white;
   background-size: cover;
 }
 /* It varsity */
-.edu-card:nth-child(5){
+.edu-card:nth-child(3){
   background-image: url('https://i.postimg.cc/GmgLBsfT/Screenshot-2023-11-02-091425.png');
   background-size: cover;
 }
 /* capaciti 2 */
-.edu-card:nth-child(6){
+.edu-card:nth-child(2){
   background-image: url('https://i.postimg.cc/DfHtHPXz/Screenshot-2023-11-02-091053.png');
   background-size: cover;
 }
 /* life choices */
-.edu-card:nth-child(7){
+.edu-card:nth-child(1){
   background-image: url(' https://i.postimg.cc/3JM3mT99/Screenshot-2023-11-02-091259.png');
   background-size: cover;
 }
-/* --------- */
-
+/* ----------------------------------------------------------------------------------------- */
+/* edu stuff - mainly animation */
+.edu-card:nth-child(odd){
+  animation:backInRight;
+  animation-duration: 2s;
+}
+.edu-card:nth-child(even){
+  animation:backInLeft;
+  animation-duration: 2s;
+}
+/* ------------------------------------------------------------------------------------------- */
 .edu-content{
   background-color: rgba(0, 0, 0, 0.736);
   width:480px;
@@ -241,8 +234,6 @@ color: white;
   aspect-ratio: 3/5;
   width: 70px;
   height: 70px;
-  /* border: 1px solid red; */
-  
 }
 /* ------------------------------------------- */
 /* ------------------------------------------- */
