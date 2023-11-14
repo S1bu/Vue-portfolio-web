@@ -55,7 +55,7 @@ export default createStore({
       try{
         let res = await fetch(myInfoLink);
         let { education } = await res.json()
-        context.commit('setEducation' ,education)
+        context.commit('setEducation' ,education.reverse())
       }
       catch(e){
         console.log(e.message);
