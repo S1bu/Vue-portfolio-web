@@ -117,7 +117,7 @@ export default {
 }
 
 .card:nth-child(12):hover{
-  background-image: url('https://i.postimg.cc/fy134SVG/Screenshot-2023-11-13-132751.png');
+  background-image: url('https://i.postimg.cc/d0S8p0x9/Screenshot-2023-11-17-095445.png');
   background-position: center;
    background-size: cover;
 }
