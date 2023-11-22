@@ -61,7 +61,7 @@
           </div>
          
           <p class="btn-holder">
-            <a href="https://drive.google.com/file/d/1cVT1zmx3jayqsqnIE6uZu1RNew6B9X6-/view?usp=drive_link" target="_blank">CV <i class="bi bi-file-text"></i></a>
+            <a href="https://www.canva.com/design/DAFzGaltbBQ/aVX0PQq9XNzYPrfkzn_wiw/edit?utm_content=DAFzGaltbBQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank">CV <i class="bi bi-file-text"></i></a>
           </p>
       </div>
       <div class="col text-center">
