@@ -204,7 +204,14 @@ form p {
   img{
     width: 80px;
   }
+.col-sm-4,.col-sm-8{
+  width: 100%;
+  margin-bottom: 10px;
+}
 
+.col-sm-8{
+  text-align: center;
+}
 }
 
 @media(width < 400px) {
@@ -218,6 +225,7 @@ form p {
 
   .col-sm-8 {
     margin-bottom: 10%;
+    text-align: center;
   }
 
   .col-sm-4 {
