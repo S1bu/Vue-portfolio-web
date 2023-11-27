@@ -155,10 +155,18 @@ h5{
   }
 }
 
-@media (width < 600px) {
+@media (width < 700px) {
   h1 {
     margin-top: 60%;
   }
+  .col{
+    text-align: center;
+  }
+.row{
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+}
 }
 </style>
 <script>
