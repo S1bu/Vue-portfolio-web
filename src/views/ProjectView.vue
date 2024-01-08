@@ -52,7 +52,7 @@ export default {
 }
 
 .card{
-  background-image: url('https://i.ibb.co/7vRtwF9/8657539057c99d9e4242a66a624e1d6f.jpg');
+  background-image: url('https://i.pinimg.com/564x/4b/cb/f2/4bcbf2a9162fef1531edea51dc879d46.jpg');
   background-size: cover;
   background-position: center;
   width: 400px;
@@ -61,71 +61,65 @@ export default {
   margin: 10px;
   transition: 1s;
 }
-
+.card:hover{
+  border: black 1px solid;
+  box-shadow: 2px 2px 20px black;
+}
+/* BMI calculator */
 .card:nth-child(1):hover{
-  background-image: url('https://i.postimg.cc/8cYkY7yq/Screenshot-2023-11-13-133258.png');
+  background-image: url('https://i.ibb.co/NLJCZG1/Screenshot-2024-01-08-112948.png');
   background-position: center;
    background-size: cover;
 }
+/* tesla */
 .card:nth-child(2):hover{
-  background-image: url('https://i.postimg.cc/NfFZW4LZ/Screenshot-2023-11-13-130830.png');
+  background-image: url('https://i.ibb.co/Hngq36M/Screenshot-2024-01-08-123220.png');
   background-position: center;
    background-size: cover;
 }
+/* guess number */
 .card:nth-child(3):hover{
-  background-image: url('https://i.postimg.cc/W10WCCpX/Screenshot-2023-11-13-130613.png');
+  background-image: url('https://i.ibb.co/4VR8bKR/Screenshot-2024-01-08-112929.png');
   background-position: center;
    background-size: cover;
 }
-
+/* calculator */
 .card:nth-child(4):hover{
-  background-image: url('https://i.postimg.cc/15xD44RW/Screenshot-2023-11-13-133351.png');
+  background-image: url('https://i.ibb.co/rkP2WFX/Screenshot-2024-01-08-112838.png');
   background-position: center;
    background-size: cover;
 }
+ 
+/* wordpress */
 .card:nth-child(5):hover{
-  background-image: url('https://i.postimg.cc/pTypcJ0W/Screenshot-2023-11-13-133155.png');
+  background-image: url('https://i.ibb.co/BP9NCWf/Screenshot-2024-01-08-112754.png');
   background-position: center;
    background-size: cover;
 }
+/* netflix clone */ 
 .card:nth-child(6):hover{
-  background-image: url('https://i.postimg.cc/5NbC5Lwr/Screenshot-2023-11-13-133010.png');
+  background-image:url('https://i.ibb.co/jMr9z7v/Screenshot-2024-01-08-112719.png') ;
   background-position: center;
    background-size: cover;
 }
-
+/* mini blog */
 .card:nth-child(7):hover{
-  background-image: url('https://i.postimg.cc/GpCZZB76/Screenshot-2023-11-13-123042.png');
+  background-image: url('https://i.ibb.co/vxQ1tb7/Screenshot-2024-01-08-112659.png');
   background-position: center;
    background-size: cover;
 }
+/* image gallery */
 .card:nth-child(8):hover{
-  background-image:url('https://i.postimg.cc/6p6Jyx0P/Screenshot-2023-11-13-122407.png') ;
+  background-image: url('https://i.ibb.co/MZz61PG/Screenshot-2024-01-08-112513.png');
   background-position: center;
    background-size: cover;
+  /* transition: 1s; */
 }
+/* foodie fanatix */
 .card:nth-child(9):hover{
-  background-image: url('https://i.postimg.cc/QMd2qF6D/Screenshot-2023-11-13-124113.png');
+  background-image: url('https://i.ibb.co/0tkJ23b/Screenshot-2024-01-08-112442.png');
   background-position: center;
    background-size: cover;
-}
-
-.card:nth-child(10):hover{
-  background-image: url('https://i.postimg.cc/TGbwhJ7C/Screenshot-2023-11-13-131100.png');
-  background-position: center;
-   background-size: cover;
-}
-
-.card:nth-child(12):hover{
-  background-image: url('https://i.postimg.cc/d0S8p0x9/Screenshot-2023-11-17-095445.png');
-  background-position: center;
-   background-size: cover;
-}
-.card:nth-child(11):hover{
-  background-image: url('https://i.postimg.cc/Nf1P6CFw/Screenshot-2023-11-13-121835.png~');
-  background-position: center;
-   background-size: cover;
-  transition: 1s;
 }
 
 .info{
