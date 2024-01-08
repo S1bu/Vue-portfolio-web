@@ -52,7 +52,7 @@ export default {
 }
 
 .card{
-  background-image: url('https://i.ibb.co/7GdLkQR/spaceman.jpg');
+  background-image: url('https://i.ibb.co/7vRtwF9/8657539057c99d9e4242a66a624e1d6f.jpg');
   background-size: cover;
   background-position: center;
   width: 400px;
