@@ -173,39 +173,35 @@ color: white;
 }
 /* ---------------------------------------------- */
 /* edu stuff - mainly background images */
- 
-.edu-card:nth-child(7){
-  background-image: url('https://i.postimg.cc/zXTBtjfC/Screenshot-2023-11-02-093721.png');
-  background-size: cover;
-}
+  
 /* Jg meiring */
 .edu-card:nth-child(6){
-  background-image: url('https://i.postimg.cc/SjFrfrxT/Screenshot-2023-11-02-093329.png');
+  background-image: url('https://i.ibb.co/NnPH11h/school-2017.jpg');
   background-size: cover;
 }
 /* silulo */
 .edu-card:nth-child(5){
-  background-image: url('https://i.postimg.cc/FHxZ005p/Screenshot-2023-11-02-093034.png');
+  background-image: url('https://i.ibb.co/Hg9pVjP/Screenshot-2024-01-08-093500.png');
   background-size: cover;
 }
 /* capacit 1 */
 .edu-card:nth-child(4){
-  background-image: url('https://i.postimg.cc/PxNYhDmh/Screenshot-2023-11-02-145211.png');
+  background-image: url('https://i.ibb.co/SwbpFNd/Screenshot-2024-01-08-092658.png');
   background-size: cover;
 }
 /* It varsity */
 .edu-card:nth-child(3){
-  background-image: url('https://i.postimg.cc/GmgLBsfT/Screenshot-2023-11-02-091425.png');
+  background-image: url('https://i.ibb.co/fYPL4TW/Screenshot-2024-01-08-092815.png');
   background-size: cover;
 }
 /* capaciti 2 */
 .edu-card:nth-child(2){
-  background-image: url('https://i.postimg.cc/DfHtHPXz/Screenshot-2023-11-02-091053.png');
+  background-image: url('https://i.ibb.co/5FFr9S5/Screenshot-2024-01-08-092535.png');
   background-size: cover;
 }
 /* life choices */
 .edu-card:nth-child(1){
-  background-image: url(' https://i.postimg.cc/3JM3mT99/Screenshot-2023-11-02-091259.png');
+  background-image: url('https://i.ibb.co/ZGXqkNT/Screenshot-2024-01-08-093324.png');
   background-size: cover;
 }
 /* ----------------------------------------------------------------------------------------- */
