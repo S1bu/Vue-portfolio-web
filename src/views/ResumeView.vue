@@ -418,6 +418,12 @@ p {
   .container-fluid {
     grid-template-columns: auto;
   }
+  .edu-holder{
+    grid-template-columns: auto;
+  }
+  .card-body {
+  width: 100%;
+}
 }
 
 /********** RESPONSIVENESS *********/
@@ -425,7 +431,10 @@ p {
   .container-fluid {
     grid-template-columns: auto;
   }
-
+  .card-body {
+  width: 80%;
+  margin: 0 10%;
+}
   p {
     font-size: 10px;
   }
