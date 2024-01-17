@@ -2,8 +2,11 @@
   <div class="containerNav">
     <nav class="navbar navbar-expand-lg ">
       <div class="container-fluid link">
-        <div class="navbar-brand"><router-link to="/"><img src="https://i.postimg.cc/q7sz3thW/logo-sibusiso-Dyan.png"
-              alt=""></router-link></div>
+        <div class="navbar-brand">
+          <router-link to="/">
+            <img src="https://i.ibb.co/nrrZBKz/logo-200x200.png"
+              alt=""></router-link>
+            </div>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
