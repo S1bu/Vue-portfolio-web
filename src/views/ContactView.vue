@@ -78,8 +78,8 @@
         <div class="col-sm-4 text-center">
           
           <div class="details">
-         
-            <img src="https://i.postimg.cc/tR632Q4p/logo-img.png" loading="lazy" alt="logo">
+            <p><b>Connect with me !</b></p>
+            <img src="https://i.pinimg.com/564x/d4/eb/69/d4eb6905a5764311765111dd1d8cc52a.jpg" loading="lazy" alt="logo" width="300">
             <div class="info">
               <p><i class="bi bi-whatsapp"></i> 0609479185</p>
               <p><i class="bi bi-linkedin"></i> www.linkedin.com/in<br>/sibusiso-dyan-0004</p>
