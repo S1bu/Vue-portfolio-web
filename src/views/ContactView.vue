@@ -83,7 +83,7 @@
             <div class="info">
               <p><i class="bi bi-whatsapp"></i> 0609479185</p>
               <p><i class="bi bi-linkedin"></i> www.linkedin.com/in<br>/sibusiso-dyan-0004</p>
-              <P><i class="bi bi-geo-alt"></i> South Africa,Cape town</P>
+              <P><i class="bi bi-geo-alt"></i> South Africa,Cape town,Gugulethu</P>
             </div>
           </div>
         </div>
