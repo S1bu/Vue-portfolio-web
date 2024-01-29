@@ -121,7 +121,12 @@ export default {
   background-position: center;
    background-size: cover;
 }
-
+/* task monkey*/
+.card:nth-child(10):hover{
+  background-image: url('https://i.ibb.co/TBg0j8w/Screenshot-2024-01-29-085648.png');
+  background-position: center;
+   background-size: cover;
+}
 .info{
   background-color:rgba(0, 0, 0, 0.763);
   width: 95%;
