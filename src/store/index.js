@@ -7,6 +7,7 @@ export default createStore({
     education:null,
     skill:null,
     work:null,
+    badge:null,
   },
   getters: {
   },
@@ -25,6 +26,9 @@ export default createStore({
     },
     setWork(state,work){
       state.work = work;
+    },
+    setBadges(state,badge){
+      state.badge = badge;
     },
   },
   actions: {
@@ -80,6 +84,16 @@ export default createStore({
           context.commit('setWork' ,Work)
         }
         catch(e){
+          console.log(e.message);
+        }
+      },
+      //badges
+      async fetchBadges(context) {
+        try {
+          let res = await fetch(myInfoLink);
+          let { badge } = await res.json();
+          context.commit('setBadges', badge); // Corrected method name
+        } catch (e) {
           console.log(e.message);
         }
       },
