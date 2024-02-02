@@ -1,7 +1,7 @@
 <template >
     <div class="testimonial">
         <br>
- <h1>What poeple have to say about me</h1>
+ <h1>What my peers have to say about me</h1>
             <div class="rowz" v-for="testimonial in testimonials" :key="testimonial.id">
               
                     <div class=" description text-center">

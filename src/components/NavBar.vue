@@ -22,13 +22,13 @@
                 <i class="bi bi-person-circle"></i> About </router-link>
             </li>
             <li class="nav-item">
-              <router-link to="/resume"><i class="bi bi-briefcase"></i> Resume</router-link>
+              <router-link to="/resume"><i class="bi bi-briefcase"></i> Work</router-link>
             </li>
             <li class="nav-item">
               <router-link to="/project"><i class="bi bi-laptop"></i> Project</router-link>
             </li>
             <li class="nav-item">
-              <router-link to="/testimonials"><i class="bi bi-chat-dots"></i> Testimonials</router-link>
+              <router-link to="/testimonials"><i class="bi bi-chat-dots"></i> Peer Review</router-link>
             </li>
             <li class="nav-item">
               <router-link to="/contact"> <i class="bi bi-telephone"></i> Contact</router-link>
