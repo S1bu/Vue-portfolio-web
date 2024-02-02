@@ -66,7 +66,7 @@ export default {
       hobbie1: 'Coding👨🏾‍💻',
       hobbie2: 'Exploring new technology🤖',
       hobbie3: 'learning new skills📚',
-      hobbie4: 'Watching sci-fi movies 🍿🎬',
+      hobbie4: 'Analyzing Forex charts 📈',
       hobbie5: 'Hiking⛰️🥾',
       inspiration1 :'Dan pena',
       inspiration_pic1: 'https://i.postimg.cc/dVjy5kR0/3c0ad48cb3992ee6456583bad2a69aa6.jpg',
