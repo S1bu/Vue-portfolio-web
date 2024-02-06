@@ -61,6 +61,7 @@
           </div>
          
           <p class="btn-holder">
+
             <a href="https://www.canva.com/design/DAFzGaltbBQ/aVX0PQq9XNzYPrfkzn_wiw/edit?utm_content=DAFzGaltbBQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank">CV <i class="bi bi-file-text"></i></a>
           </p>
       </div>

@@ -16,12 +16,10 @@
       </div>
             
           </div>
-    <div class="row">
-          <center>
-         
-          </center>
+    <div class="row detail-holder">
+      
        
-          <div class="col text-center">
+          <div class="col hobbies text-center">
             <h4>Hobbies:</h4>
             <p>{{ hobbie1 }}</p>
             <p>{{ hobbie2 }}</p>
@@ -29,22 +27,16 @@
             <p>{{ hobbie4 }}</p>
             <p>{{ hobbie5 }}</p>
           </div>
-        </div>
-        <!-- <div class="row text-center">
-          <h4>Inspiration(s):</h4>
-
-          <div class="insp-card text-center">
-            <p>{{ inspiration1 }}</p>
-            <img :src="inspiration_pic1" alt="">
+          <div class="col details text-center">
+            <h4>Details:</h4>
+          <p>Name:{{ name }} </p>
+          <p>Surname:  {{ surname }}</p>
+          <p>D.O.B:  {{ D_O_B }}</p>
+          <p>Ethnicity: {{ Ethnicity }}</p>
+          <p>country:{{ country }}</p>
           </div>
-       
-          
-          <div class="insp-card text-center">
-            <p>{{ inspiration2 }}</p>
-            <img :src="inspiration_pic2" alt="">
-          </div>
-          
-        </div> -->
+  </div>
+     
 </div>
 </template>
 
@@ -52,6 +44,8 @@
 export default {
   data() {
     return {
+      Ethnicity:'African',
+      D_O_B:'21-04-2000',
       image1: 'https://i.postimg.cc/T1ktSVTS/sibusisopic.png',
       name: 'Sibusiso',
       surname: 'Dyan',
@@ -167,7 +161,14 @@ h1{
   background-color:rgba(0, 0, 0, 0.84) ;
 }
 
-
+.details >p:nth-child(even){
+  background-color: rgba(0, 0, 0, 0.448);
+  margin: 0 7%;
+}
+.hobbies >p:nth-child(even){
+  background-color: rgba(0, 0, 0, 0.448);
+  margin: 0 7%;
+}
 @media(width < 900px) {
   .holder {
     margin-right: 3px;
@@ -176,11 +177,14 @@ h1{
   
  
 }
-
-@media(width < 700px) {
+@media screen and (max-width: 700px) {
   
-  }
+ .detail-holder{
+display: flex;
+flex-direction: column;
+}
 
-
+}
 @media(width < 400px) {
-}</style>
+}
+</style>

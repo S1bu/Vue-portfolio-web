@@ -63,11 +63,7 @@ img{
     margin:100px;
    transition: 1s;
 }
-.rowz:hover{
-    margin:150px;
-    transition: 1s;
  
-}
 .rowz:nth-child(odd) > 
 .detail{
     background-color: rgba(0, 0, 0, 0.69);
