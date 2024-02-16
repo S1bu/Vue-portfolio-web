@@ -10,7 +10,7 @@
         </center>
         <div class="container-fluid">
           <div class="edu-holder">
-            <div class="edu-card" v-for="education in education" :key="education.id">
+            <div class="edu-card" v-for="education in education" :key="education.id" data-aos="fade-up">
               <div class="edu-title">
                 <center>
                   <h4>{{ education.name }} - {{ education.year }}</h4>
@@ -36,14 +36,45 @@
         </div>
 
       </div>
-      <section id="skills"></section>
+      <section id="skills">
       <!-- skills section -->
       <div class="holder">
-        <center>
+      
+          <center>
           <h1>Skills</h1>
         </center>
-        <div class="container-fluid">
-          <div class="card" v-for="skill in skill" :key="skill.id">
+  
+       
+       
+          <div class="skillsCardHolder" data-aos="fade-up">
+
+         
+          <div class="card_1">
+              <h4>Markup language</h4>
+              <p>1. HTML</p>
+          </div>
+          <div class="card_2">
+            <h4>Programming</h4>
+            <p>1. Javascript</p>
+            <p>2. Python</p>
+            <p>3. SQL</p>
+          </div>
+          <div class="card_3">
+            <h4>Framework</h4>
+            <p>1. Vue.js</p>
+            <p>2. Node.js</p>
+            <p>3. Express.js</p>
+          </div>
+          <div class="card_4">
+            <h4>Low code</h4>
+            <p>1. WordPress</p>
+          </div>
+          <div class="card_5">
+            <h4>Database</h4>
+            <p>1. mySQL</p>
+          </div>
+      
+          <!-- <div class="card" v-for="skill in skill" :key="skill.id">
 
             <div class="col">
               <div class="logo text-center">
@@ -63,9 +94,10 @@
               </div>
             </div>
 
-          </div>
+          </div> -->
         </div>
       </div>
+    </section>
     </div>
     <section id="badges">
       <center>
@@ -73,7 +105,7 @@
       </center>
 
       <div class="container-fluid">
-        <div class="card" v-for="badge in badge" :key="badge.id">
+        <div class="card" v-for="badge in badge" :key="badge.id" data-aos="fade-up">
           <h5>{{ badge.badge_name }}</h5>
           <div class="badge-image">
             <img :src="badge.badge_image" alt="">
@@ -90,7 +122,7 @@
         <h1>Work</h1>
       </center>
       <div class="container-fluid">
-        <div class="card" v-for="work in work" :key="work.id">
+        <div class="card" v-for="work in work" :key="work.id" data-aos="fade-up">
           <div class="logo text-center">
             <img :src="work.image" class="card-img-top" :alt="work.institution" loading="lazy">
           </div>
@@ -151,7 +183,21 @@ export default {
   --background-color: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
   ---second-color: rgba(10, 18, 33, 0.59);
 }
-
+.card_1,.card_2,.card_3,.card_4,.card_5{
+  color: white;
+  width: 100%;
+  border: 1px solid red;
+}
+.skillsCardHolder{
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  justify-content: space-around;
+}
+.skillsCardHolder h5{
+  font-family: 900;
+  background-color: none
+  ;
+}
 /* ------------------------------------------- */
 /* education section */
 /* ------------------------------------------- */
