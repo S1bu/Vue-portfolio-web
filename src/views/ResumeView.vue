@@ -39,17 +39,52 @@
       <section id="skills">
       <!-- skills section -->
       <div class="holder">
+      <div class="row">
+        <div class="col">
+ <div class="skills-image-holder">
+<h2>Tech Skills</h2>
+ </div>
+     </div>
+     <div class="col">
+      <div class="skills-card">
+     <div class="Skill">
+      <p>HTML</p>
       
-          <center>
-          <h1>Skills</h1>
-        </center>
-  
-       
-       
+     </div>
+     <div class="Skill">
+      <p>CSS</p>
+      
+     </div>
+     <div class="Skill">
+      <p>Javascript</p>
+      
+     </div>
+     <div class="Skill">
+      <p>Vue.js</p>
+      
+     </div>
+     <div class="Skill">
+      <p>Node.js</p>
+     </div>
+     <div class="Skill">
+      <p>express.js</p>
+     </div>
+     <div class="Skill">
+      <p>Jquery</p>
+     </div>
+     <div class="Skill">
+      <p>Python</p>
+     </div>
+      </div>
+     </div>
+    
+      </div>
+   
+   
           <div class="skillsCardHolder" data-aos="fade-up">
 
          
-          <div class="card_1">
+          <!-- <div class="card_1">
               <h4>Markup language</h4>
               <p>1. HTML</p>
           </div>
@@ -72,29 +107,8 @@
           <div class="card_5">
             <h4>Database</h4>
             <p>1. mySQL</p>
-          </div>
-      
-          <!-- <div class="card" v-for="skill in skill" :key="skill.id">
-
-            <div class="col">
-              <div class="logo text-center">
-                <img :src="skill.logo" :alt="skill.name" loading="lazy">
-              </div>
-              <center>{{ skill.name }} <i class="bi bi-hand-index"></i></center>
-              <br>
-
-              <div class="card-body">
-                <div class="logo text-center">
-                  <img :src="skill.logo" :alt="skill.name" loading="lazy">
-                </div>
-                <p class="card-text text-center">{{ skill.name }}</p>
-                <p class="card-text"><span class="bold">Level </span>: {{ skill.Level }} </p>
-                <p class="card-text"><span class="bold">Comment </span>: {{ skill.Description }} </p>
-
-              </div>
-            </div>
-
           </div> -->
+      
         </div>
       </div>
     </section>
@@ -176,6 +190,30 @@ export default {
 </script>
 
 <style scoped>
+.skills-card .Skill{
+  color: white;
+  
+}
+.skills-image-holder h2{
+  color: white;
+  font-size: 60px;
+  font-weight: 600;
+padding-top:25% ;
+ 
+}
+.skills-image-holder{
+  text-align: center;
+  background-image: url('https://i.pinimg.com/564x/3f/03/53/3f0353330f3ec129e62215cf2b3c14db.jpg');
+  height: 50vh;
+  width: 80%;
+}
+.skills-card p{
+  /* width: 10%; */
+  border: 1px solid white;
+  text-align: center;
+  
+}
+
 :root {
   ---background-color2: #004d7a;
   ---alternative-color: gray;
@@ -301,7 +339,7 @@ h4 {
   width: 480px;
   margin: 10px;
   text-align: center;
-  opacity: 0;
+  /* opacity: 0; */
   transition: 1s;
   border-radius: 10px;
 }

@@ -75,7 +75,7 @@ export default {
 
 <style scoped>
 :root {
-  ---background-color2 :#004d7a;
+  ---background-color2 :#043958;
   ---alternative-color: gray;
   ---text-color:white;
 }
@@ -146,7 +146,7 @@ h1{
   background-image: url('https://wallpaperaccess.com/full/418162.png');
   background-attachment: fixed;
   background-size: cover;
-  border: 2px solid #004d7a;
+  border: 2px solid #043958;
   border-radius: 10px;
   margin: 5px;
  }

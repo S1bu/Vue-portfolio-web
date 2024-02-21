@@ -76,7 +76,7 @@
 </template>
 <style scoped>
 :root {
-  ---background-color2 :#004d7a;
+  ---background-color2 :#043958;
   --background-color: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
   ---main-color: midnightblue;
   ---second-color: rgba(10, 18, 33, 0.59);
@@ -93,7 +93,7 @@
 }
 
 .holder {
-  background-color: #004d7a;
+  background-color: #043958;
   background-size: cover;
   background-attachment: fixed;
 }

@@ -2,14 +2,9 @@
     <div class="testimonial">
         <br>
  <h1>What my peers have to say about me</h1>
-            <div class="rowz" v-for="testimonial in testimonials" :key="testimonial.id"  data-aos="fade-up">
-              
-                    <div class=" description text-center">
-                <br>
-                <br>
-               <p>"{{ testimonial.Description }}"</p> 
-            </div>
-            <div class="detail text-center">
+            <!-- <div class="rowz" > -->
+                <div class="row" v-for="testimonial in testimonials" :key="testimonial.id"  data-aos="fade-up">
+                    <div class="col-4">
                 <br>
                 <h5 class="card-title">{{ testimonial.fullname }} </h5>
               
@@ -18,10 +13,16 @@
                 <h6>({{ testimonial.Relation }})</h6>
                 
             </div>
-           
+            
+                    <div class="col-7">
+                <br>
+                <br>
+               <p>"{{ testimonial.Description }}"</p> 
+            </div>
+                </div>
         </div>
       
-    </div>
+    <!-- </div> -->
   
 </template>
 
@@ -39,10 +40,16 @@ export default {
 </script>
 
 <style  scoped>
-.testimonial{
-    background-color: #004d7a;
+.rowz{
+    
     width: 100%;
-  
+    border: 1px solid red;
+}
+.testimonial{
+ 
+    background-color: #043958;
+    /* width: 100%; */
+  border: 1px solid red;
 }
  
 img{
@@ -58,112 +65,15 @@ img{
   color: white;
   font-weight: 900;
  }
-/* ---------------- */ 
-.rowz{
-    margin:100px;
-   transition: 1s;
-}
- 
-.rowz:nth-child(odd) > 
-.detail{
-    background-color: rgba(0, 0, 0, 0.69);
+
+.col-7{
+    border: 1px solid red;
     color: white;
-    border-radius: 10px;
-    float: left;
-    width: 35%;
-    height: 35vh;
-     margin-top: 5%;
-     animation:backInLeft; 
-    animation-duration: 2s;
-           box-shadow: 8px 12px rgba(0, 0, 0, 0.432);
+    padding: 0 3%;
 }
-
-.rowz:nth-child(odd)>
-.description{
+.col-4{
+    border: 1px solid red;
     color: white;
-    background-color: rgba(0, 0, 0, 0.69);
-    /* background-color: rgba(255, 255, 255, 0.697); */
-    border-radius: 10px;
-    float: right;
-    width: 60%;
-    height: 35vh;
-     margin-top: 5%;
-     padding: 10px;
-     animation:backInRight; 
-    animation-duration: 2s;
-           box-shadow: 8px 12px rgba(0, 0, 0, 0.432);
-}
-/* --------------------- */ 
- 
-.rowz:nth-child(even) > 
-.detail{
-    background-color: rgba(0, 0, 0, 0.69);
-    color: white;
-    border-radius: 10px;
-    float: right;
-    width: 35%;
-    height: 35vh;
-    margin-top: 5%;
-    animation:backInRight; 
-    animation-duration: 2s;
-    box-shadow: 8px 12px rgba(0, 0, 0, 0.432);
 }
 
-
-.rowz:nth-child(even)>
- .description{
-    color: white;
-    background-color: rgba(0, 0, 0, 0.69);
-    /* background-color: rgba(255, 255, 255, 0.697); */
-    border-radius: 10px;
-    float: left;
-    width: 60%;
-    height: 35vh;
-    margin-top: 5%;
-    padding: 10px;
-    animation:backInLeft; 
-    animation-duration: 2s;
-       box-shadow: 8px 12px rgba(0, 0, 0, 0.432);
-}
-
-.rowz:last-child{
-.detail{
-    margin-bottom: 20px;
-}
-.description{
-    margin-bottom: 20px;
-}
-}
-
-@media(width < 700px) {
-    .rowz:nth-child(even) >
-    .detail{
-    font-size: 9px;
-        width: auto;
-}
-.description{
-
-    font-size: 9px;
-    width: auto;
-}
-.rowz:nth-child(odd) >
-    .detail{
-    float: left;
-    font-size: 9px;
-        width: auto;
-}
-.description{
-    float: left;
-    font-size: 9px;
-    width: auto;
-}
-h5{
-    font-size: 10px;
-}
-
-}
- 
-
-@media(width < 400px) { 
-}
 </style>
