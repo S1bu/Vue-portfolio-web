@@ -41,6 +41,7 @@ export default {
   padding:0 10%;
 }
 h1 {
+    text-align: center;
   color: white;
   text-shadow: 2px 5px rgba(0, 0, 0, 0.432);
   font-weight: 900;
