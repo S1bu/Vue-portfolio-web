@@ -3,9 +3,9 @@
     <nav class="navbar navbar-expand-lg ">
       <div class="container-fluid link">
         <div class="navbar-brand">
-          <router-link to="/">
-            <img src="https://i.ibb.co/nrrZBKz/logo-200x200.png"
-              alt=""></router-link>
+         
+          Sibusiso.Dev   
+     
             </div>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,6 +45,13 @@
 export default {
 
 }
+
+
 </script>
 
-<style scoped></style>
+<style scoped>
+ .navbar-brand{
+  color: white;
+  font-weight: 900;
+ }
+</style>

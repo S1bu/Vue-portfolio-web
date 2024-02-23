@@ -2,27 +2,20 @@
     <div class="testimonial">
         <br>
  <h1>What my peers have to say about me</h1>
-            <!-- <div class="rowz" > -->
-                <div class="row" v-for="testimonial in testimonials" :key="testimonial.id"  data-aos="fade-up">
-                    <div class="col-4">
-                <br>
-                <h5 class="card-title">{{ testimonial.fullname }} </h5>
-              
-                <img :src="testimonial.image" class="card-img-top" :alt="testimonial.fullname" loading="lazy">
-           
-                <h6>({{ testimonial.Relation }})</h6>
-                
-            </div>
-            
-                    <div class="col-7">
-                <br>
-                <br>
+         <div class="testi-holder">
+
+         
+                <div class="row text-center" v-for="testimonial in testimonials" :key="testimonial.id"  data-aos="fade-right">
+             
+               <div class="testi-image-holder">
+
+               </div>
+               
                <p>"{{ testimonial.Description }}"</p> 
             </div>
-                </div>
+               
         </div>
-      
-    <!-- </div> -->
+    </div>
   
 </template>
 
@@ -40,40 +33,81 @@ export default {
 </script>
 
 <style  scoped>
-.rowz{
-    
-    width: 100%;
-    border: 1px solid red;
+.testi-holder{
+    margin: 10% 0;
 }
 .testimonial{
- 
     background-color: #043958;
-    /* width: 100%; */
-  border: 1px solid red;
+  padding:0 10%;
+}
+h1 {
+  color: white;
+  text-shadow: 2px 5px rgba(0, 0, 0, 0.432);
+  font-weight: 900;
 }
  
+p{
+    color: white;
+}
+
 img{
-    width: 150px;
-    height: 150px;
+    width: 80px;
+    height: 80px;
     object-fit: contain;
     aspect-ratio: 3/5;
+    border: 2px solid white;
+  
 }
  
- h1{
-    text-align: center;
-    text-shadow: 2px 5px rgba(0, 0, 0, 0.432);
-  color: white;
-  font-weight: 900;
+.row{
+ /* height: 100vh; */
+    width: 100%;
+    border: 2px solid white;
+    background-color: black;
+    margin: 2%;
+   border-radius:20px ;
+}
+
+.testi-image-holder{
+    border-radius: 20px;
+    background-size: cover;
+    height: 35vh;
+    width: 100%;
+}
+
+ .row:nth-child(1) .testi-image-holder{
+    background-image: url('https://i.ibb.co/18vK5vR/jason.png');
+ }
+ .row:nth-child(2) .testi-image-holder{
+    background-image: url('https://i.ibb.co/ZxntXbb/alonso.png');
+    
+ }
+ .row:nth-child(3) .testi-image-holder{
+    background-image: url(' https://i.ibb.co/tK0gLJd/tara.png');
+    
+ }
+ .row:nth-child(4) .testi-image-holder{
+    background-image: url(' https://i.ibb.co/CtJvr7P/waydin.png');
+  
+ }
+ .row:nth-child(5) .testi-image-holder{
+    background-image: url('https://i.ibb.co/QMdRzwK/Kgodisho.png');
  }
 
-.col-7{
-    border: 1px solid red;
-    color: white;
-    padding: 0 3%;
-}
-.col-4{
-    border: 1px solid red;
-    color: white;
-}
 
+ /* ------------------------- */
+ /*------respinsiveness---*/
+ @media(width < 900px) {
+    .testi-image-holder{
+    border-radius: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* background-repeat:; */
+    /* height: 35vh; */
+    width: 100%;
+}
+.testimonial{
+    padding: 5%;
+}
+ }
 </style>
