@@ -101,10 +101,8 @@ img{
     .testi-image-holder{
     border-radius: 20px;
     background-size: cover;
-  
     width: 100%;
     height: 17vh;
-    border: 1px solid red;
 }
  
 .testimonial{
