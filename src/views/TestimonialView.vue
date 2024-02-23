@@ -60,7 +60,6 @@ img{
 }
  
 .row{
- /* height: 100vh; */
     width: 100%;
     border: 2px solid white;
     background-color: black;
@@ -71,8 +70,9 @@ img{
 .testi-image-holder{
     border-radius: 20px;
     background-size: cover;
-    height: 35vh;
+    height:45vh;
     width: 100%;
+    margin-bottom: 2%;
 }
 
  .row:nth-child(1) .testi-image-holder{
@@ -100,14 +100,22 @@ img{
  @media(width < 900px) {
     .testi-image-holder{
     border-radius: 20px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    /* background-repeat:; */
-    /* height: 35vh; */
+    background-size: cover;
+  
     width: 100%;
+    height: 17vh;
+    border: 1px solid red;
 }
+ 
 .testimonial{
     padding: 5%;
 }
+ }
+ @media(width < 500px) {
+    .testi-image-holder{
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
  }
 </style>
