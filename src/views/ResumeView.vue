@@ -1,14 +1,14 @@
 <template>
   <div class="page">
 
-    <div class="resume ">
+    <div class="resume">
       <section id="education"></section>
       <!-- educatioin section -->
       <div class="holder">
         <center>
           <h1>Education</h1>
         </center>
-        <div class="container-fluid">
+        <!-- <div class="container-fluid"> -->
           <div class="edu-holder">
             <div class="edu-card" v-for="education in education" :key="education.id" data-aos="fade-up">
               <div class="edu-title">
@@ -22,8 +22,6 @@
                   <img :src="education.logo" :alt="education.name" loading="lazy">
                 </div>
 
-
-
                 <!-- info -->
                 <div class="info">
                   <p class="card-text"> Qualification: {{ education.Qualification }}</p>
@@ -35,7 +33,7 @@
           </div>
         </div>
 
-      </div>
+      <!-- </div> -->
       <section id="skills">
       <!-- skills section -->
       <div class="holder">
@@ -46,22 +44,20 @@
  </div>
      </div>
      <div class="col">
+      <br>
+      <br>
       <div class="skills-card">
      <div class="Skill">
       <p>HTML</p>
-      
      </div>
      <div class="Skill">
       <p>CSS</p>
-      
      </div>
      <div class="Skill">
       <p>Javascript</p>
-      
      </div>
      <div class="Skill">
       <p>Vue.js</p>
-      
      </div>
      <div class="Skill">
       <p>Node.js</p>
@@ -75,6 +71,10 @@
      <div class="Skill">
       <p>Python</p>
      </div>
+
+     <div class="Skill">
+      <p>mySQL</p>
+     </div>
       </div>
      </div>
     
@@ -82,32 +82,6 @@
    
    
           <div class="skillsCardHolder" data-aos="fade-up">
-
-         
-          <!-- <div class="card_1">
-              <h4>Markup language</h4>
-              <p>1. HTML</p>
-          </div>
-          <div class="card_2">
-            <h4>Programming</h4>
-            <p>1. Javascript</p>
-            <p>2. Python</p>
-            <p>3. SQL</p>
-          </div>
-          <div class="card_3">
-            <h4>Framework</h4>
-            <p>1. Vue.js</p>
-            <p>2. Node.js</p>
-            <p>3. Express.js</p>
-          </div>
-          <div class="card_4">
-            <h4>Low code</h4>
-            <p>1. WordPress</p>
-          </div>
-          <div class="card_5">
-            <h4>Database</h4>
-            <p>1. mySQL</p>
-          </div> -->
       
         </div>
       </div>
@@ -119,7 +93,7 @@
       </center>
 
       <div class="container-fluid">
-        <div class="card" v-for="badge in badge" :key="badge.id" data-aos="fade-up">
+        <div class="card curve" v-for="badge in badge" :key="badge.id" data-aos="fade-up">
           <h5>{{ badge.badge_name }}</h5>
           <div class="badge-image">
             <img :src="badge.badge_image" alt="">
@@ -140,13 +114,10 @@
           <div class="logo text-center">
             <img :src="work.image" class="card-img-top" :alt="work.institution" loading="lazy">
           </div>
-          <center>{{ work.institution }} <i class="bi bi-hand-index"></i></center>
+          <center>{{ work.institution }} <i class="bi bi-caret-down-fill"></i></center>
           <br>
           <div class="card-body">
-            <div class="logo text-center">
-              <img :src="work.image" class="card-img-top" :alt="work.institution" loading="lazy">
-            </div>
-            <p class="card-title"> <span class="bold">Name </span> : {{ work.institution }}</p>
+          
             <p class="card-title"> <span class="bold">Role </span> : {{ work.role }}</p>
             <p class="card-title"> <span class="bold">Duration </span> : {{ work.duration }}</p>
             <p class="card-title"> <span class="bold"> Reason for leaving</span> : {{ work.reason }}</p>
@@ -208,10 +179,10 @@ padding-top:25% ;
   width: 80%;
 }
 .skills-card p{
-  /* width: 10%; */
   border: 1px solid white;
+  border-radius: 10px;
   text-align: center;
-  
+  background-color: black;
 }
 
 :root {
@@ -255,8 +226,17 @@ h4 {
 .edu-holder {
   display: grid;
   grid-template-columns: auto auto;
+  margin-left: 10%;
 }
 
+.curve{
+  rotate: -30deg;
+  transition: 2s;
+}
+.curve:hover{
+rotate: 0deg;
+transition: 2s;
+}
 .info p {
   color: white;
 }
@@ -336,7 +316,7 @@ h4 {
 /* ------------------------------------------------------------------------------------------- */
 .edu-content {
   background-color: rgba(0, 0, 0, 0.736);
-  width: 480px;
+  width: 95%;
   margin: 10px;
   text-align: center;
   /* opacity: 0; */
@@ -371,27 +351,18 @@ a {
 }
 
 .card-body {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 600px;
-  height: auto;
-  background-color: var(---background-color2);
-  color: white;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   
+ 
   display: none;
-  z-index: 1;
+ 
 }
 
 
-.card:hover .card-body {
+.card:hover .card-body{
   display: block;
   animation: fadeIn;
   animation-duration: 2s;
+  transition: 2s;
 }
 
 
@@ -406,13 +377,17 @@ h1 {
 }
 
 .holder {
-  margin: 4rem 0;
+  margin: 2% 5%;
 }
 
 .container-fluid {
   display: grid;
   grid-template-columns: auto auto auto;
   justify-content: center;
+}
+
+.container-fluid .card{
+  width: 300px;
 }
 
 .bold {
@@ -461,7 +436,7 @@ p {
   margin: 5px;
   background: rgba(0, 0, 0, 0.736);
   border-radius: 12px;
-  width: 400px;
+  width:95%;
   color: white;
   transition: 1s;
   position: relative;
@@ -547,12 +522,27 @@ padding: 10px;
 
 /********** RESPONSIVENESS *********/
 @media(width < 900px) {
+
   .container-fluid {
-    grid-template-columns: auto;
+    grid-template-columns: auto auto;
   }
   .edu-holder{
   display: grid;
   grid-template-columns: auto;
+  margin-left: 1%;
+}
+.edu-card{
+  width: 95%;
+}
+.skills-image-holder{
+    width: 100%;
+  }
+  .skills-image-holder{
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 40vh;
+  width: 100%;
 }
 }
 
@@ -569,6 +559,12 @@ padding: 10px;
   .card-body {
     width: 100%;
   }
+  .skills-image-holder {
+    width: 100%;
+  }
+ .skills-card .skill{
+  margin-top: 1%;
+ }
 }
 
 /********** RESPONSIVENESS *********/
@@ -576,7 +572,9 @@ padding: 10px;
   .container-fluid {
     grid-template-columns: auto;
   }
-
+  .skills-image-holder{
+    width: 100%;
+  }
   .card-body {
     width: 80%;
     margin: 0 10%;
@@ -587,9 +585,10 @@ padding: 10px;
   }
 
   .logo img {
-    width: 35px;
+    width: 40%;
     object-fit: contain;
     aspect-ratio: 3/5;
+    border: none;
 
   }
 
