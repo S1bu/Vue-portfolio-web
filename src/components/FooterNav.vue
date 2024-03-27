@@ -116,4 +116,12 @@ a:hover{
     border:1px solid white;
     border-radius: 10px;
 }
+
+@media (width < 700px) {
+    .row{
+        display:flex;
+        flex-direction: column;
+    }
+}
+
 </style>
