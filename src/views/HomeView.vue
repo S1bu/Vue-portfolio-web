@@ -54,10 +54,9 @@
           </h5>
           <br>
           <div class="row">
-            <p style="margin: 0;padding: 0;">I am a full-stack web development student 💻 at Life Choices Academy, with 6 months 
-              of experience working on real-world projects. I am currently seeking an internship related to software development.
-               My passion lies within technology 🤖, more specifically web development, where I can use code to impact people's lives. 
-               👨🏾‍💻.</p>
+            <p style="margin: 0;padding: 0;">
+              Well-qualified  Full Stack Developer familiar with wide range of programming utilities and languages. Knowledgeable of backend and frontend development requirements. Collaborative team player with excellent technical abilities offering 2.5 years of related experience.
+            </p>
           </div>
          
           <p class="btn-holder">
@@ -82,14 +81,13 @@
   ---second-color: rgba(10, 18, 33, 0.59);
 }
  
+
 .container{
   margin-top: 6%;
 }
 .career {
   color: var(---second-color);
   font-weight: 900;
-
-
 }
 
 .holder {

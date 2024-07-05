@@ -8,6 +8,7 @@ export default createStore({
     skill:null,
     work:null,
     badge:null,
+    quotes:null
   },
   getters: {
   },
@@ -29,6 +30,9 @@ export default createStore({
     },
     setBadges(state,badge){
       state.badge = badge;
+    },
+    setQuotes(state,quotes){
+      state.quotes = quotes;
     },
   },
   actions: {
@@ -97,6 +101,18 @@ export default createStore({
           console.log(e.message);
         }
       },
+
+    //Quotes
+    async fetchQuotes(context) {
+      try {
+        let res = await fetch(myInfoLink);
+        let { Quotes } = await res.json();
+        context.commit('setQuotes', Quotes); // Corrected method name
+      } catch (e) {
+        console.log(e.message);
+      }
+    },
+    
   },
   modules: {
   }

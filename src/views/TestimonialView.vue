@@ -65,7 +65,9 @@ img{
     border: 2px solid white;
     background-color: black;
     margin: 2%;
-   border-radius:20px ;
+   border-radius: 0px 50px 0px 50px;
+   -webkit-border-radius: 0px 50px 0px 49px;
+   -moz-border-radius: 0px 50px 0px 49px;
 }
 
 .testi-image-holder{
@@ -74,6 +76,7 @@ img{
     height:45vh;
     width: 100%;
     margin-bottom: 2%;
+    border-radius:50px ;
 }
 
  .row:nth-child(1) .testi-image-holder{

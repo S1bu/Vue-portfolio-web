@@ -8,11 +8,8 @@
     </div>
     <div class="row">
       <div class="col text-center">
-        <h4>Who am I:</h4>
-        <p style="margin: 40px;padding: 0;">I am a full-stack web development student 💻 at Life Choices Academy, with 6 months 
-              of experience working on real-world projects. I am currently seeking an internship related to software development.
-               My passion lies within technology 🤖, more specifically web development, where I can use code to impact people's lives. 
-               👨🏾‍💻.</p>
+        <h4><i class="bi bi-person-circle"></i> Who am I:</h4>
+      
       </div>
             
           </div>
@@ -36,12 +33,58 @@
           <p>country:{{ country }}</p>
           </div>
   </div>
+<br>
+<br>
+<br>
+<br>
+<h4 class="text-center"><i class="bi bi-code"></i> Technical skills <i class="bi bi-code-slash"></i></h4>
+<div class="skill-section">
+  <div class="skill-card" v-for="skill in skill" :key="skill.id"  data-aos="fade-up">
+    <p><strong>{{skill.id}}. {{ skill.name }}</strong></p>
+</div>
+</div>
+<br>
+<br>
+<br>
+<br>
+  <div class="row detail-holder">
+    <h4 class="text-center">Favourite Quotes <i class="bi bi-chat-quote"></i></h4>
+
+    <div class="quote-card" v-for="quote in Quotes" :key="quote.id"  data-aos="fade-up">
+      <div class="row">
+        <div class="col-2">
+          <img :src="quote.image" alt="">
+        </div>
+        <div class="col-10">
+          <p>"{{quote.Quote}}"</p>
+          <p>~ {{ quote.name }} ~</p>
+        </div>
+      </div>
+    </div>
+ 
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
      
 </div>
 </template>
 
 <script>
 export default {
+  computed: {
+        Quotes() {
+            return this.$store.state.quotes
+        },
+        skill() {
+      return this.$store.state.skill
+    }
+    },
+    mounted() {
+        this.$store.dispatch('fetchQuotes'),
+        this.$store.dispatch('fetchSkills')
+    },
   data() {
     return {
       Ethnicity:'African',
@@ -79,6 +122,73 @@ export default {
   ---alternative-color: gray;
   ---text-color:white;
 }
+/*
+Skills Section
+*/
+ .skill-section{
+  display:grid;
+  grid-template-columns: auto auto auto auto auto;
+  justify-content: space-evenly;
+
+  width:98%;
+  border-radius:50px;
+  height: 50vh;
+  background-image: url('https://wallpaperaccess.com/full/2820622.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+margin: 1%;
+ }
+.skill-card{
+  padding:20px;
+}
+ 
+.skill-card p{
+  font-size:20px;
+  font-weight: 600;
+}
+/* 
+Quotes section
+*/
+.quote-card{
+  width: 60%;
+  margin: 3% 0;
+  background-color: black;
+  border: 2px solid white;
+  border-radius: 0px 50px 0px 50px;
+-webkit-border-radius: 0px 50px 0px 49px;
+-moz-border-radius: 0px 50px 0px 49px;
+box-shadow: 5px 10px rgba(0, 0, 0, 0.432);
+}
+
+.quote-card:nth-child(odd){
+  margin-left:35%;
+}
+.quote-card:nth-child(even){
+  margin-left: 5%;
+}
+ 
+.quote-card p{
+  color:white;
+  margin-top:5%;
+}
+
+.quote-card .col{
+  border:1px solid red
+}
+.col-2{
+  order:1px solid red
+}
+.col-2 img{
+  margin-top:30px;
+  width:100px;
+  height:100px;
+  border: 2px solid white;
+  border-radius: 50%;
+  object-fit: cover;
+  border:2px solid white
+}
+
+/*------*/
 .insp-card{
   text-align: center;
   width: 300px;
@@ -173,8 +283,15 @@ h1{
   .holder {
     margin-right: 3px;
   }
-
-  
+  .quote-card:nth-child(odd){
+    margin-left:0 2%;
+  }
+  .quote-card:nth-child(even){
+    margin-left:0 2%;
+  }
+  .quote-card{
+    width: 98%;
+  }
  
 }
 @media screen and (max-width: 700px) {
@@ -183,8 +300,28 @@ h1{
 display: flex;
 flex-direction: column;
 }
+.quote-card:nth-child(odd){
+  margin-left:0 2%;
+}
+.quote-card:nth-child(even){
+  margin-left:0 2%;
+}
+.quote-card{
+  width: 98%;
+}
+
 
 }
 @media(width < 400px) {
+  .quote-card:nth-child(odd){
+    margin-left:0 2%;
+  }
+  .quote-card:nth-child(even){
+    margin-left:0 2%;
+  }
+  .quote-card{
+    width: 98%;
+  }
+ 
 }
 </style>

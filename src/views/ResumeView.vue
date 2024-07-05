@@ -33,59 +33,7 @@
           </div>
         </div>
 
-      <!-- </div> -->
-      <section id="skills">
-      <!-- skills section -->
-      <div class="holder">
-      <div class="row">
-        <div class="col">
- <div class="skills-image-holder">
-<h2>Tech Skills</h2>
- </div>
-     </div>
-     <div class="col">
-      <br>
-      <br>
-      <div class="skills-card">
-     <div class="Skill">
-      <p>HTML</p>
-     </div>
-     <div class="Skill">
-      <p>CSS</p>
-     </div>
-     <div class="Skill">
-      <p>Javascript</p>
-     </div>
-     <div class="Skill">
-      <p>Vue.js</p>
-     </div>
-     <div class="Skill">
-      <p>Node.js</p>
-     </div>
-     <div class="Skill">
-      <p>express.js</p>
-     </div>
-     <div class="Skill">
-      <p>Jquery</p>
-     </div>
-     <div class="Skill">
-      <p>Python</p>
-     </div>
 
-     <div class="Skill">
-      <p>mySQL</p>
-     </div>
-      </div>
-     </div>
-    
-      </div>
-   
-   
-          <div class="skillsCardHolder" data-aos="fade-up">
-      
-        </div>
-      </div>
-    </section>
     </div>
     <section id="badges">
       <center>
@@ -137,9 +85,7 @@ export default {
     education() {
       return this.$store.state.education
     },
-    skill() {
-      return this.$store.state.skill
-    },
+   
     work() {
       return this.$store.state.work
     },
